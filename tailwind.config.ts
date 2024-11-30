@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        alegreya: ["var(--font-alegreya)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
