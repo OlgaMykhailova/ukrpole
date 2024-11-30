@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #fffffc;
+  --black: #080a07;
 }
 
 :root:has(.no-doc-scroll) {
@@ -13,14 +13,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  overflow-x: hidden;
+  color: var(--black);
+  background: var(--white);
   font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
 }
 
