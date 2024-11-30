@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        tab: "768px",
+        laptop: "1280px",
+      },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         alegreya: ["var(--font-alegreya)"],
