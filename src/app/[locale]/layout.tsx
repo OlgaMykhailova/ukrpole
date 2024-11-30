@@ -42,10 +42,10 @@ export default async function LocaleLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${montserrat.variable} ${alegreya.variable} antialiased`}
+        className={`${montserrat.variable} ${alegreya.variable} flex min-h-screen flex-col antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <main className="flex-1">{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>
