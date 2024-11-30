@@ -29,7 +29,7 @@ export default async function LocaleLayout({
   params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: { locale: Locale };
 }>) {
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
