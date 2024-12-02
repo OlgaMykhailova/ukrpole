@@ -5,6 +5,7 @@ import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
 import PhoneLink from "./PhoneLink";
 import HeaderBgImages from "./HeaderBgImages";
+import NavMenu from "./navMenu/NavMenu";
 
 interface HeaderDesktopProps {
   color?: "beige" | "white";
@@ -31,6 +32,7 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
           <PhoneLink />
         </div>
       </div>
+      <NavMenu />
     </div>
   );
 }
