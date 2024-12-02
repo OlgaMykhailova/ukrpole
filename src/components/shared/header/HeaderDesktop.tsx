@@ -4,7 +4,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
 import PhoneLink from "./PhoneLink";
-import HeaderBgImages from "./backgrounds/HeaderBgImages";
+import HeaderBgImages from "./HeaderBgImages";
 
 interface HeaderDesktopProps {
   color?: "beige" | "white";
