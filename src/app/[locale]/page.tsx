@@ -1,7 +1,9 @@
-import { useTranslations } from "next-intl";
+import Header from "@/components/shared/header/Header";
 
 export default function Home() {
-  const t = useTranslations("home");
-
-  return <div>{t("title")}</div>;
+  return (
+    <main className="flex-1">
+      <Header />
+    </main>
+  );
 }

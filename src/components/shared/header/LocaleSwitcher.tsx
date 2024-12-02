@@ -21,7 +21,7 @@ export default function LocaleSwitcher({ locale }: { locale: Locale }) {
         <li key={curLocale}>
           <button
             onClick={() => handleLocaleChange(curLocale)}
-            className={`text-18reg outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 ease-out ${
+            className={`outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 ease-out ${
               curLocale === locale ? "text-greenDark" : "text-black"
             }`}
           >

@@ -16,6 +16,14 @@ export default {
         montserrat: ["var(--font-montserrat)"],
         alegreya: ["var(--font-alegreya)"],
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "16px",
+          md: "36px",
+          xl: "100px",
+        },
+      },
       fontSize: {
         "12reg": ["12px", { lineHeight: "17px", fontWeight: "400" }],
         "14reg": ["14px", { lineHeight: "20px", fontWeight: "400" }],

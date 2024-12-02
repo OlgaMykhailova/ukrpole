@@ -48,7 +48,7 @@ export default async function LocaleLayout({
         className={`${montserrat.variable} ${alegreya.variable} flex min-h-screen flex-col antialiased text-18reg`}
       >
         <NextIntlClientProvider messages={messages}>
-          <main className="flex-1">{children}</main>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
