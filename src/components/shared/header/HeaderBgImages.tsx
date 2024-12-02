@@ -16,14 +16,14 @@ export default function HeaderBgImages() {
         alt="tomatoes"
         width="270"
         height="160"
-        className="absolute top-0 left-[12.73%] deskxl:left-[17%]"
+        className="absolute top-0 left-[12.73%] deskxl:left-[17%] deskxxl:left-[22%]"
       />
       <Image
         src="/images/backgrounds/pepper.svg"
         alt="pepper"
         width="160"
         height="100"
-        className="absolute top-0 right-[25.23%]"
+        className="absolute top-0 right-[25.23%] deskxxl:right-[28%]"
       />
       <Image
         src="/images/backgrounds/leek.svg"
