@@ -11,10 +11,20 @@ export default {
       screens: {
         tab: "768px",
         laptop: "1280px",
+        deskxl: "1700px",
+        deskxxl: "1920px",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         alegreya: ["var(--font-alegreya)"],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "16px",
+          md: "36px",
+          xl: "100px",
+        },
       },
       fontSize: {
         "12reg": ["12px", { lineHeight: "17px", fontWeight: "400" }],

@@ -1,5 +1,20 @@
 {
-  "home": {
+  "homePage": {
     "title": "Головна сторінка"
+  },
+  "aboutPage": {
+    "title": "Про компанію"
+  },
+  "productsPage": {
+    "title": "Продукція"
+  },
+  "cooperationPage": {
+    "title": "Співпраця"
+  },
+  "newsPage": {
+    "title": "Новини"
+  },
+  "contactsPage": {
+    "title": "Контакти"
   }
 }
