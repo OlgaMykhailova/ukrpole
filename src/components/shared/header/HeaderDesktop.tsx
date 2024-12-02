@@ -18,10 +18,16 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
         color === "beige" ? "bg-beige" : "bg-white"
       }`}
     >
-      <div className="container flex items-center max-w-[1720px]">
-        <LocaleSwitcher locale={locale as Locale} />
-        <LogoLink />
-        <PhoneLink />
+      <div className="container flex justify-between items-center max-w-[1720px] py-6">
+        <div className="flex-1 flex justify-start">
+          <LocaleSwitcher locale={locale as Locale} />
+        </div>
+        <div className="flex-1 flex justify-center">
+          <LogoLink />
+        </div>
+        <div className="flex-1 flex justify-end">
+          <PhoneLink />
+        </div>
       </div>
     </div>
   );

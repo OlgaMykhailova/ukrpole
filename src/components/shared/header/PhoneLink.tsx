@@ -1,4 +1,5 @@
 import { PHONE_NUMBER } from "@/constants/constants";
+import { phoneRegex } from "@/regex/phoneRegex";
 import Image from "next/image";
 
 export default function PhoneLink() {
@@ -7,7 +8,7 @@ export default function PhoneLink() {
       href={`tel:+38${PHONE_NUMBER.replace(/\D/g, "")}`}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className="group flex items-center gap-x-1 outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark
+      className="group flex items-center gap-x-1 outline-none text-18med laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark
        transition duration-300 ease-out"
     >
       <Image
@@ -16,7 +17,7 @@ export default function PhoneLink() {
         width={40}
         height={40}
       />
-      {PHONE_NUMBER}
+      {PHONE_NUMBER.replace(phoneRegex, "$1($2) $3 $4 $5")}
     </a>
   );
 }
