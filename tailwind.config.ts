@@ -11,6 +11,7 @@ export default {
       screens: {
         tab: "768px",
         laptop: "1280px",
+        deskxl: "1700px",
       },
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],

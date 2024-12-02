@@ -16,7 +16,7 @@ export default function HeaderBgImages() {
         alt="tomatoes"
         width="270"
         height="160"
-        className="absolute top-0 left-[12.73%]"
+        className="absolute top-0 left-[12.73%] deskxl:left-[17%]"
       />
       <Image
         src="/images/backgrounds/pepper.svg"
