@@ -19,7 +19,7 @@ export default function HeroBgImages() {
         width={2048}
         height={1024}
         priority
-        className="absolute bottom-[-2px] left-[1px]"
+        className="absolute bottom-[-2px] left-0"
       />
     </>
   );
