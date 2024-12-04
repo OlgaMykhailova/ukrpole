@@ -23,7 +23,7 @@ export default function Button({
         rounded-full transition duration-300 ease-out border-[2px] ${
           variant === "primary"
             ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white enabled:focus-visible:border-white"
-            : "bg-white shadow-buttonWhite border-white laptop:enabled:hover:shadow-buttonGreen enabled:focus-visible:shadow-buttonGreen"
+            : "bg-white shadow-buttonWhite border-white laptop:enabled:hover:border-green enabled:focus-visible:border-green"
         }  
         ${
           isLoading
