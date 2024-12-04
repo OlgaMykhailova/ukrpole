@@ -43,10 +43,7 @@ export default function HeaderMobTablet({
           />
         </div>
       </div>
-      <BurgerMenu
-        isHeaderMenuOpened={isHeaderMenuOpened}
-        closeMenu={() => setIsHeaderMenuOpened(false)}
-      />
+      <BurgerMenu isHeaderMenuOpened={isHeaderMenuOpened} />
       <Backdrop
         isVisible={isHeaderMenuOpened}
         onClick={() => setIsHeaderMenuOpened(false)}

@@ -7,18 +7,11 @@ import BurgerMenuBgImages from "./BurgerMenuBgImages";
 import NavMenu from "../navMenu/NavMenu";
 import Button from "../../buttons/Button";
 
-// import SocialLinksList from "../socialLinks/SocialLinksList";
-// import CallUsButton from "./callUs/CallUsButton";
-
-// import MenuList from "./menuList/MenuList";
-
 interface BurgerMenuMobTabProps {
   isHeaderMenuOpened: boolean;
-  closeMenu: () => void;
 }
 
 export default function BurgerMenu({
-  closeMenu,
   isHeaderMenuOpened,
 }: BurgerMenuMobTabProps) {
   const locale = useLocale();
