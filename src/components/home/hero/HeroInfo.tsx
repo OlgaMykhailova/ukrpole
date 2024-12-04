@@ -15,7 +15,7 @@ export default function HeroInfo() {
       <h2 className="max-w-[328px] tab:max-w-[752px] mb-[26px] sm:mb-[46px] tab:mb-[34px] text-center text-white">
         {t("homePage.hero.description")}
       </h2>
-      <Link href="/about" locale={locale} className="outline-none">
+      <Link href="/about" locale={locale} className="group outline-none">
         <Button variant="secondary">{t("buttons.moreAboutUs")}</Button>
       </Link>
     </div>

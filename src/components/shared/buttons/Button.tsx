@@ -20,18 +20,19 @@ export default function Button({
       disabled={disabled}
       onClick={onClick}
       className={`flex items-center h-12 laptop:h-[51px] px-6 text-16med tab:text-18med 
-        rounded-full transition duration-300 ease-out border-[2px] ${
-          variant === "primary"
-            ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white enabled:focus-visible:border-white"
-            : "bg-white shadow-buttonWhite border-white laptop:enabled:hover:border-green enabled:focus-visible:border-green"
-        }  
+        rounded-full transition duration-300 ease-out border-[2px] enabled:active:shadow-buttonGreenDark enabled:active:bg-greenDark
+         enabled:active:border-white outline-none ${
+           variant === "primary"
+             ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white laptop:enabled:focus-visible:border-white"
+             : "bg-white shadow-buttonWhite border-white laptop:enabled:hover:border-green laptop:enabled:focus-visible:border-green"
+         }  
+          enabled:group-active:bg-greenDark enabled:group-active:border-white
         ${
           isLoading
             ? ""
             : "disabled:bg-grey disabled:border-grey disabled:shadow-buttonGrey"
         } 
-        enabled:active:shadow-buttonGreenDark enabled:active:bg-greenDark enabled:active:border-white
-         outline-none ${className}`}
+        ${className}`}
     >
       {children}
       {isLoading ? (
