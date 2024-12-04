@@ -7,20 +7,12 @@ export default function HeroBgImages() {
       <Image
         src="/images/backgrounds/heroHomeBg.webp"
         alt="canned cucumbers and tomatoes on the background of tomato bushes"
-        layout="fill"
-        priority
-        objectPosition="22% center"
-        className="-z-10 h-full object-cover tab:origin-center"
-      />
-      <div className="w-full h-full bg-heroHomeGradient"></div>
-      <Image
-        src="/images/backgrounds/heroHomeFigure.svg"
-        alt="canned cucumbers and tomatoes on the background of tomato bushes"
         width={2048}
         height={1024}
         priority
-        className="absolute bottom-[-2px] left-[1px]"
+        className="absolute top-0 left-0 -z-20 w-[calc(100%-1px)] h-[calc(100%-1px)] object-cover object-22%-center tab:origin-center"
       />
+      <div className="absolute top-0 left-0 -z-10 w-[calc(100%-1px)] h-[calc(100%-1px)] bg-heroHomeGradient"></div>
     </>
   );
 }
