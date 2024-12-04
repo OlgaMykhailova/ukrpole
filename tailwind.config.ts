@@ -22,7 +22,7 @@ export default {
         center: true,
         padding: {
           DEFAULT: "16px",
-          md: "36px",
+          md: "32px",
           xl: "100px",
         },
       },
@@ -34,7 +34,7 @@ export default {
         "18reg": ["18px", { lineHeight: "25px", fontWeight: "400" }],
         "18med": ["18px", { lineHeight: "25px", fontWeight: "500" }],
         "24med": ["24px", { lineHeight: "32px", fontWeight: "500" }],
-        "32med": ["32px", { lineHeight: "45px", fontWeight: "500" }],
+        "32med": ["32px", { lineHeight: "40px", fontWeight: "500" }],
         "40med": ["40px", { lineHeight: "56px", fontWeight: "500" }],
         "64med": ["64px", { lineHeight: "80px", fontWeight: "500" }],
       },
@@ -52,6 +52,13 @@ export default {
         yellowLight: "#FAF1D5",
         darkRed: "#FF7272",
         red: "#FFAFAF",
+      },
+      objectPosition: {
+        "22%-center": "22% center",
+      },
+      backgroundImage: {
+        heroHomeGradient:
+          "radial-gradient(71.85% 71.85% at 48.79% 28.15%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
       },
       boxShadow: {
         buttonWhite: "0 0 0 2px #FFFFFC",
