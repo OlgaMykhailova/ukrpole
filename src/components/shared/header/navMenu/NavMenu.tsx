@@ -15,7 +15,7 @@ export default function NavMenu() {
 
   return (
     <nav className="container flex justify-center max-w-[1720px]">
-      <ul className="inline-flex gap-6 py-4 border-t border-greenKhaki">
+      <ul className="flex flex-col laptop:inline-flex laptop:flex-row gap-8 laptop:gap-6 laptop:py-4 laptop:border-t border-greenKhaki">
         {menuList.map((menuItem, idx) => (
           <MenuLink key={idx} menuItem={menuItem} />
         ))}

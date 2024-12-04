@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import LocaleSwitcher from "../../LocaleSwitcher";
+import LocaleSwitcher from "../LocaleSwitcher";
 import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
 import BurgerMenuButton from "./BurgerMenuButton";
 import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
-import PhoneLink from "../../PhoneLink";
+import PhoneLink from "../PhoneLink";
+import BurgerMenu from "./BurgerMenu";
+import Backdrop from "../../backdrop/Backdrop";
 
 interface HeaderMobTabletProps {
   color?: "beige" | "white";
@@ -41,6 +43,14 @@ export default function HeaderMobTablet({
           />
         </div>
       </div>
+      <BurgerMenu
+        isHeaderMenuOpened={isHeaderMenuOpened}
+        closeMenu={() => setIsHeaderMenuOpened(false)}
+      />
+      <Backdrop
+        isVisible={isHeaderMenuOpened}
+        onClick={() => setIsHeaderMenuOpened(false)}
+      />
     </div>
   );
 }
