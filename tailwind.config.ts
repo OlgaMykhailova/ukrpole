@@ -53,6 +53,10 @@ export default {
         darkRed: "#FF7272",
         red: "#FFAFAF",
       },
+      backgroundImage: {
+        heroHomeGradient:
+          "radial-gradient(71.85% 71.85% at 48.79% 28.15%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
+      },
       boxShadow: {
         buttonWhite: "0 0 0 2px #FFFFFC",
         buttonGreen: "0 0 0 2px #B0E48F",
@@ -71,10 +75,6 @@ export default {
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
-      },
-      backgroundImage: {
-        heroHomeGradient:
-          "radial-gradient(71.85% 71.85% at 48.79% 28.15%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%)",
       },
     },
   },
