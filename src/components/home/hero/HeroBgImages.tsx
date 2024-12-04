@@ -10,9 +10,17 @@ export default function HeroBgImages() {
         width={2048}
         height={1024}
         priority
-        className="absolute top-0 left-0 -z-20 w-[calc(100%-1px)] h-[calc(100%-1px)] object-cover object-22%-center tab:origin-center"
+        className="absolute top-0 left-0 -z-20 w-[calc(100%-2px)] h-[calc(100%-1px)] object-cover object-22%-center tab:origin-center"
       />
-      <div className="absolute top-0 left-0 -z-10 w-[calc(100%-1px)] h-[calc(100%-1px)] bg-heroHomeGradient"></div>
+      <div className="absolute top-0 left-0 -z-10 w-[calc(100%-2px)] h-[calc(100%-1px)] bg-heroHomeGradient"></div>
+      <Image
+        src="/images/backgrounds/heroHomeFigure.svg"
+        alt="curved figure"
+        width={2048}
+        height={1024}
+        priority
+        className="absolute bottom-0 left-0 -z-10 w-full h-auto translate-y-[1px]"
+      />
     </>
   );
 }
