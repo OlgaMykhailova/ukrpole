@@ -14,7 +14,7 @@ export default function LogoLink() {
         alt="logo"
         width="204"
         height="53"
-        className=""
+        className="w-[124px] h-8 tab:w-[162px] tab:h-[42px] laptop:w-[204px] laptop:h-[53px]"
       />
     </Link>
   );
