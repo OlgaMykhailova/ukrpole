@@ -1,11 +1,11 @@
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import React from "react";
 
 import { Locale } from "@/types/locale";
-import LocaleSwitcher from "../LocaleSwitcher";
+import LocaleSwitcher from "../../LocaleSwitcher";
 import BurgerMenuBgImages from "./BurgerMenuBgImages";
-import NavMenu from "../navMenu/NavMenu";
-import Button from "../../buttons/Button";
+import NavMenu from "../../navMenu/NavMenu";
+import PhoneLink from "./PhoneLink";
 
 interface BurgerMenuMobTabProps {
   isHeaderMenuOpened: boolean;
@@ -15,7 +15,6 @@ export default function BurgerMenu({
   isHeaderMenuOpened,
 }: BurgerMenuMobTabProps) {
   const locale = useLocale();
-  const t = useTranslations("buttons");
 
   return (
     <div
@@ -30,7 +29,7 @@ export default function BurgerMenu({
           <LocaleSwitcher locale={locale as Locale} />
         </div>
         <NavMenu />
-        <Button className="mt-12">{t("callBack")}</Button>
+        <PhoneLink />
       </div>
     </div>
   );
