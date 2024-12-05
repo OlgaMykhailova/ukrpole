@@ -23,6 +23,7 @@
   },
   "notFoundPage": {},
   "buttons": {
-    "moreAboutUs": "Більше про нас"
+    "moreAboutUs": "Більше про нас",
+    "callBack": "Замовити зворотній дзвінок"
   }
 }

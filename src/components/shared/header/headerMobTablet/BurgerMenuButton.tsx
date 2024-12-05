@@ -20,9 +20,9 @@ export default function BurgerMenuButton({
       type="button"
       onClick={toggleHeaderMenuOpen}
       className="group absolute top-2 right-4 z-[60] w-14 h-14 px-[10px] py-[15px] outline-none before:content-['']
-         before:absolute before:z-50 before:top-2 before:left-2 before:rounded-full before:size-10 before:opacity-0 before:transition 
-         before:duration-300 before:ease-out active:before:opacity-100 focus-visible:before:opacity-100 laptop:hover:before:opacity-100 before:bg-whiteGradient
-         before:blur-[10px]"
+         before:absolute before:-z-10 before:top-0 before:left-0 before:rounded-full before:size-14 before:opacity-0 before:transition 
+         before:duration-1000 before:ease-out active:before:opacity-100 focus-visible:before:opacity-100 laptop:hover:before:opacity-100 
+         before:bg-greenGradient before:blur-[4px]"
     >
       <div className="w-full h-full rotate-0 ">
         <span

@@ -1,12 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import LocaleSwitcher from "../../LocaleSwitcher";
+import LocaleSwitcher from "../LocaleSwitcher";
 import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
 import BurgerMenuButton from "./BurgerMenuButton";
 import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
-import PhoneLink from "../../PhoneLink";
+import BurgerMenu from "./burgerMenu/BurgerMenu";
+import Backdrop from "../../backdrop/Backdrop";
+import CallBackButton from "../CallBackButton";
 
 interface HeaderMobTabletProps {
   color?: "beige" | "white";
@@ -32,7 +34,7 @@ export default function HeaderMobTablet({
         </div>
         <LogoLink />
         <div className="hidden tab:flex">
-          <PhoneLink />
+          <CallBackButton />
         </div>
         <div className="size-14">
           <BurgerMenuButton
@@ -41,6 +43,11 @@ export default function HeaderMobTablet({
           />
         </div>
       </div>
+      <BurgerMenu isHeaderMenuOpened={isHeaderMenuOpened} />
+      <Backdrop
+        isVisible={isHeaderMenuOpened}
+        onClick={() => setIsHeaderMenuOpened(false)}
+      />
     </div>
   );
 }
