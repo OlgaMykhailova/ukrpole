@@ -24,7 +24,7 @@ export default function Button({
          enabled:active:border-white outline-none ${
            variant === "primary"
              ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white laptop:enabled:focus-visible:border-white"
-             : "bg-white shadow-buttonWhite border-white laptop:enabled:hover:border-green laptop:enabled:focus-visible:border-green"
+             : "bg-white shadow-buttonWhite border-green laptop:enabled:hover:border-greenDark laptop:enabled:focus-visible:border-greenDark"
          }  
           enabled:group-active:bg-greenDark enabled:group-active:border-white
         ${
