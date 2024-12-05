@@ -5,7 +5,7 @@ import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
 import HeaderDeskBgImages from "./HeaderDeskBgImages";
 import NavMenu from "../navMenu/NavMenu";
-import CallBackButton from "../CallBackButton";
+import CallBackApplication from "../callBackApplication/CallBackApplication";
 
 interface HeaderDesktopProps {
   color?: "beige" | "white";
@@ -29,7 +29,7 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
           <LogoLink />
         </div>
         <div className="flex-1 flex justify-end">
-          <CallBackButton />
+          <CallBackApplication />
         </div>
       </div>
       <NavMenu />
