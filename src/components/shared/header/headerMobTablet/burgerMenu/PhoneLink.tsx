@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function PhoneLink() {
   return (
     <a
-      href={`tel:+38${PHONE_NUMBER.replace(/\D/g, "")}`}
+      href={`tel:+${PHONE_NUMBER.replace(/\D/g, "")}`}
       target="_blank"
       rel="noopener noreferrer nofollow"
       className="mt-12 outline-none"
