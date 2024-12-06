@@ -61,7 +61,7 @@ export default function CallBackForm({
       validationSchema={validationSchema}
     >
       {({ errors, touched, dirty, isValid }) => (
-        <Form className="flex flex-col gap-y-4 w-full h-full rounded-[24px]">
+        <Form className="flex flex-col w-full h-full rounded-[24px]">
           <CustomizedInput
             fieldName="phone"
             label={t("forms.phone")}
