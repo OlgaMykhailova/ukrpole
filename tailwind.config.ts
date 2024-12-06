@@ -81,7 +81,7 @@ export default {
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
-        slowRotation: "rotate 2400ms linear infinite",
+        slowRotation: "rotate 2800ms linear infinite",
       },
     },
   },
