@@ -32,6 +32,7 @@ export default function NotificationPopUp({
       <Modal
         isPopUpShown={isNotificationShown}
         setIsPopUpShown={setIsNotificationShown}
+        isError={isError}
       >
         <div className="flex flex-col items-center gap-y-6">
           <PopUpTitle isError={isError}>

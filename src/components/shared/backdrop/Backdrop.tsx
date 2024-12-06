@@ -25,7 +25,7 @@ export default function Backdrop({
 
   return (
     <div
-      className={`fixed z-40 inset-0 bg-grey bg-opacity-30 transition duration-[1000ms] ${
+      className={`fixed z-40 inset-0 bg-backdrop bg-opacity-30 transition duration-[1000ms] ${
         isVisible
           ? "opacity-100 no-doc-scroll"
           : "opacity-0 pointer-events-none"

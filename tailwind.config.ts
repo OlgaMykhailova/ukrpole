@@ -52,6 +52,7 @@ export default {
         yellowLight: "#FAF1D5",
         darkRed: "#FF7272",
         red: "#FFAFAF",
+        backdrop: "#698587",
       },
       objectPosition: {
         "22%-center": "22% center",
@@ -80,6 +81,7 @@ export default {
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
+        slowRotation: "rotate 2800ms linear infinite",
       },
     },
   },
