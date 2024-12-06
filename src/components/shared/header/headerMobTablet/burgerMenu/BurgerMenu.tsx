@@ -5,7 +5,7 @@ import { Locale } from "@/types/locale";
 import LocaleSwitcher from "../../LocaleSwitcher";
 import BurgerMenuBgImages from "./BurgerMenuBgImages";
 import NavMenu from "../../navMenu/NavMenu";
-import PhoneLink from "./PhoneLink";
+import PhoneLink from "../../../phoneLink/PhoneLink";
 
 interface BurgerMenuMobTabProps {
   isHeaderMenuOpened: boolean;
@@ -29,7 +29,7 @@ export default function BurgerMenu({
           <LocaleSwitcher locale={locale as Locale} />
         </div>
         <NavMenu />
-        <PhoneLink />
+        <PhoneLink className="mt-12" />
       </div>
     </div>
   );

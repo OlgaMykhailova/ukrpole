@@ -29,8 +29,8 @@ export default {
       fontSize: {
         "12reg": ["12px", { lineHeight: "17px", fontWeight: "400" }],
         "14reg": ["14px", { lineHeight: "20px", fontWeight: "400" }],
-        "16reg": ["16px", { lineHeight: "22px", fontWeight: "400" }],
-        "16med": ["16px", { lineHeight: "22px", fontWeight: "500" }],
+        "16reg": ["16px", { lineHeight: "22.4px", fontWeight: "400" }],
+        "16med": ["16px", { lineHeight: "22.4px", fontWeight: "500" }],
         "18reg": ["18px", { lineHeight: "25px", fontWeight: "400" }],
         "18med": ["18px", { lineHeight: "25px", fontWeight: "500" }],
         "24med": ["24px", { lineHeight: "32px", fontWeight: "500" }],

@@ -4,11 +4,11 @@ import LocaleSwitcher from "../LocaleSwitcher";
 import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
-import BurgerMenuButton from "./BurgerMenuButton";
+import BurgerMenuButton from "./burgerMenu/BurgerMenuButton";
 import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
 import BurgerMenu from "./burgerMenu/BurgerMenu";
 import Backdrop from "../../backdrop/Backdrop";
-import CallBackButton from "../CallBackButton";
+import CallBackApplication from "../callBackApplication/CallBackApplication";
 
 interface HeaderMobTabletProps {
   color?: "beige" | "white";
@@ -34,7 +34,7 @@ export default function HeaderMobTablet({
         </div>
         <LogoLink />
         <div className="hidden tab:flex">
-          <CallBackButton />
+          <CallBackApplication />
         </div>
         <div className="size-14">
           <BurgerMenuButton

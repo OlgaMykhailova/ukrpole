@@ -19,7 +19,7 @@ export default function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`flex items-center h-[51px] px-6 text-18med rounded-full transition duration-300 ease-out border-[2px] enabled:active:shadow-buttonGreenDark 
+      className={`flex items-center justify-center h-[51px] px-6 text-18med rounded-full transition duration-300 ease-out border-[2px] enabled:active:shadow-buttonGreenDark 
         enabled:active:bg-greenDark enabled:active:border-white outline-none ${
           variant === "primary"
             ? "bg-green shadow-buttonGreen border-green laptop:enabled:hover:border-white laptop:enabled:focus-visible:border-white"

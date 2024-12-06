@@ -3,13 +3,17 @@ import { phoneRegex } from "@/regex/phoneRegex";
 import Button from "@/components/shared/buttons/Button";
 import Image from "next/image";
 
-export default function PhoneLink() {
+interface PhoneLinkProps {
+  className?: string;
+}
+
+export default function PhoneLink({ className = "" }: PhoneLinkProps) {
   return (
     <a
       href={`tel:+${PHONE_NUMBER.replace(/\D/g, "")}`}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className="mt-12 outline-none"
+      className={`outline-none ${className}`}
     >
       <Button>
         <>
