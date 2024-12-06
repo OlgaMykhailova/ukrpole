@@ -2,7 +2,7 @@ import React from "react";
 
 interface PopUpTitleProps {
   children: string;
-  isError: boolean;
+  isError?: boolean;
   className?: string;
 }
 
