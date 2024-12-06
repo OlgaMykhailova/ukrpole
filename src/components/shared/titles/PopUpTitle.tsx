@@ -14,7 +14,7 @@ export default function PopUpTitle({
   return (
     <h2
       data-label={children}
-      className={`relative font-alegreya text-24med tab:text-32med tab:uppercase ${
+      className={`relative font-alegreya text-center text-24med tab:text-32med tab:uppercase ${
         isError ? "text-darkRed" : "text-greenDark"
       } ${className}`}
     >

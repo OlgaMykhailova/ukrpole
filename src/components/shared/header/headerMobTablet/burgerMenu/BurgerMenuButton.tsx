@@ -42,7 +42,7 @@ export default function BurgerMenuButton({
                 }`}
         ></span>
         <span
-          className={`block absolute left-0 w-full h-[1.6px] rounded-md bg-greenDark  rotate-0  
+          className={`block absolute left-0 w-full h-[1.6px] rounded-md bg-greenDark rotate-0  
                 transition duration-[600ms] ease-out ${
                   isHeaderMenuOpened
                     ? thirdLineTransformStyles

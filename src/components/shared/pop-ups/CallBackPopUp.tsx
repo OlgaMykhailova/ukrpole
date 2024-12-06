@@ -24,15 +24,14 @@ export default function CallBackPopUp({
   return (
     <>
       <Modal isPopUpShown={isPopUpShown} setIsPopUpShown={setIsPopUpShown}>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-6">
           <PopUpTitle isError={isError}>{t("title")}</PopUpTitle>
-          <p className="mb-2">{t("description")}</p>
-          {/* <CallBackForm
+          <p className="text-center">{t("description")}</p>
+          <CallBackForm
             setIsError={setIsError}
             setIsNotificationShown={setIsNotificationShown}
             setIsPopUpShown={setIsPopUpShown}
-            
-          /> */}
+          />
         </div>
       </Modal>
       <NotificationPopUp

@@ -4,7 +4,7 @@ import LocaleSwitcher from "../LocaleSwitcher";
 import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
-import BurgerMenuButton from "./BurgerMenuButton";
+import BurgerMenuButton from "./burgerMenu/BurgerMenuButton";
 import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
 import BurgerMenu from "./burgerMenu/BurgerMenu";
 import Backdrop from "../../backdrop/Backdrop";
