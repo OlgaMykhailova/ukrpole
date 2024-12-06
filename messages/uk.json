@@ -41,7 +41,8 @@
     "moreAboutUs": "Більше про нас",
     "callBack": "Замовити зворотній дзвінок",
     "sendMessage": "Надіслати",
-    "sending": "Надсилання..."
+    "sending": "Надсилання...",
+    "goToCatalog": "Перейти в каталог"
   },
   "popUps": {
     "callBack": {
