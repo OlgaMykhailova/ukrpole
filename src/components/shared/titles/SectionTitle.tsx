@@ -10,7 +10,7 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   return (
     <h2
-      className={`mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase ${className}`}
+      className={`mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase text-center ${className}`}
     >
       {children}
     </h2>
