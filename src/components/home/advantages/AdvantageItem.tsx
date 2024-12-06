@@ -19,7 +19,7 @@ export default function AdvantageItem({ advantage }: AdvantageItemProps) {
         alt="round outline"
         width={344}
         height={343}
-        className="absolute top-0 left-0 w-full h-auto group-hover:animate-rotation"
+        className="absolute top-0 left-0 w-full h-auto group-hover:animate-slowRotation"
       />
 
       <Subtitle className="w-[209px] mb-2 laptop:mb-4 text-center">
