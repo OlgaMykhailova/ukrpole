@@ -19,9 +19,11 @@ export default function BurgerMenu({
   return (
     <div
       className={`${
-        isHeaderMenuOpened ? "translate-x-0" : "translate-x-full"
+        isHeaderMenuOpened
+          ? "translate-x-0 opacity-100"
+          : "translate-x-full opacity-0"
       } absolute top-0 right-0 z-50 w-[100vw] h-[100dvh] tab:min-w-[360px] tab:max-h-[666px] tab:w-[40%] bg-beige 
-      transition-transform duration-[600ms] overflow-y-auto`}
+      transition duration-[600ms] overflow-y-auto`}
     >
       <BurgerMenuBgImages />
       <div className="container flex flex-col items-center max-w-full">
