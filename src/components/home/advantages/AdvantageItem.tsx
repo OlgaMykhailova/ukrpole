@@ -1,5 +1,20 @@
+import Subtitle from "@/components/shared/titles/Subtitle";
 import React from "react";
 
-export default function AdvantageItem() {
-  return <li>AdvantageItem</li>;
+interface AdvantageItemProps {
+  advantage: {
+    title: string;
+    description: string;
+  };
+}
+
+export default function AdvantageItem({ advantage }: AdvantageItemProps) {
+  const { title, description } = advantage;
+
+  return (
+    <li>
+      <Subtitle>{title}</Subtitle>
+      <p>{description}</p>
+    </li>
+  );
 }
