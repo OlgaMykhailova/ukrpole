@@ -23,7 +23,7 @@ export default function SubmitButton({
       isLoading={isLoading}
       className="w-full mt-6"
     >
-      {t("sendMessage")}
+      {isLoading ? t("sending") : t("sendMessage")}
     </Button>
   );
 }
