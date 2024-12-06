@@ -32,25 +32,26 @@ export default function NotificationPopUp({
       <Modal
         isPopUpShown={isNotificationShown}
         setIsPopUpShown={setIsNotificationShown}
-        isError={isError}
       >
-        <PopUpTitle isError={isError}>
-          {t(`${isError ? "unsuccessful" : "successful"}.title`)}
-        </PopUpTitle>
-        <p className="text-xs tab:text-baseb">
-          {t(`${isError ? "unsuccessful" : "successful"}.description`)}
-        </p>
-        {isError ? (
-          <PhoneLink />
-        ) : (
-          <Image
-            src={`/images/backgrounds/notifications/cannedVegetables.webp`}
-            alt="canned vegetables"
-            width={684}
-            height={581}
-            className="mx-auto w-[264px] tab:w-[328px] h-auto"
-          />
-        )}
+        <div className="flex flex-col items-center gap-y-6">
+          <PopUpTitle isError={isError}>
+            {t(`${isError ? "unsuccessful" : "successful"}.title`)}
+          </PopUpTitle>
+          <p className="text-14reg tab:text-18reg text-center">
+            {t(`${isError ? "unsuccessful" : "successful"}.description`)}
+          </p>
+          {isError ? (
+            <PhoneLink />
+          ) : (
+            <Image
+              src={`/images/backgrounds/notifications/cannedVegetables.webp`}
+              alt="canned vegetables"
+              width={684}
+              height={581}
+              className="mx-auto w-[264px] tab:w-[328px] h-auto"
+            />
+          )}
+        </div>
       </Modal>
       <Backdrop isVisible={isNotificationShown} onClick={closeNotification} />
     </>

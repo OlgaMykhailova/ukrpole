@@ -29,7 +29,7 @@ export default function BurgerMenu({
           <LocaleSwitcher locale={locale as Locale} />
         </div>
         <NavMenu />
-        <PhoneLink />
+        <PhoneLink className="mt-12" />
       </div>
     </div>
   );

@@ -25,7 +25,8 @@
   "buttons": {
     "moreAboutUs": "Більше про нас",
     "callBack": "Замовити зворотній дзвінок",
-    "sendMessage": "Надіслати"
+    "sendMessage": "Надіслати",
+    "sending": "Надсилання..."
   },
   "popUps": {
     "callBack": {
