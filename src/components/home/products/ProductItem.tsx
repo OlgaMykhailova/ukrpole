@@ -21,7 +21,7 @@ export default function ProductItem({
         {tabsIds.map((tab, idx) => (
           <div
             key={idx}
-            className={`absolute top-0 left-0 transition duration-[200ms] ease-out ${
+            className={`absolute top-0 left-0 transition duration-500 ease-out ${
               tab === activeTab
                 ? "opacity-100"
                 : "opacity-0 pointer-events-none"
