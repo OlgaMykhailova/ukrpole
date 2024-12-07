@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroBgImages() {
   return (
-    <>
+    <div className="absolute -z-10 flex flex-col justify-end h-full">
       <Image
         src="/images/backgrounds/heroHome/heroHomeBg.webp"
         alt="canned cucumbers and tomatoes on the background of tomato bushes"
@@ -19,8 +19,7 @@ export default function HeroBgImages() {
         width={2048}
         height={1024}
         priority
-        className="absolute bottom-0 left-0 -z-10 translate-x-[1px] translate-y-[1px]"
       />
-    </>
+    </div>
   );
 }
