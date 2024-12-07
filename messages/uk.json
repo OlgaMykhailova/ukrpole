@@ -55,6 +55,10 @@
     "title": "Контакти"
   },
   "notFoundPage": {},
+  "footer": {
+    "policy": "Політика конфіденційності",
+    "rightsReserved": "© 2024 Укрполе"
+  },
   "buttons": {
     "moreAboutUs": "Більше про нас",
     "callBack": "Замовити зворотній дзвінок",

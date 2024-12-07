@@ -32,7 +32,7 @@ export default function HeaderMobTablet({
         <div className="tab:hidden">
           <LocaleSwitcher locale={locale as Locale} />
         </div>
-        <LogoLink />
+        <LogoLink className="w-[124px] h-8 tab:w-[162px] tab:h-[42px] laptop:w-[204px] laptop:h-[53px]" />
         <div className="hidden tab:flex">
           <CallBackApplication />
         </div>
