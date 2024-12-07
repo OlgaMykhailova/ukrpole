@@ -19,6 +19,7 @@ export default function HeroBgImages() {
         width={2048}
         height={1024}
         priority
+        className="w-full h-auto"
       />
     </div>
   );
