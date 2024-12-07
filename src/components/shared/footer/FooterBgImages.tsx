@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function FooterBgImages() {
   return (
-    <>
+    <div className="relative">
       <Image
         src="/images/backgrounds/footer/bgMob.svg"
         alt="green background"
@@ -25,6 +25,7 @@ export default function FooterBgImages() {
         height="108"
         className="hidden laptop:block w-full h-auto"
       />
-    </>
+      <div className="absolute -bottom-1 left-0 -z-10 w-full h-[6px] bg-green"></div>
+    </div>
   );
 }

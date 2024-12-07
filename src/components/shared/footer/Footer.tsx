@@ -5,7 +5,7 @@ import FooterNavigation from "./FooterNavigation";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="relative">
       <FooterBgImages />
       <FooterNavigation />
       <FooterBottom />
