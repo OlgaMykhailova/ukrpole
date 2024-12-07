@@ -7,19 +7,21 @@ export default function FooterBottom() {
   const locale = useLocale();
 
   return (
-    <div
-      className="container flex flex-col-reverse tab:flex-row tab:justify-between gap-y-4 items-center justify-center max-w-[1720px] h-[114px] 
-    tab:h-[57px] bg-beige text-18med"
-    >
-      <p className="text-darkGrey"> {t("rightsReserved")}</p>
-      <Link
-        href="/policy"
-        locale={locale}
-        className="outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 
-        ease-out"
+    <div className="bg-beige">
+      <div
+        className="container flex flex-col-reverse tab:flex-row tab:justify-between gap-y-4 items-center justify-center max-w-[1720px] h-[114px] 
+    tab:h-[57px] text-18med"
       >
-        {t("policy")}
-      </Link>
+        <p className="text-darkGrey"> {t("rightsReserved")}</p>
+        <Link
+          href="/policy"
+          locale={locale}
+          className="outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 
+        ease-out"
+        >
+          {t("policy")}
+        </Link>
+      </div>
     </div>
   );
 }

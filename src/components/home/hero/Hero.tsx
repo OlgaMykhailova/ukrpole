@@ -1,7 +1,6 @@
 import React from "react";
 import HeroBgImages from "./HeroBgImages";
 import HeroInfo from "./HeroInfo";
-
 export default function Hero() {
   return (
     <section

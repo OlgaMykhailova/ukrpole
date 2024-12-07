@@ -4,7 +4,11 @@ import React from "react";
 
 import { Link } from "@/i18n/routing";
 
-export default function LogoLink() {
+interface LogoLinkProps {
+  className: string;
+}
+
+export default function LogoLink({ className = "" }: LogoLinkProps) {
   const locale = useLocale();
 
   return (
@@ -14,7 +18,7 @@ export default function LogoLink() {
         alt="logo"
         width="204"
         height="53"
-        className="w-[124px] h-8 tab:w-[162px] tab:h-[42px] laptop:w-[204px] laptop:h-[53px]"
+        className={` ${className}`}
       />
     </Link>
   );
