@@ -35,6 +35,7 @@ export default function ProductsTabs() {
   ];
 
   const activeTabData = tabs.find((tab) => tab.id === activeTab);
+  const tabsIds = tabs.map((tab) => tab.id);
 
   return (
     <div>
@@ -42,9 +43,10 @@ export default function ProductsTabs() {
       <div className="mx-auto">
         {activeTabData && (
           <ProductItem
-            id={activeTabData.id}
+            tabsIds={tabsIds}
             label={activeTabData.label}
             description={activeTabData.description}
+            activeTab={activeTab}
           />
         )}
       </div>
