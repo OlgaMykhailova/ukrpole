@@ -22,7 +22,7 @@ export default function ProductItem({
         height={740}
         className="w-full h-auto max-w-[878px] mx-auto"
       />
-      <p className="w-full max-w-[746px] mx-auto mt-4 tab:mt-6 text-center">
+      <p className="w-full max-w-[380px] tab:max-w-[746px] h-[134px] tab:h-auto mx-auto mt-4 tab:mt-6 text-center">
         {description}
       </p>
     </div>
