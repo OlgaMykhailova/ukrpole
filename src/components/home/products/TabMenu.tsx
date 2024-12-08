@@ -21,7 +21,7 @@ export default function TabMenu({
         <button
           key={id}
           onClick={() => setActiveTab(id)}
-          className={`group flex flex-col items-center outline-none ${
+          className={`group flex flex-col items-center outline-none  ${
             activeTab === id
               ? "bg-blueLight text-black"
               : "bg-transparent text-inputText"
@@ -32,7 +32,7 @@ export default function TabMenu({
             alt={label}
             width={80}
             height={80}
-            className={`size-[64px] tab:size-20`}
+            className={`size-[64px] tab:size-20 group-active:scale-95 transition duration-300 ease-out`}
           />
           <div className="relative flex justify-center items-center w-[70px] tab:w-[103px] h-[33px] tab:h-[49px] group-active:scale-95 transition duration-300 ease-out">
             <Image
@@ -45,7 +45,13 @@ export default function TabMenu({
                    activeTab === id ? "opacity-100" : "opacity-0"
                  }`}
             />
-            <span className="text-greenDark">{label}</span>
+            <span
+              className={`tab:text-18med transition duration-300 ease-out ${
+                activeTab === id ? "text-black" : "text-greenDark"
+              }`}
+            >
+              {label}
+            </span>
           </div>
         </button>
       ))}
