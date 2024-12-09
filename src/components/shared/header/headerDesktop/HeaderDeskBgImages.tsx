@@ -23,9 +23,7 @@ export default function HeaderDeskBgImages({
           alt="ginger"
           width="89"
           height="92"
-          className={`absolute -z-10 bottom-0 left-0 transition duration-500 ease-out ${
-            isAtTop ? "translate-y-0" : "-translate-y-[102px]"
-          }`}
+          className={`absolute -z-10 bottom-0 left-0`}
         />
         <Image
           src="/images/backgrounds/headerDesktop/tomatoes.webp"
@@ -50,9 +48,7 @@ export default function HeaderDeskBgImages({
           alt="leek"
           width="197"
           height="145"
-          className={`absolute -z-10 bottom-0 right-0 transition duration-500 ease-out ${
-            isAtTop ? "translate-y-0" : "-translate-y-[102px]"
-          }`}
+          className={`absolute -z-10 bottom-0 right-0`}
         />
       </>
     </>
