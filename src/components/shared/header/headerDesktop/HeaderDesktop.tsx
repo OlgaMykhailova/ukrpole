@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { throttle } from "lodash";
 import HeaderDeskBgImages from "./HeaderDeskBgImages";
 import NavMenu from "../navMenu/NavMenu";
 import HeaderTop from "./HeaderTop";
@@ -13,12 +14,17 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY === 0);
+      requestAnimationFrame(() => {
+        setIsAtTop(window.scrollY <= 72);
+      });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const throttledHandleScroll = throttle(handleScroll, 100);
+
+    window.addEventListener("scroll", throttledHandleScroll);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", throttledHandleScroll);
     };
   }, []);
 
