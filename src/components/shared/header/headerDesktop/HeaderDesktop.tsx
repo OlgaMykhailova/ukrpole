@@ -13,7 +13,7 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsAtTop(window.scrollY === 0);
+      setIsAtTop(window.scrollY <= 72);
     };
 
     window.addEventListener("scroll", handleScroll);
