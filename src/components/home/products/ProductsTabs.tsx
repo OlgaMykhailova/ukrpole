@@ -14,21 +14,25 @@ export default function ProductsTabs() {
   const tabs: TabMenuItem[] = [
     {
       id: "tomatoes",
+      imageAlt: "tomato",
       label: t("tomatoes.subtitle"),
       description: t("tomatoes.description"),
     },
     {
       id: "cucumbers",
+      imageAlt: "cucumber",
       label: t("cucumbers.subtitle"),
       description: t("cucumbers.description"),
     },
     {
       id: "assorted",
+      imageAlt: "tomato and cucumber",
       label: t("assorted.subtitle"),
       description: t("assorted.description"),
     },
     {
       id: "peppers",
+      imageAlt: "pepper",
       label: t("peppers.subtitle"),
       description: t("peppers.description"),
     },
@@ -40,13 +44,7 @@ export default function ProductsTabs() {
     <div>
       <TabMenu tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="mx-auto">
-        {activeTabData && (
-          <ProductItem
-            id={activeTabData.id}
-            label={activeTabData.label}
-            description={activeTabData.description}
-          />
-        )}
+        {activeTabData && <ProductItem activeTabData={activeTabData} />}
       </div>
     </div>
   );
