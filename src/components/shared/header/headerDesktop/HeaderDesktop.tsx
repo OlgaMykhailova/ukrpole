@@ -24,7 +24,8 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
 
   return (
     <div
-      className={`hidden laptop:block fixed z-10 w-full h-[160px]"
+      className={`hidden laptop:block fixed z-10 w-full  transition-[height] duration-500 ease-out ${
+        isAtTop ? "h-[160px]" : "h-[72px]"
       }`}
     >
       <HeaderDeskBgImages color={color} isAtTop={isAtTop} />
