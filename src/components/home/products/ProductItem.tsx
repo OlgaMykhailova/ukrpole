@@ -1,4 +1,3 @@
-import { TabType } from "@/types/tab";
 import { TabMenuItem } from "@/types/tabMenuItem";
 import Image from "next/image";
 import React from "react";
