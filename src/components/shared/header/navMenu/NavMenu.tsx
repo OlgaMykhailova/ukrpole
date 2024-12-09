@@ -3,7 +3,7 @@ import MenuLink from "./MenuLink";
 import { useTranslations } from "next-intl";
 
 interface NavMenuProps {
-  isAtTop: boolean;
+  isAtTop?: boolean;
 }
 
 export default function NavMenu({ isAtTop }: NavMenuProps) {
@@ -19,8 +19,10 @@ export default function NavMenu({ isAtTop }: NavMenuProps) {
 
   return (
     <nav
-      className={`relative -z-20 container flex justify-center items-center max-w-[1720px] transition-all duration-500 ease-out ${
-        isAtTop ? "top-0 h-[58px]" : "-top-[102px] h-[72px]"
+      className={`relative laptop:-z-20 container flex justify-center items-center max-w-[1720px] transition-all duration-500 ease-out ${
+        isAtTop
+          ? "laptop:top-0 laptop:h-[58px]"
+          : "laptop:-top-[102px] laptop:h-[72px]"
       }`}
     >
       <ul
@@ -34,11 +36,11 @@ export default function NavMenu({ isAtTop }: NavMenuProps) {
             menuItem={menuItem}
             className={`transition-transform duration-500 ${
               isAtTop
-                ? "translate-x-0"
+                ? "laptop:translate-x-0"
                 : idx < 2
-                ? "-translate-x-[70px]"
+                ? "laptop:-translate-x-[70px]"
                 : idx >= 2
-                ? "translate-x-[120px]"
+                ? "laptop:translate-x-[120px]"
                 : ""
             }`}
           />

@@ -14,7 +14,7 @@ export default function HeaderTop({ isAtTop }: HeaderTopProps) {
 
   return (
     <div
-      className={`relative container flex justify-between items-center max-w-[1720px] h-[102px] py-6 transition-[position] duration-500 ease-out ${
+      className={`relative container flex justify-between items-center max-w-[1720px] h-[102px] py-6 transition-all duration-500 ease-out ${
         isAtTop ? "top-0" : "-top-[102px]"
       }`}
     >
