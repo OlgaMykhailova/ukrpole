@@ -1,18 +1,14 @@
 import { TabType } from "@/types/tab";
+import { TabMenuItem } from "@/types/tabMenuItem";
 import Image from "next/image";
 import React from "react";
 
 interface ProductItemProps {
-  id: TabType;
-  label: string;
-  description: string;
+  activeTabData: TabMenuItem;
 }
 
-export default function ProductItem({
-  id,
-  label,
-  description,
-}: ProductItemProps) {
+export default function ProductItem({ activeTabData }: ProductItemProps) {
+  const { id, label, description } = activeTabData;
   return (
     <div>
       <div className="overflow-clip">

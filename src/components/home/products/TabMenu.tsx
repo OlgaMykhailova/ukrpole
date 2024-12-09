@@ -17,7 +17,7 @@ export default function TabMenu({
 }: TabMenuProps) {
   return (
     <div className="flex justify-between w-[328px] tab:w-[556px] mx-auto mb-12 laptop:mb-8">
-      {tabs.map(({ id, label }) => (
+      {tabs.map(({ id, label, imageAlt }) => (
         <button
           key={id}
           onClick={() => setActiveTab(id)}
@@ -29,7 +29,7 @@ export default function TabMenu({
         >
           <Image
             src={`/images/icons/${id}.svg`}
-            alt={label}
+            alt={imageAlt}
             width={80}
             height={80}
             className={`size-[64px] tab:size-20 group-active:scale-95 transition duration-300 ease-out`}
