@@ -7,7 +7,7 @@ import PartnersList from "./PartnersList";
 export default function Partners() {
   const t = useTranslations("homePage.partners");
   return (
-    <Section className="container max-w-[1720px]">
+    <Section className="container flex flex-col items-center max-w-[1720px]">
       <SectionTitle>{t("title")}</SectionTitle>
       <PartnersList />
     </Section>
