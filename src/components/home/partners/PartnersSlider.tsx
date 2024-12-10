@@ -28,23 +28,25 @@ export default function PartnersSlider({ partnersList }: PartnersSliderProps) {
   };
 
   return (
-    <div className="sm:hidden slider-container">
-      <Slider {...settings}>
-        <div>
-          <ul className="flex flex-wrap justify-between gap-y-4 px-2">
-            {firstPart.map((partner, idx) => (
-              <PartnerItem key={idx} partner={partner} />
-            ))}
-          </ul>
-        </div>
-        <div>
-          <ul className="flex flex-wrap justify-between gap-y-4 px-2">
-            {secondPart.map((partner, idx) => (
-              <PartnerItem key={idx} partner={partner} />
-            ))}
-          </ul>
-        </div>
-      </Slider>
+    <div className="sm:hidden ">
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div>
+            <ul className="flex flex-wrap justify-center gap-4 px-2">
+              {firstPart.map((partner, idx) => (
+                <PartnerItem key={idx} partner={partner} />
+              ))}
+            </ul>
+          </div>
+          <div>
+            <ul className="flex flex-wrap justify-center gap-4 px-2">
+              {secondPart.map((partner, idx) => (
+                <PartnerItem key={idx} partner={partner} />
+              ))}
+            </ul>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 }

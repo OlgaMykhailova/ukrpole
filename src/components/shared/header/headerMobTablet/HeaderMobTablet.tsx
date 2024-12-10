@@ -36,7 +36,7 @@ export default function HeaderMobTablet({
         <div className="hidden tab:flex">
           <CallBackApplication />
         </div>
-        <div className="size-14">
+        <div className="relative size-14">
           <BurgerMenuButton
             isHeaderMenuOpened={isHeaderMenuOpened}
             toggleHeaderMenuOpen={toggleHeaderMenuOpen}
