@@ -17,7 +17,7 @@ export default function Cooperation() {
         alt="green field"
         width="1280"
         height="187"
-        className="absolute -top-[calc(0.146*100vw-3px)] w-full h-auto"
+        className="absolute -top-[calc(0.146*100vw-3px)] left-0 w-[100vw] h-auto"
       />
       <div className="bg-green">
         <div className="container py-6 tab:py-10 max-w-[1720px]">
