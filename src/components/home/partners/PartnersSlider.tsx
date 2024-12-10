@@ -1,52 +1,47 @@
 "use client";
 
-import React from "react";
-import Slider from "react-slick";
-import PartnerItem from "./PartnerItem";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
 import "./sliderStyles.css";
+
+import React from "react";
+import { Autoplay, Grid, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import PartnerItem from "./PartnerItem";
 
 interface PartnersSliderProps {
   partnersList: string[];
 }
 
 export default function PartnersSlider({ partnersList }: PartnersSliderProps) {
-  const firstPart = partnersList.slice(0, 6);
-  const secondPart = partnersList.slice(6, partnersList.length);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    swipeToSlide: true,
-    speed: 2000,
-    autoplaySpeed: 4000,
-    cssEase: "ease-out",
-  };
-
   return (
-    <div className="sm:hidden pb-[42px]">
-      <div className="slider-container">
-        <Slider {...settings}>
-          <div>
-            <ul className="flex flex-wrap justify-center gap-4 px-1">
-              {firstPart.map((partner, idx) => (
-                <PartnerItem key={idx} partner={partner} />
-              ))}
-            </ul>
-          </div>
-          <div>
-            <ul className="flex flex-wrap justify-center gap-4 px-1">
-              {secondPart.map((partner, idx) => (
-                <PartnerItem key={idx} partner={partner} />
-              ))}
-            </ul>
-          </div>
-        </Slider>
-      </div>
+    <div className="sm:hidden">
+      <Swiper
+        grid={{
+          rows: 3,
+        }}
+        breakpoints={{
+          360: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+        }}
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        autoplay={true}
+        loop={true}
+        modules={[Grid, Pagination, Autoplay]}
+        className="partnersSlider"
+      >
+        {partnersList.map((partner, idx) => (
+          <SwiperSlide key={idx} className="partnersSlider">
+            <PartnerItem partner={partner} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

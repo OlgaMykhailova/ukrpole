@@ -1,18 +1,30 @@
-.slick-dots li button::before {
-  content: "";
-  top: 24px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: var(--yellow-light);
-  opacity: 1;
-  transition: background-color 1000ms ease-out, width 1000ms ease-out,
-    height 1000ms ease-out, top 1000ms ease-out;
+.swiper.partnersSlider {
+  width: 328px !important;
+  height: 272px !important;
+  padding-bottom: 40px !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slick-dots li.slick-active button::before {
-  top: 21px;
+.swiper-slide.partnersSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px !important;
+  height: 66px !important;
+}
+
+.swiper-pagination {
+  bottom: -6px !important;
+}
+
+.swiper-pagination-bullet {
   width: 16px;
   height: 16px;
+  background-color: var(--yellow-light);
+  opacity: 1;
+}
+
+.partnersSlider .swiper-pagination-bullet-active {
   background-color: var(--green-dark);
 }
