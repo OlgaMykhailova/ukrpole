@@ -1,13 +1,11 @@
 "use client";
 
-import "swiper/css";
-import "swiper/css/grid";
-import "swiper/css/pagination";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./sliderStyles.css";
 
 import React from "react";
-import { Autoplay, Grid, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from "react-slick";
 import PartnerItem from "./PartnerItem";
 
 interface PartnersSliderProps {
@@ -15,31 +13,41 @@ interface PartnersSliderProps {
 }
 
 export default function PartnersSlider({ partnersList }: PartnersSliderProps) {
+  const firstPart = partnersList.slice(0, 6);
+  const secondPart = partnersList.slice(6, partnersList.length);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    swipeToSlide: true,
+    speed: 500,
+    autoplaySpeed: 4000,
+    cssEase: "ease-out",
+  };
+
   return (
-    <Swiper
-      grid={{
-        rows: 3,
-      }}
-      breakpoints={{
-        360: {
-          slidesPerView: 2,
-          spaceBetween: 16,
-        },
-      }}
-      pagination={{
-        dynamicBullets: true,
-        clickable: true,
-      }}
-      autoplay={true}
-      loop={true}
-      modules={[Grid, Pagination, Autoplay]}
-      className="partnersSlider"
-    >
-      {partnersList.map((partner, idx) => (
-        <SwiperSlide key={idx} className="partnersSlider">
-          <PartnerItem partner={partner} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="sm:hidden pb-[42px] overflow-hidden">
+      <div className="slider-container">
+        <Slider {...settings}>
+          <div>
+            <ul className="flex flex-wrap justify-center gap-4">
+              {firstPart.map((partner, idx) => (
+                <PartnerItem key={idx} partner={partner} />
+              ))}
+            </ul>
+          </div>
+          <div>
+            <ul className="flex flex-wrap justify-center gap-4">
+              {secondPart.map((partner, idx) => (
+                <PartnerItem key={idx} partner={partner} />
+              ))}
+            </ul>
+          </div>
+        </Slider>
+      </div>
+    </div>
   );
 }

@@ -7,7 +7,7 @@ interface PartnerItemProps {
 
 export default function PartnerItem({ partner }: PartnerItemProps) {
   return (
-    <li className="flex items-center justify-center sm:w-[30.9%] lg:w-[23%] laptop:w-[23.3%] h-auto aspect-[155/66] px-3 tab:px-4 laptop:px-5 rounded-[16px] bg-beige">
+    <li className="flex items-center justify-center w-[47%] sm:w-[30.9%] lg:w-[23%] laptop:w-[23.3%] h-auto aspect-[155/66] px-3 tab:px-4 laptop:px-5 rounded-[16px] bg-beige">
       <Image
         src={`/images/contentImages/homePartners/${partner}.webp`}
         alt={partner}
