@@ -1,0 +1,18 @@
+.slick-dots li button::before {
+  content: "";
+  top: 24px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: var(--yellow-light);
+  opacity: 1;
+  transition: background-color 500ms ease-out, width 500ms ease-out,
+    height 500ms ease-out, top 500ms ease-out;
+}
+
+.slick-dots li.slick-active button::before {
+  top: 21px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--green-dark);
+}
