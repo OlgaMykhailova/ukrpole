@@ -27,7 +27,7 @@ export default function Cooperation() {
             <Link
               href="/cooperation"
               locale={locale}
-              className="mt-6 tab:mt-5 outline-none"
+              className="group mt-6 tab:mt-5 outline-none"
             >
               <Button variant="secondary">{t("buttons.becomePartner")}</Button>
             </Link>
