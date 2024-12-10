@@ -6,8 +6,8 @@
   border-radius: 100%;
   background-color: var(--yellow-light);
   opacity: 1;
-  transition: background-color 1000ms ease-out, width 1000ms ease-out,
-    height 1000ms ease-out, top 1000ms ease-out;
+  transition: background-color 500ms ease-out, width 500ms ease-out,
+    height 500ms ease-out, top 500ms ease-out;
 }
 
 .slick-dots li.slick-active button::before {
