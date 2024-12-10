@@ -16,32 +16,30 @@ interface PartnersSliderProps {
 
 export default function PartnersSlider({ partnersList }: PartnersSliderProps) {
   return (
-    <div className="sm:hidden">
-      <Swiper
-        grid={{
-          rows: 3,
-        }}
-        breakpoints={{
-          360: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-          },
-        }}
-        pagination={{
-          dynamicBullets: true,
-          clickable: true,
-        }}
-        autoplay={true}
-        loop={true}
-        modules={[Grid, Pagination, Autoplay]}
-        className="partnersSlider"
-      >
-        {partnersList.map((partner, idx) => (
-          <SwiperSlide key={idx} className="partnersSlider">
-            <PartnerItem partner={partner} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Swiper
+      grid={{
+        rows: 3,
+      }}
+      breakpoints={{
+        360: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+      }}
+      pagination={{
+        dynamicBullets: true,
+        clickable: true,
+      }}
+      autoplay={true}
+      loop={true}
+      modules={[Grid, Pagination, Autoplay]}
+      className="partnersSlider"
+    >
+      {partnersList.map((partner, idx) => (
+        <SwiperSlide key={idx} className="partnersSlider">
+          <PartnerItem partner={partner} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
