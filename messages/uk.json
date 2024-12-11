@@ -84,6 +84,13 @@
     "title": "Контакти"
   },
   "notFoundPage": {},
+  "navMenu": {
+    "about": "Про компанію",
+    "products": "Продукція",
+    "cooperation": "Співпраця",
+    "news": "Новини",
+    "contacts": "Контакти"
+  },
   "footer": {
     "policy": "Політика конфіденційності",
     "rightsReserved": "© 2024 Укрполе"

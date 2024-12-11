@@ -10,11 +10,11 @@ export default function NavMenu({ isAtTop }: NavMenuProps) {
   const t = useTranslations();
 
   const menuList = [
-    { title: t("aboutPage.title"), path: "about" },
-    { title: t("productsPage.title"), path: "products" },
-    { title: t("cooperationPage.title"), path: "cooperation" },
-    { title: t("newsPage.title"), path: "news" },
-    { title: t("contactsPage.title"), path: "contacts" },
+    { title: t("navMenu.about"), path: "about" },
+    { title: t("navMenu.products"), path: "products" },
+    { title: t("navMenu.cooperation"), path: "cooperation" },
+    { title: t("navMenu.news"), path: "news" },
+    { title: t("navMenu.contacts"), path: "contacts" },
   ];
 
   return (
