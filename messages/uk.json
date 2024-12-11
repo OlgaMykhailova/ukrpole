@@ -79,7 +79,8 @@
     "sendMessage": "Надіслати",
     "sending": "Надсилання...",
     "goToCatalog": "Перейти в каталог",
-    "becomePartner": "Стати партнером"
+    "becomePartner": "Стати партнером",
+    "seeAll": "Переглянути всі"
   },
   "popUps": {
     "callBack": {
