@@ -11,7 +11,7 @@ export default function News() {
   const locale = useLocale();
 
   return (
-    <Section>
+    <Section className="flex flex-col items-center">
       <SectionTitle>{t("homePage.news.title")}</SectionTitle>
       <NewsList />
       <Link
@@ -19,7 +19,7 @@ export default function News() {
         locale={locale}
         className="group block mt-8 tab:mt-14 laptop:mt-16 outline-none"
       >
-        <Button className="mx-auto">{t("buttons.seeAll")}</Button>
+        <Button>{t("buttons.seeAll")}</Button>
       </Link>
     </Section>
   );
