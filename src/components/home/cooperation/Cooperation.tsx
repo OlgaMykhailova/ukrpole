@@ -11,13 +11,13 @@ export default function Cooperation() {
   const locale = useLocale();
 
   return (
-    <section className="relative w-full mt-[calc(0.146*100vw-3px)] pb-20 tab:pb-[100px] scroll-mt-[72px] laptop:scroll-mt-[160px]">
+    <section className="relative w-[100vw] mt-[calc(0.146*100vw-3px)] pb-20 tab:pb-[100px] scroll-mt-[72px] laptop:scroll-mt-[160px]">
       <Image
         src="/images/backgrounds/homeCooperation/field.svg"
         alt="green field"
         width="1280"
         height="187"
-        className="absolute -top-[calc(0.146*100vw-3px)] left-0 w-[100vw] h-auto"
+        className="absolute -top-[calc(0.146*100vw-3px)] left-0 right-0 w-[100vw] h-auto"
       />
       <div className="bg-green">
         <div className="container py-6 tab:py-10 max-w-[1720px]">
