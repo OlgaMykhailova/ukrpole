@@ -4,6 +4,7 @@ import Header from "@/components/shared/header/Header";
 import Products from "@/components/home/products/Products";
 import Footer from "@/components/shared/footer/Footer";
 import Partners from "@/components/home/partners/Partners";
+import Cooperation from "@/components/home/cooperation/Cooperation";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <Products />
         <Advantages />
+        <Cooperation />
         <Partners />
       </main>
       <Footer />
