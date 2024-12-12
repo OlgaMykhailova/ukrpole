@@ -7,14 +7,15 @@ interface MenuLinkProps {
     title: string;
     path: string;
   };
+  className: string;
 }
 
-export default function MenuLink({ menuItem }: MenuLinkProps) {
+export default function MenuLink({ menuItem, className }: MenuLinkProps) {
   const locale = useLocale();
   const { title, path } = menuItem;
 
   return (
-    <li className="text-center">
+    <li className={`text-center ${className}`}>
       <Link
         href={`/${path}`}
         locale={locale}

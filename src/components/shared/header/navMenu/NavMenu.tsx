@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import MenuLink from "./MenuLink";
 import { useTranslations } from "next-intl";
+import { usePathname } from "@/i18n/routing";
 
 interface NavMenuProps {
   isAtTop?: boolean;
@@ -8,6 +10,8 @@ interface NavMenuProps {
 
 export default function NavMenu({ isAtTop }: NavMenuProps) {
   const t = useTranslations();
+
+  const currentPath = usePathname().slice(1);
 
   const menuList = [
     { title: t("navMenu.about"), path: "about" },
@@ -42,7 +46,7 @@ export default function NavMenu({ isAtTop }: NavMenuProps) {
                 : idx >= 2
                 ? "laptop:translate-x-[120px]"
                 : ""
-            }`}
+            } ${currentPath === menuItem.path ? "text-greenDark" : ""}`}
           />
         ))}
       </ul>
