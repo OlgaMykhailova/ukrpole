@@ -23,7 +23,7 @@ export default function HeaderMobTablet({
 
   return (
     <div
-      className={`laptop:hidden fixed z-10 w-full h-[72px] ${
+      className={`laptop:hidden fixed z-10 w-full h-[72px] border-b border-greenKhaki ${
         color === "beige" ? "bg-beige" : "bg-white"
       }`}
     >
