@@ -19,6 +19,7 @@ export default function Hero() {
         alt="field with tomatoes"
         width={720}
         height={320}
+        priority
         className="sm:hidden absolute -z-10 top-0 left-0 w-full h-auto"
       />
       <Image
@@ -26,6 +27,7 @@ export default function Hero() {
         alt="field with tomatoes"
         width={2560}
         height={800}
+        priority
         className="hidden sm:block absolute -z-10 top-0 left-0 w-full h-auto"
       />
     </section>

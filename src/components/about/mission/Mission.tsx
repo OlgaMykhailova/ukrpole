@@ -11,8 +11,9 @@ export default function Mission() {
         src="/images/contentImages/aboutMission/mission.webp"
         alt="canned vegetables"
         width={1390}
-        height={1200}
-        className="w-full sm:w-[45.6%] laptop:w-[60%]"
+        height={1141}
+        priority
+        className="w-full sm:w-[45.6%] laptop:w-[60%] h-auto"
       />
     </Section>
   );
