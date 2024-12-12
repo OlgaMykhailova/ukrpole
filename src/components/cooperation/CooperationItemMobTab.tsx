@@ -30,10 +30,10 @@ export default function CooperationItemMobTab({
         height={1024}
         className="w-full h-auto"
       />
-      <div className="cursor-pointer" onClick={toggleShowMore}>
+      <div className="group" onClick={toggleShowMore}>
         <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
         <div>
-          <span className="text-16med text-greenDark">
+          <span className="text-16med text-greenDark group-active:text-greenKhaki">
             {t("buttons.learnMore")}
           </span>
           <Image
