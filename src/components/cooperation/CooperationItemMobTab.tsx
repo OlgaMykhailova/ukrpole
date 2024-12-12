@@ -33,7 +33,7 @@ export default function CooperationItemMobTab({
       <div className="group" onClick={toggleShowMore}>
         <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
         <div>
-          <span className="text-16med text-greenDark group-active:text-greenKhaki">
+          <span className="text-16med text-greenDark group-active:text-greenKhaki transition duration-700 ease-out">
             {t("buttons.learnMore")}
           </span>
           <Image
