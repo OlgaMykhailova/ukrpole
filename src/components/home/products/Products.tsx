@@ -10,10 +10,10 @@ export default function Products() {
   const locale = useLocale();
 
   return (
-    <Section>
+    <Section className="flex flex-col items-center">
       <ProductsTabs />
-      <Link href="/products" locale={locale} className="outline-none">
-        <Button className="mx-auto mt-4 tab:mt-6">{t("goToCatalog")}</Button>
+      <Link href="/products" locale={locale} className="group outline-none">
+        <Button className="mt-4 tab:mt-6">{t("goToCatalog")}</Button>
       </Link>
     </Section>
   );
