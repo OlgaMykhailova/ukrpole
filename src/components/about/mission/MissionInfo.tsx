@@ -12,6 +12,7 @@ export default function MissionInfo() {
         alt="round outline"
         width={344}
         height={343}
+        priority
         className="absolute top-0 left-0 w-full h-auto"
       />
       <h2 className="mb-2 tab:mb-4 font-alegreya text-32med tab:text-40med uppercase text-center">
