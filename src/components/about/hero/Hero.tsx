@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section className="relative w-full aspect-[720/320] sm:aspect-[2560/800] overflow-hidden">
-      <Breadcrumbs crumbs={crumbs} />
+      <Breadcrumbs crumbs={crumbs} variant="light" />
       <Image
         src="/images/backgrounds/aboutHero/aboutHeroMob.webp"
         alt="field with tomatoes"
