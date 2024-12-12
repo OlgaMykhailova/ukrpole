@@ -22,7 +22,7 @@ export default function CooperationItemMobTab({
   const { id, title, descriptionPartOne, descriptionPartTwo } = cooperationItem;
 
   return (
-    <li className="flex flex-col gap-y-4 w-full p-4 border-[2px] border-green">
+    <li className="laptop:hidden flex flex-col gap-y-4 w-full p-4 border-[2px] border-green">
       <Image
         src={`/images/contentImages/cooperation/${id}.webp`}
         alt={id}
@@ -46,7 +46,7 @@ export default function CooperationItemMobTab({
             }`}
           />
           <div
-            className={`overflow-hidden transition-[max-height] duration-700 ease-out ${
+            className={`overflow-hidden transition-[max-height] duration-700 ease-in ${
               isShownMore ? "max-h-[600px]" : "max-h-0"
             }`}
           >
