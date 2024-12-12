@@ -13,7 +13,7 @@ export default function Mission() {
         width={1390}
         height={1141}
         priority
-        className="w-full sm:w-[45.6%] laptop:w-[60%] h-auto"
+        className="w-full sm:w-[50%] laptop:w-[60%] h-auto"
       />
     </Section>
   );
