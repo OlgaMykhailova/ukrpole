@@ -29,7 +29,7 @@ export default function AdvantagesList() {
   ];
 
   return (
-    <ul className="">
+    <ul className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-10 sm:gap-8 laptop:gap-14">
       {advantagesList.map((advantage, idx) => (
         <AdvantageItem key={idx} advantage={advantage} />
       ))}
