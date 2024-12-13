@@ -2,15 +2,12 @@ import React from "react";
 import HeaderDesktop from "./headerDesktop/HeaderDesktop";
 import HeaderMobTablet from "./headerMobTablet/HeaderMobTablet";
 
-interface HeaderProps {
-  color?: "beige" | "white";
-}
 
-export default function Header({ color = "beige" }: HeaderProps) {
+export default function Header() {
   return (
     <header>
-      <HeaderDesktop color={color} />
-      <HeaderMobTablet color={color} />
+      <HeaderDesktop />
+      <HeaderMobTablet />
     </header>
   );
 }

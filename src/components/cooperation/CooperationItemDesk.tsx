@@ -28,6 +28,7 @@ export default function CooperationItemDesk({
         alt={id}
         width={1024}
         height={1024}
+        priority
         className="absolute -z-10 top-0 left-0 w-full h-auto"
       />
       <h2 className="font-alegreya text-32med text-white text-center uppercase">

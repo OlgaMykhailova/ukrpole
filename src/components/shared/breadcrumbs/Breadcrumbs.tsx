@@ -8,9 +8,13 @@ interface Breadcrumb {
 
 interface BreadcrumbsProps {
   crumbs: Breadcrumb[];
+  variant?: "bright" | "light";
 }
 
-export default function Breadcrumbs({ crumbs }: BreadcrumbsProps) {
+export default function Breadcrumbs({
+  crumbs,
+  variant = "bright",
+}: BreadcrumbsProps) {
   const locale = useLocale();
 
   return (
@@ -22,12 +26,21 @@ export default function Breadcrumbs({ crumbs }: BreadcrumbsProps) {
         {crumbs.map((crumb, index) => (
           <li
             key={crumb.href}
-            className="flex items-center text-18reg text-darkGrey laptop:hover:text-greenDark focus:text-greenDark 
-          active:text-greenDark transition duration-300 ease-out"
+            className={`flex items-center text-18reg ${
+              variant === "bright"
+                ? "text-darkGrey laptop:hover:text-greenDark focus:text-greenDark active:text-greenDark"
+                : "text-white laptop:hover:text-greenLight focus:text-greenLight active:text-greenLight"
+            } transition duration-300 ease-out`}
           >
             {index > 0 && <span className="inline-block mx-2 tab:mx-3">/</span>}
             {index === crumbs.length - 1 ? (
-              <span className="text-18med text-greenDark">{crumb.label}</span>
+              <span
+                className={`text-18med ${
+                  variant === "bright" ? "text-greenDark" : "text-greenLight"
+                }`}
+              >
+                {crumb.label}
+              </span>
             ) : (
               <Link href={crumb.href} locale={locale} className="outline-none">
                 {crumb.label}

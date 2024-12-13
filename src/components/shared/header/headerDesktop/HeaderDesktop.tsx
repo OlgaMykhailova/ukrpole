@@ -5,11 +5,7 @@ import HeaderDeskBgImages from "./HeaderDeskBgImages";
 import NavMenu from "../navMenu/NavMenu";
 import HeaderTop from "./HeaderTop";
 
-interface HeaderDesktopProps {
-  color?: "beige" | "white";
-}
-
-export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
+export default function HeaderDesktop() {
   const [isAtTop, setIsAtTop] = useState(true);
 
   useEffect(() => {
@@ -34,7 +30,7 @@ export default function HeaderDesktop({ color = "beige" }: HeaderDesktopProps) {
         isAtTop ? "h-[160px]" : "h-[72px]"
       }`}
     >
-      <HeaderDeskBgImages color={color} isAtTop={isAtTop} />
+      <HeaderDeskBgImages isAtTop={isAtTop} />
       <HeaderTop isAtTop={isAtTop} />
       <NavMenu isAtTop={isAtTop} />
     </div>
