@@ -10,22 +10,15 @@ import BurgerMenu from "./burgerMenu/BurgerMenu";
 import Backdrop from "../../backdrop/Backdrop";
 import CallBackApplication from "../callBackApplication/CallBackApplication";
 
-interface HeaderMobTabletProps {
-  color?: "beige" | "white";
-}
 
-export default function HeaderMobTablet({
-  color = "beige",
-}: HeaderMobTabletProps) {
+export default function HeaderMobTablet() {
   const locale = useLocale();
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
   const toggleHeaderMenuOpen = () => setIsHeaderMenuOpened(!isHeaderMenuOpened);
 
   return (
     <div
-      className={`laptop:hidden fixed z-10 w-full h-[72px] border-b border-greenKhaki ${
-        color === "beige" ? "bg-beige" : "bg-white"
-      }`}
+      className={`laptop:hidden fixed z-10 w-full h-[72px] border-b border-greenKhaki bg-beige`}
     >
       <HeaderMobTabBgImages />
       <div className="container flex items-center justify-between py-2 max-w-[1720px]">

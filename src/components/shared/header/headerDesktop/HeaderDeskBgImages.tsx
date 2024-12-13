@@ -3,19 +3,17 @@ import Image from "next/image";
 
 interface HeaderDeskBgImagesProps {
   isAtTop: boolean;
-  color: "beige" | "white";
 }
 
 export default function HeaderDeskBgImages({
   isAtTop,
-  color,
 }: HeaderDeskBgImagesProps) {
   return (
     <>
       <div
         className={`-z-20 absolute top-0 w-full border-b border-greenKhaki transition-[height] duration-500 ease-out ${
           isAtTop ? "h-[160px]" : "h-[72px]"
-        }  ${color === "beige" ? "bg-beige" : "bg-white"} `}
+        } bg-beige`}
       ></div>
       <>
         <Image
