@@ -14,9 +14,9 @@ export default function ValueItem({ value, className = "" }: ValueItemProps) {
 
   return (
     <li
-      className={`mx-auto mb-8 last:mb-0 sm:mb-0 sm:max-w-[302px] laptop:max-w-[252px] ${className}`}
+      className={`mx-auto mb-10 last:mb-0 sm:mb-0 sm:max-w-[302px] laptop:max-w-[252px] ${className}`}
     >
-      <Subtitle className="text-center mb-2">{title}</Subtitle>
+      <Subtitle className="text-center mb-2 text-greenDark">{title}</Subtitle>
       <p className="text-center">{description}</p>
     </li>
   );
