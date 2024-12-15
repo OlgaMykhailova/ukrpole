@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
+import Contacts from "@/components/contacts/Contacts";
 
-export default function Contact() {
+export default function ContactPage() {
   const t = useTranslations();
 
   const crumbs = [
@@ -13,6 +14,7 @@ export default function Contact() {
   return (
     <>
       <Breadcrumbs crumbs={crumbs} />
+      <Contacts />
     </>
   );
 }
