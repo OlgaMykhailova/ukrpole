@@ -9,7 +9,7 @@ export default function Address() {
   const t = useTranslations("contactsPage");
 
   return (
-    <li className="flex gap-x-4 items-start">
+    <li className="flex gap-x-4 items-start tab:grow laptop:grow-0 tab:w-[300px] laptop:w-auto">
       <Image
         src="/images/icons/mapPin.svg"
         alt="map pin icon"

@@ -67,7 +67,7 @@ export default function ContactsForm({
       validationSchema={validationSchema}
     >
       {({ errors, touched, dirty, isValid }) => (
-        <Form className="flex flex-col w-full max-w-[525px] h-full p-4 tab:p-8 mx-auto rounded-[16px] bg-greenLight">
+        <Form className="flex flex-col lg:order-3 w-full lg:w-[50.5%] max-w-[525px] h-full p-4 tab:p-8 mx-auto lg:mx-0 rounded-[16px] bg-greenLight">
           <div className="flex flex-col gap-5">
             <CustomizedInput
               fieldName="name"

@@ -13,9 +13,11 @@ export default function Contacts() {
   return (
     <Section>
       <PageTitle>{t("title")}</PageTitle>
-      <ContactsInfo />
-      <ContactsApplication />
-      <ContactsList />
+      <div className="lg:flex flex-col flex-wrap content-between gap-y-10 lg:h-[645px]">
+        <ContactsInfo />
+        <ContactsApplication />
+        <ContactsList />
+      </div>
       <Map />
     </Section>
   );
