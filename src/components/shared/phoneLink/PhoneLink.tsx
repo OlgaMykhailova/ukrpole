@@ -2,12 +2,17 @@ import { PHONE_NUMBER } from "@/constants/constants";
 import { phoneRegex } from "@/regex/phoneRegex";
 import Button from "@/components/shared/buttons/Button";
 import Image from "next/image";
+import { Dispatch, SetStateAction } from "react";
 
 interface PhoneLinkProps {
   className?: string;
+  setIsHeaderMenuOpened?: Dispatch<SetStateAction<boolean>> | undefined;
 }
 
-export default function PhoneLink({ className = "" }: PhoneLinkProps) {
+export default function PhoneLink({
+  className = "",
+  setIsHeaderMenuOpened,
+}: PhoneLinkProps) {
   return (
     <a
       href={`tel:+${PHONE_NUMBER.replace(/\D/g, "")}`}
@@ -15,7 +20,11 @@ export default function PhoneLink({ className = "" }: PhoneLinkProps) {
       rel="noopener noreferrer nofollow"
       className={`outline-none ${className}`}
     >
-      <Button>
+      <Button
+        onClick={
+          setIsHeaderMenuOpened ? () => setIsHeaderMenuOpened(false) : undefined
+        }
+      >
         <>
           <Image
             src="/images/icons/phone.svg"

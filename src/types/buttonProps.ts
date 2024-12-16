@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 export interface ButtonProps {
   children: string | React.JSX.Element;
   ariaLabel?: string;
@@ -6,5 +8,5 @@ export interface ButtonProps {
   variant?: "primary" | "secondary";
   disabled?: boolean;
   isLoading?: boolean;
-  onClick?: () => void;
+  onClick?: () => void | Dispatch<SetStateAction<boolean>>;
 }
