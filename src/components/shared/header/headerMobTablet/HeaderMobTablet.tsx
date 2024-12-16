@@ -10,7 +10,6 @@ import BurgerMenu from "./burgerMenu/BurgerMenu";
 import Backdrop from "../../backdrop/Backdrop";
 import CallBackApplication from "../callBackApplication/CallBackApplication";
 
-
 export default function HeaderMobTablet() {
   const locale = useLocale();
   const [isHeaderMenuOpened, setIsHeaderMenuOpened] = useState(false);
@@ -36,7 +35,10 @@ export default function HeaderMobTablet() {
           />
         </div>
       </div>
-      <BurgerMenu isHeaderMenuOpened={isHeaderMenuOpened} />
+      <BurgerMenu
+        isHeaderMenuOpened={isHeaderMenuOpened}
+        setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+      />
       <Backdrop
         isVisible={isHeaderMenuOpened}
         onClick={() => setIsHeaderMenuOpened(false)}
