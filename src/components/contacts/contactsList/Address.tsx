@@ -1,0 +1,42 @@
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import React from "react";
+
+import Subtitle from "@/components/shared/titles/Subtitle";
+import { ADDRESS_LINK } from "@/constants/constants";
+
+export default function Address() {
+  const t = useTranslations("contactsPage");
+
+  return (
+    <li className="flex gap-x-4 items-start">
+      <Image
+        src="/images/icons/mapPin.svg"
+        alt="map pin icon"
+        width="48"
+        height="48"
+      />
+      <div className="flex flex-col gap-y-4">
+        <Subtitle>{t("address.title")}</Subtitle>
+        <a
+          href={ADDRESS_LINK}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="outline-none laptop:hover:text-blue focus-visible:text-blue active:text-blue transition duration-300 ease-out"
+        >
+          {t("address.description")}
+        </a>
+        <a
+          href={ADDRESS_LINK}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="self-start border-b-[1px] border-greenDark outline-none text-greenDark laptop:hover:border-b-greenKhaki 
+          focus-visible:border-b-greenKhaki active:border-b-greenKhaki laptop:hover:text-greenKhaki focus-visible:text-greenKhaki 
+          active:text-greenKhaki transition duration-300 ease-out"
+        >
+          {t("layRoute")}
+        </a>
+      </div>
+    </li>
+  );
+}

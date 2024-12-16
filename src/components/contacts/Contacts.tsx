@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../shared/section/Section";
 import Map from "./Map";
-import ContactsList from "./ContactsList";
+import ContactsList from "./contactsList/ContactsList";
 import ContactsInfo from "./ContactsInfo";
 import PageTitle from "../shared/titles/PageTitle";
 import { useTranslations } from "next-intl";
