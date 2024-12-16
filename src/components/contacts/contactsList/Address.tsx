@@ -22,7 +22,7 @@ export default function Address() {
           href={ADDRESS_LINK}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="outline-none laptop:hover:text-blue focus-visible:text-blue active:text-blue transition duration-300 ease-out"
+          className="outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 ease-out"
         >
           {t("address.description")}
         </a>
