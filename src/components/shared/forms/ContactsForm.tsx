@@ -5,28 +5,31 @@ import { Dispatch, SetStateAction, useState } from "react";
 import MaskedInput from "react-text-mask";
 
 import { phoneMask } from "@/regex/regex";
-import { CallBackValidation } from "@/schemas/callBackFormValidation";
+import { ContactsValidation } from "@/schemas/contactsFormValidation";
 import { handleSubmitForm } from "@/utils/handleSubmitForm";
 
 import CustomizedInput from "./formElements/CustomizedInput";
 import SubmitButton from "./formElements/SubmitButton";
 import FormDescription from "./formElements/FormDescription";
 
-export interface ValuesCallBackFormType {
+export interface ValuesContactsFormType {
+  name: string;
   phone: string;
+  email: string;
+  message: string;
 }
 
-interface CallBackFormProps {
+interface ContactsFormProps {
   setIsError: Dispatch<SetStateAction<boolean>>;
   setIsNotificationShown: Dispatch<SetStateAction<boolean>>;
   setIsPopUpShown: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function CallBackForm({
+export default function ContactsForm({
   setIsError,
   setIsNotificationShown,
   setIsPopUpShown,
-}: CallBackFormProps) {
+}: ContactsFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const t = useTranslations("");
 
@@ -34,17 +37,17 @@ export default function CallBackForm({
     phone: "",
   };
 
-  const validationSchema = CallBackValidation();
+  const validationSchema = ContactsValidation();
 
   const submitForm = async (
-    values: ValuesCallBackFormType,
-    formikHelpers: FormikHelpers<ValuesCallBackFormType>
+    values: ValuesContactsFormType,
+    formikHelpers: FormikHelpers<ValuesContactsFormType>
   ) => {
     const data =
       `<b>Передзвоніть мені</b>\n` +
       `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n`;
 
-    await handleSubmitForm<ValuesCallBackFormType>(
+    await handleSubmitForm<ValuesContactsFormType>(
       formikHelpers,
       setIsLoading,
       setIsError,

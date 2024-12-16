@@ -1,5 +1,5 @@
 import { PHONE_NUMBER } from "@/constants/constants";
-import { phoneRegex } from "@/regex/phoneRegex";
+import { phoneRegex } from "@/regex/regex";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
