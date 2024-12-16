@@ -6,7 +6,7 @@ import { Dispatch, SetStateAction } from "react";
 
 interface PhoneLinkProps {
   className?: string;
-  setIsHeaderMenuOpened: Dispatch<SetStateAction<boolean>>;
+  setIsHeaderMenuOpened?: Dispatch<SetStateAction<boolean>> | undefined;
 }
 
 export default function PhoneLink({
@@ -20,7 +20,11 @@ export default function PhoneLink({
       rel="noopener noreferrer nofollow"
       className={`outline-none ${className}`}
     >
-      <Button onClick={() => setIsHeaderMenuOpened(false)}>
+      <Button
+        onClick={
+          setIsHeaderMenuOpened ? () => setIsHeaderMenuOpened(false) : undefined
+        }
+      >
         <>
           <Image
             src="/images/icons/phone.svg"
