@@ -41,7 +41,7 @@ export default function CallBackForm({
     formikHelpers: FormikHelpers<ValuesCallBackFormType>
   ) => {
     const data =
-      `<b>Передзвоніть мені</b>\n` +
+      `<b>Заявка "Передзвоніть мені"</b>\n` +
       `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n`;
 
     await handleSubmitForm<ValuesCallBackFormType>(

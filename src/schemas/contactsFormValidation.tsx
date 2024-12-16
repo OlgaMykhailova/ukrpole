@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-import { emailRegex, nameRegex, phoneRegex } from "@/regex/regex";
+import { emailRegex, nameRegex, inputPhoneRegex } from "@/regex/regex";
 
 export const ContactsValidation = () => {
   const t = useTranslations("forms.errors");
@@ -16,7 +16,7 @@ export const ContactsValidation = () => {
     email: yup.string().matches(emailRegex, t("wrongEmail")),
     phone: yup
       .string()
-      .matches(phoneRegex, t("wrongPhone"))
+      .matches(inputPhoneRegex, t("wrongPhone"))
       .required(t("required")),
     message: yup.string().max(200, t("messageMinMaxSymbols")),
   });

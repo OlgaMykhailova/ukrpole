@@ -22,13 +22,11 @@ export interface ValuesContactsFormType {
 interface ContactsFormProps {
   setIsError: Dispatch<SetStateAction<boolean>>;
   setIsNotificationShown: Dispatch<SetStateAction<boolean>>;
-  setIsPopUpShown: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function ContactsForm({
   setIsError,
   setIsNotificationShown,
-  setIsPopUpShown,
 }: ContactsFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const t = useTranslations("");
@@ -47,16 +45,18 @@ export default function ContactsForm({
     formikHelpers: FormikHelpers<ValuesContactsFormType>
   ) => {
     const data =
-      `<b>Передзвоніть мені</b>\n` +
-      `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n`;
+      `<b>Заявка "Контакти"</b>\n` +
+      `Ім'я: ${values.name.trim()}\n` +
+      `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n` +
+      `Email: ${values.email.toLowerCase().trim()}\n` +
+      `Повідомлення: ${values.message.trim()}\n`;
 
     await handleSubmitForm<ValuesContactsFormType>(
       formikHelpers,
       setIsLoading,
       setIsError,
       setIsNotificationShown,
-      data,
-      setIsPopUpShown
+      data
     );
   };
 
@@ -110,7 +110,12 @@ export default function ContactsForm({
             />
           </div>
           <FormDescription />
-          <SubmitButton dirty={dirty} isValid={isValid} isLoading={isLoading} />
+          <SubmitButton
+            dirty={dirty}
+            isValid={isValid}
+            isLoading={isLoading}
+            variant="secondary"
+          />
         </Form>
       )}
     </Formik>

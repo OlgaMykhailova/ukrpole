@@ -2,10 +2,10 @@ import React from "react";
 import Section from "../shared/section/Section";
 import Map from "./Map";
 import ContactsList from "./ContactsList";
-import ContactsForm from "../shared/forms/ContactsForm";
 import ContactsInfo from "./ContactsInfo";
 import PageTitle from "../shared/titles/PageTitle";
 import { useTranslations } from "next-intl";
+import ContactsApplication from "./ContactsApplication";
 
 export default function Contacts() {
   const t = useTranslations("contactsPage");
@@ -14,7 +14,7 @@ export default function Contacts() {
     <Section>
       <PageTitle>{t("title")}</PageTitle>
       <ContactsInfo />
-      <ContactsForm />
+      <ContactsApplication />
       <ContactsList />
       <Map />
     </Section>
