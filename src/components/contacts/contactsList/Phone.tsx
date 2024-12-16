@@ -19,7 +19,7 @@ export default function Phone() {
       <div className="flex flex-col gap-4">
         <Subtitle>{t("phone.title")}</Subtitle>
         <a
-          href={`tel:+38${PHONE_NUMBER.replace(/\D/g, "")}`}
+          href={`tel:${PHONE_NUMBER.replace(/\D/g, "")}`}
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="outline-none laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark transition duration-300 ease-out"
