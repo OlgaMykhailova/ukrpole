@@ -34,7 +34,10 @@ export default function ContactsForm({
   const t = useTranslations("");
 
   const initialValues = {
+    name: "",
+    email: "",
     phone: "",
+    message: "",
   };
 
   const validationSchema = ContactsValidation();
@@ -64,19 +67,48 @@ export default function ContactsForm({
       validationSchema={validationSchema}
     >
       {({ errors, touched, dirty, isValid }) => (
-        <Form className="flex flex-col w-full h-full rounded-[24px]">
-          <CustomizedInput
-            fieldName="phone"
-            label={t("forms.phone")}
-            required={true}
-            placeholder={t("forms.phonePlaceholder")}
-            errors={errors}
-            touched={touched}
-            as={MaskedInput}
-            image="/images/icons/phonePrefix.svg"
-            fieldClassName="pl-[80px]"
-            mask={phoneMask}
-          />
+        <Form className="flex flex-col w-full max-w-[525px] h-full p-4 tab:p-8 mx-auto rounded-[16px] bg-greenLight">
+          <div className="flex flex-col gap-5">
+            <CustomizedInput
+              fieldName="name"
+              label={t("forms.name")}
+              required={true}
+              placeholder={t("forms.namePlaceholder")}
+              errors={errors}
+              touched={touched}
+            />
+            <CustomizedInput
+              fieldName="phone"
+              label={t("forms.phone")}
+              required={true}
+              placeholder={t("forms.phonePlaceholder")}
+              errors={errors}
+              touched={touched}
+              as={MaskedInput}
+              image="/images/icons/phonePrefix.svg"
+              fieldClassName="pl-[80px]"
+              mask={phoneMask}
+            />
+            <CustomizedInput
+              fieldName="email"
+              label={t("forms.email")}
+              required={false}
+              placeholder={t("forms.emailPlaceholder")}
+              errors={errors}
+              touched={touched}
+            />
+            <CustomizedInput
+              fieldName="message"
+              label={t("forms.comment")}
+              required={false}
+              placeholder={t("forms.commentPlaceholder")}
+              errors={errors}
+              touched={touched}
+              as="textarea"
+              wrapperClassName="h-[92px]"
+              fieldClassName="min-h-[92px] resize-none"
+            />
+          </div>
           <FormDescription />
           <SubmitButton dirty={dirty} isValid={isValid} isLoading={isLoading} />
         </Form>
