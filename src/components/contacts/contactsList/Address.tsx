@@ -13,8 +13,8 @@ export default function Address() {
       <Image
         src="/images/icons/mapPin.svg"
         alt="map pin icon"
-        width="48"
-        height="48"
+        width="32"
+        height="32"
       />
       <div className="flex flex-col gap-y-4">
         <Subtitle>{t("address.title")}</Subtitle>

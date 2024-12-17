@@ -13,8 +13,8 @@ export default function Email() {
       <Image
         src="/images/icons/envelope.svg"
         alt="envelope icon"
-        width="48"
-        height="48"
+        width="32"
+        height="32"
       />
       <div className="flex flex-col gap-4">
         <Subtitle>{t("email.title")}</Subtitle>

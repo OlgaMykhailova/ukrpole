@@ -11,10 +11,10 @@ export default function Phone() {
   return (
     <li className="flex items-start gap-x-4">
       <Image
-        src="/images/icons/phone.svg"
+        src="/images/icons/phoneCalling.svg"
         alt="phone icon"
-        width="48"
-        height="48"
+        width="32"
+        height="32"
       />
       <div className="flex flex-col gap-4">
         <Subtitle>{t("phone.title")}</Subtitle>
