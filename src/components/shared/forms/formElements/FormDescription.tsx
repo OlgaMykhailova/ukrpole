@@ -8,7 +8,7 @@ export default function FormDescription() {
   const t = useTranslations("");
 
   return (
-    <div className="mt-2 text-14reg tab:text-16reg">
+    <div className="mt-5 text-14reg tab:text-16reg">
       <div className="flex gap-x-2 w-full mb-6 text-14reg">
         <span className="text-darkRed">*</span>
         <p>{t("forms.requiredFields")}</p>

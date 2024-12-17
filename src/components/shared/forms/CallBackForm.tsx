@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { Dispatch, SetStateAction, useState } from "react";
 import MaskedInput from "react-text-mask";
 
-import { phoneMask } from "@/regex/phoneRegex";
+import { phoneMask } from "@/regex/regex";
 import { CallBackValidation } from "@/schemas/callBackFormValidation";
 import { handleSubmitForm } from "@/utils/handleSubmitForm";
 
@@ -41,7 +41,7 @@ export default function CallBackForm({
     formikHelpers: FormikHelpers<ValuesCallBackFormType>
   ) => {
     const data =
-      `<b>Передзвоніть мені</b>\n` +
+      `<b>Заявка "Передзвоніть мені"</b>\n` +
       `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n`;
 
     await handleSubmitForm<ValuesCallBackFormType>(

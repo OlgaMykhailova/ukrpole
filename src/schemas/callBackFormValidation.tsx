@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-import { inputPhoneRegex } from "@/regex/phoneRegex";
+import { inputPhoneRegex } from "@/regex/regex";
 
 export const CallBackValidation = () => {
   const t = useTranslations("forms.errors");
