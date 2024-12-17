@@ -10,7 +10,7 @@ export default function Partners() {
   return (
     <>
       <Section className="sm:flex flex-col items-center max-w-[1720px]">
-        <SectionTitle>{t("title")}</SectionTitle>
+        <SectionTitle variant="decorBegin">{t("title")}</SectionTitle>
         <PartnersInfo />
       </Section>
     </>
