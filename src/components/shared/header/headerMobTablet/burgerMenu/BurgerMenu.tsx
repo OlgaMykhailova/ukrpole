@@ -1,5 +1,5 @@
 import { useLocale } from "next-intl";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 import { Locale } from "@/types/locale";
 import LocaleSwitcher from "../../LocaleSwitcher";
@@ -9,10 +9,12 @@ import PhoneLink from "../../../phoneLink/PhoneLink";
 
 interface BurgerMenuMobTabProps {
   isHeaderMenuOpened: boolean;
+  setIsHeaderMenuOpened: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function BurgerMenu({
   isHeaderMenuOpened,
+  setIsHeaderMenuOpened,
 }: BurgerMenuMobTabProps) {
   const locale = useLocale();
 
@@ -30,8 +32,11 @@ export default function BurgerMenu({
         <div className="flex justify-between items-center w-full h-[72px] mb-7">
           <LocaleSwitcher locale={locale as Locale} />
         </div>
-        <NavMenu />
-        <PhoneLink className="mt-12" />
+        <NavMenu setIsHeaderMenuOpened={setIsHeaderMenuOpened} />
+        <PhoneLink
+          setIsHeaderMenuOpened={setIsHeaderMenuOpened}
+          className="mt-12"
+        />
       </div>
     </div>
   );

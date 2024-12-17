@@ -1,14 +1,18 @@
 "use client";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import MenuLink from "./MenuLink";
 import { useTranslations } from "next-intl";
 import { usePathname } from "@/i18n/routing";
 
 interface NavMenuProps {
   isAtTop?: boolean;
+  setIsHeaderMenuOpened?: Dispatch<SetStateAction<boolean>> | undefined;
 }
 
-export default function NavMenu({ isAtTop }: NavMenuProps) {
+export default function NavMenu({
+  isAtTop,
+  setIsHeaderMenuOpened,
+}: NavMenuProps) {
   const t = useTranslations();
 
   const currentPath = usePathname().slice(1);
@@ -38,6 +42,7 @@ export default function NavMenu({ isAtTop }: NavMenuProps) {
           <MenuLink
             key={idx}
             menuItem={menuItem}
+            setIsHeaderMenuOpened={setIsHeaderMenuOpened}
             className={`transition-transform duration-500 ${
               isAtTop
                 ? "laptop:translate-x-0"
