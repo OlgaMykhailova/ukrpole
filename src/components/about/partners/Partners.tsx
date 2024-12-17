@@ -13,7 +13,9 @@ export default function Partners() {
 
   return (
     <Section>
-      <SectionTitle>{t("aboutPage.partners.title")}</SectionTitle>
+      <SectionTitle variant="decorBegin">
+        {t("aboutPage.partners.title")}
+      </SectionTitle>
       <PartnersInfo />
       <div className="flex flex-col items-center">
         <CooperationInfo />

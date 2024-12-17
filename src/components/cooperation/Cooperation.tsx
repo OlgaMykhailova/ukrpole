@@ -13,7 +13,7 @@ export default function Cooperation() {
 
   return (
     <Section className="flex flex-col items-center">
-      <PageTitle>{t("cooperationPage.title")}</PageTitle>
+      <PageTitle className="w-full">{t("cooperationPage.title")}</PageTitle>
       <CooperationList />
       <CooperationInfo />
       <Link href="/contacts" locale={locale} className="group outline-none">
