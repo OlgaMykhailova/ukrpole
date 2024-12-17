@@ -23,7 +23,7 @@ export default function Map() {
         alt="map pin"
         width="48"
         height="48"
-        className="absolute left-[52.5%] top-[40.6%] sm:left-[55%] sm:top-[134px]"
+        className="absolute left-[calc(60.5%-48px)] top-[calc(48.6%-48px)] sm:left-[55%] sm:top-[134px]"
       />
     </a>
   );
