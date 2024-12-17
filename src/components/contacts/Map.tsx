@@ -9,7 +9,7 @@ export default function Map() {
       href={ADDRESS_LINK}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className="relative block mt-10 laptop:mt-14 outline-none"
+      className="relative block laptop:hidden mt-10 laptop:mt-14 outline-none"
     >
       <Image
         src="/images/contentImages/contactsMap/map.png"
