@@ -12,7 +12,7 @@ export default function News() {
 
   return (
     <Section className="flex flex-col items-center">
-      <SectionTitle variant="noDecor">{t("homePage.news.title")}</SectionTitle>
+      <SectionTitle>{t("homePage.news.title")}</SectionTitle>
       <NewsList />
       <Link
         href="/news"

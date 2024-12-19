@@ -13,7 +13,7 @@ export default function Partners() {
 
   return (
     <Section>
-      <SectionTitle variant="decorBegin">
+      <SectionTitle>
         {t("aboutPage.partners.title")}
       </SectionTitle>
       <PartnersInfo />
