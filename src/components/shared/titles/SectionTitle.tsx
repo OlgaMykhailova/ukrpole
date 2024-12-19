@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 interface SectionTitleProps {
   children: string;
@@ -10,9 +11,16 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   return (
     <h2
-      className={`mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase text-center ${className}`}
+      className={`relative mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase text-center ${className}`}
     >
       {children}
+      <Image
+        src="/images/backgrounds/sectionTitle/leaf.svg"
+        alt="leaf icon"
+        width={112}
+        height={15}
+        className={`absolute bottom-[-15px] left-[calc(50%-56px)] `}
+      />
     </h2>
   );
 }
