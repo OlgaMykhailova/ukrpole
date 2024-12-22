@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../shared/section/Section";
 import { useTranslations } from "next-intl";
 import PageTitle from "../shared/titles/PageTitle";
+import NewsList from "./NewsList";
 
 export default function News() {
   const t = useTranslations("newsPage");
@@ -9,6 +10,7 @@ export default function News() {
   return (
     <Section>
       <PageTitle>{t("title")}</PageTitle>
+      <NewsList />
     </Section>
   );
 }

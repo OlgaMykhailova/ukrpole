@@ -9,7 +9,7 @@ interface SectionTitleProps {
 export default function PageTitle({ children, className }: SectionTitleProps) {
   return (
     <h1
-      className={`relative mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase ${className}`}
+      className={`relative mb-[47px] tab:mb-[71px] laptop:mb-[79px] font-alegreya text-32med tab:text-40med uppercase ${className}`}
     >
       {children}
       <Image
