@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
+import News from "@/components/news/News";
 
-export default function News() {
+export default function NewsPage() {
   const t = useTranslations();
 
   const crumbs = [
@@ -13,6 +14,7 @@ export default function News() {
   return (
     <>
       <Breadcrumbs crumbs={crumbs} />
+      <News />
     </>
   );
 }
