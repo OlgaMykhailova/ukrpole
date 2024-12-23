@@ -6,7 +6,7 @@ export default function MissionInfo() {
   const t = useTranslations("aboutPage.mission");
 
   return (
-    <div className="relative flex flex-col justify-center items-center w-full tab:w-[51.7%] sm:min-w-[320px] max-w-[430px] tab:max-w-[460px] laptop:max-w-[560px] aspect-square">
+    <div className="relative flex flex-col justify-center items-center w-full tab:w-[51.7%] sm:min-w-[320px] max-w-[430px] tab:max-w-[460px] laptop:max-w-[560px] aspect-square mt-8 tab:mt-0">
       <Image
         src="/images/icons/strokeCircle.svg"
         alt="round outline"
@@ -14,6 +14,14 @@ export default function MissionInfo() {
         height={343}
         priority
         className="absolute top-0 left-0 w-full h-auto"
+      />
+      <Image
+        src="/images/icons/bubbles.svg"
+        alt="bubbles"
+        width={67}
+        height={61}
+        priority
+        className="absolute -top-8 tab:top-0 laptop:top-3 right-0"
       />
       <h2 className="mb-2 tab:mb-3 laptop:mb-4 font-alegreya text-32med tab:text-40med uppercase text-center">
         {t("title")}
