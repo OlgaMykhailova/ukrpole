@@ -42,7 +42,7 @@ export default {
         black: "#080A07",
         white: "#FFFFFC",
         darkGrey: "#7D7D7D",
-        grey: "#AAB7AA",
+        grey: "#C4CFC4",
         beige: "#F1F0EC",
         greenDark: "#418D12",
         greenKhaki: "#ADC584",
