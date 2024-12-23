@@ -30,7 +30,7 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
 
       <div className="flex flex-col content-between sm:w-[47%] tab:w-[51.8%] lg:w-[48.9%] lg:pb-10">
         <h2 className="text-18med lg:text-24med">{title}</h2>
-        <p className="mt-4 text-16reg lg:18-reg line-clamp-4 lg:line-clamp-none">
+        <p className="mt-4 text-16reg lg:text-18reg line-clamp-4 lg:line-clamp-6 laptop:line-clamp-[7] 2xl:line-clamp-[10]">
           {description}
         </p>
         <Link
