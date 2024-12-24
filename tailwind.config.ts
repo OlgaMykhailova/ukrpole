@@ -42,7 +42,7 @@ export default {
         black: "#080A07",
         white: "#FFFFFC",
         darkGrey: "#7D7D7D",
-        grey: "#AAB7AA",
+        grey: "#C4CFC4",
         beige: "#F1F0EC",
         greenDark: "#418D12",
         greenKhaki: "#ADC584",
@@ -67,7 +67,7 @@ export default {
         buttonWhite: "0 0 0 2px #FFFFFC",
         buttonGreen: "0 0 0 2px #B0E48F",
         buttonGreenDark: "0 0 0 2px #418D12",
-        buttonGrey: "0 0 0 2px #AAB7AA",
+        buttonGrey: "0 0 0 2px #C4CFC4",
       },
       keyframes: {
         rotate: {

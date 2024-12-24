@@ -37,7 +37,7 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
         active:text-greenKhaki transition duration-300 
         ease-out"
       >
-        {t("homePage.news.readMore")}
+        {t("buttons.readMore")}
       </Link>
     </li>
   );

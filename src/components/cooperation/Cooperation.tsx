@@ -13,7 +13,9 @@ export default function Cooperation() {
 
   return (
     <Section className="flex flex-col items-center">
-      <PageTitle className="w-full">{t("cooperationPage.title")}</PageTitle>
+      <PageTitle className="w-full" variant="center">
+        {t("cooperationPage.title")}
+      </PageTitle>
       <CooperationList />
       <CooperationInfo />
       <Link href="/contacts" locale={locale} className="group outline-none">

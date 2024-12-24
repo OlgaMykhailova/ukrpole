@@ -11,7 +11,7 @@ export default function SectionTitle({
 }: SectionTitleProps) {
   return (
     <h2
-      className={`relative mb-8 tab:mb-14 laptop:mb-16 font-alegreya text-32med tab:text-40med uppercase text-center ${className}`}
+      className={`relative mb-[47px] tab:mb-[71px] laptop:mb-[79px] font-alegreya text-32med tab:text-40med uppercase text-center ${className}`}
     >
       {children}
       <Image
