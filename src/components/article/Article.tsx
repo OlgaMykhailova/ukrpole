@@ -18,7 +18,7 @@ export default function Article({ currentArticle }: ArticleProps) {
     <Section>
       <PageTitle>{title}</PageTitle>
       <ArticleDescription currentArticle={currentArticle} />
-      <ArticleList />
+      <ArticleList currentArticle={currentArticle} />
       <ArticleBottom currentArticle={currentArticle} />
     </Section>
   );
