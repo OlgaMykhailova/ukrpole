@@ -1,22 +1,13 @@
 import React from "react";
 import NewsItem from "./NewsItem";
-import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+import { articlesList } from "@/mockedData/articles";
+import { Locale } from "@/types/locale";
 
 export default function NewsList() {
-  const t = useTranslations();
+  const locale = useLocale();
 
-  const newsList = [
-    {
-      title: t("cooperationNewsPage.title"),
-      description: t("cooperationNewsPage.description"),
-      id: "cooperation",
-    },
-    {
-      title: t("growingNewsPage.title"),
-      description: t("growingNewsPage.description"),
-      id: "growing",
-    },
-  ];
+  const newsList = articlesList[locale as Locale]?.slice(0, 2);
 
   return (
     <ul className="tab:flex justify-between">
