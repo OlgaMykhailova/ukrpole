@@ -7,7 +7,7 @@ interface NewsItemProps {
   newsItem: {
     title: string;
     description: string;
-    id: string;
+    article: string;
   };
   className?: string;
 }
@@ -16,13 +16,13 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
   const t = useTranslations();
   const locale = useLocale();
 
-  const { title, description, id } = newsItem;
+  const { title, description, article } = newsItem;
 
   return (
     <li className={`sm:flex justify-between w-full ${className}`}>
       <Image
-        src={`/images/contentImages/homeNews/${id}.webp`}
-        alt={id}
+        src={`/images/contentImages/homeNews/${article}.webp`}
+        alt={article}
         width={1056}
         height={700}
         className="w-full sm:w-[50%] tab:w-[44.7%] lg:w-[48.9%] mb-6 sm:mb-0"
@@ -34,7 +34,7 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
           {description}
         </p>
         <Link
-          href={`/news/${id}`}
+          href={`/news/${article}`}
           locale={locale}
           className="block mt-4 lg:mt-auto outline-none text-16med tab:text-18med text-greenDark laptop:hover:text-greenKhaki focus:text-greenKhaki 
         active:text-greenKhaki transition duration-300 

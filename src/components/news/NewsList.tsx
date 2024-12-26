@@ -11,27 +11,27 @@ export default function NewsList() {
     {
       title: t("cooperationNewsPage.title"),
       description: t("cooperationNewsPage.description"),
-      id: "cooperation",
+      article: "cooperation",
     },
     {
       title: t("growingNewsPage.title"),
       description: t("growingNewsPage.description"),
-      id: "growing",
+      article: "growing",
     },
     {
       title: t("trademarksNewsPage.title"),
       description: t("trademarksNewsPage.description"),
-      id: "trademarks",
+      article: "trademarks",
     },
     {
       title: t("benefitsNewsPage.title"),
       description: t("benefitsNewsPage.description"),
-      id: "benefits",
+      article: "benefits",
     },
     {
       title: t("storageNewsPage.title"),
       description: t("storageNewsPage.description"),
-      id: "storage",
+      article: "storage",
     },
   ];
 
