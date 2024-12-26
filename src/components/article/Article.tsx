@@ -1,15 +1,21 @@
 import React from "react";
+import Section from "../shared/section/Section";
+import PageTitle from "../shared/titles/PageTitle";
+import ArticleDescription from "./ArticleDescription";
+import { ArticleItem } from "@/types/article";
 
 interface ArticleProps {
-  article: {
-    id: string;
-    title: string;
-    descriprion: string;
-    list: { title: string; description: string }[];
-    finalPart: string;
-  };
+  currentArticle: ArticleItem;
 }
 
-export default function Article({ article }: ArticleProps) {
-  return <div>Article</div>;
+export default function Article({ currentArticle }: ArticleProps) {
+  console.log(currentArticle);
+  const { title } = currentArticle;
+
+  return (
+    <Section>
+      <PageTitle>{title}</PageTitle>
+      <ArticleDescription currentArticle={currentArticle} />
+    </Section>
+  );
 }
