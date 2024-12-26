@@ -11,6 +11,5 @@ interface ArticleProps {
 }
 
 export default function Article({ article }: ArticleProps) {
-  const { id, title, description, list, finalPart } = article;
   return <div>Article</div>;
 }

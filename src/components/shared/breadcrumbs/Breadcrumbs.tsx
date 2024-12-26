@@ -35,7 +35,7 @@ export default function Breadcrumbs({
             {index > 0 && <span className="inline-block mx-2 tab:mx-3">/</span>}
             {index === crumbs.length - 1 ? (
               <span
-                className={`text-18med ${
+                className={`text-18med line-clamp-1 ${
                   variant === "bright" ? "text-greenDark" : "text-greenLight"
                 }`}
               >
