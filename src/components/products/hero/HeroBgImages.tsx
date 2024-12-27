@@ -1,19 +1,9 @@
-import Image from "next/image";
 import React from "react";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
-import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export default function ProductsHero() {
-  const t = useTranslations();
-
-  const crumbs = [
-    { label: t("breadcrumbs.home"), href: "/" },
-    { label: t("breadcrumbs.products"), href: "/products" },
-  ];
-
+export default function HeroBgImages() {
   return (
-    <section className="relative aspect-[360/160] sm:aspect-[770/202]">
-      <Breadcrumbs crumbs={crumbs} variant="light" />
+    <>
       <Image
         src="/images/backgrounds/productsHero/productsHeroMob.webp"
         alt="field with tomatoes"
@@ -30,6 +20,6 @@ export default function ProductsHero() {
         priority
         className="hidden sm:block absolute -z-10 top-0 left-0 w-full h-auto"
       />
-    </section>
+    </>
   );
 }

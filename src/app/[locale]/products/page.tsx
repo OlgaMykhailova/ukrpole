@@ -1,10 +1,10 @@
-import ProductsHero from "@/components/products/ProductsHero";
+import Hero from "@/components/products/hero/Hero";
 import React from "react";
 
 export default function ProductsPage() {
   return (
     <>
-      <ProductsHero />
+      <Hero />
     </>
   );
 }
