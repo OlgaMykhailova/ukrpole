@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import { TabType } from "@/types/tab";
 import { TabMenuItem } from "@/types/tabMenuItem";
+import CatalogList from "./CatalogList";
 
 export default function Catalog() {
   const [activeTab, setActiveTab] = useState<TabType>("tomatoes");
@@ -46,6 +47,7 @@ export default function Catalog() {
         {t("productsPage.chooseCategory")}
       </h2>
       <TabMenu tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <CatalogList />
     </Section>
   );
 }
