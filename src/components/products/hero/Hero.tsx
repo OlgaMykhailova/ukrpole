@@ -16,7 +16,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="flex flex-col items-center pb-20 tab:pb-[100px] laptop:pb-[150px]">
+    <section className="flex flex-col items-center pb-20 tab:pb-[100px]">
       <div className="relative w-full aspect-[360/160] sm:aspect-[770/202]">
         <Breadcrumbs crumbs={crumbs} variant="light" />
         <HeroBgImages />
