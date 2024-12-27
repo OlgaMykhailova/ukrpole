@@ -11,7 +11,7 @@ import Section7 from "@/components/policy/Section7";
 import PageTitle from "@/components/shared/titles/PageTitle";
 import Section from "@/components/shared/section/Section";
 
-export default function Policy() {
+export default function PolicyPage() {
   const t = useTranslations("");
   const crumbs = [
     { label: t("breadcrumbs.home"), href: "/" },

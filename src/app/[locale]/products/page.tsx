@@ -1,5 +1,10 @@
+import ProductsHero from "@/components/products/ProductsHero";
 import React from "react";
 
-export default function Products() {
-  return <div>Products page</div>;
+export default function ProductsPage() {
+  return (
+    <>
+      <ProductsHero />
+    </>
+  );
 }
