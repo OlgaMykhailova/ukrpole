@@ -11,7 +11,7 @@ export default function CatalogList() {
   const localizedProductsList = productsList[locale as Locale] as ProductItem[];
 
   return (
-    <ul>
+    <ul className="flex flex-wrap justify-between gap-y-6">
       {localizedProductsList.map((product, idx) => (
         <CatalogCard key={idx} product={product} />
       ))}
