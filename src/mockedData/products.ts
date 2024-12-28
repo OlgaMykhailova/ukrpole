@@ -40,7 +40,7 @@ export const productsList = {
       id: "cucumbers",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
       title: "Огірки",
-      volume: "550",
+      volume: "580",
     },
     {
       id: "cucumbers",
@@ -63,7 +63,7 @@ export const productsList = {
     {
       id: "tomatoes",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
-      title: "Томати",
+      title: "Томати Челісімо",
       volume: "480",
     },
     {
