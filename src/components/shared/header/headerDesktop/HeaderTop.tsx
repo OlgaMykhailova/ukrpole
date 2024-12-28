@@ -21,7 +21,7 @@ export default function HeaderTop({ isAtTop }: HeaderTopProps) {
       <div className="flex-1 flex justify-start">
         <LocaleSwitcher locale={locale as Locale} />
       </div>
-      <div className={`flex-1 flex justify-center `}>
+      <div className={`flex-1 flex justify-center`}>
         <LogoLink
           className={`w-[124px] h-auto tab:w-[162px] transition-all duration-500 ease-out ${
             isAtTop

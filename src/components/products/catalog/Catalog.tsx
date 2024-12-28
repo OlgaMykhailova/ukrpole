@@ -39,7 +39,7 @@ export default function Catalog() {
     },
   ];
 
-  const activeTabData = tabs.find((tab) => tab.id === activeTab);
+  //   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
     <Section>

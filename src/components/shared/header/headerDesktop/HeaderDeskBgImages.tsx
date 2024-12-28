@@ -28,7 +28,7 @@ export default function HeaderDeskBgImages({
           alt="tomatoes"
           width="270"
           height="160"
-          className={`absolute z-10 top-[-6px] left-[12.73%] deskxl:left-[17%] deskxxl:left-[22%] transition duration-500 ease-out ${
+          className={`absolute -z-10 top-[-6px] left-[12.73%] deskxl:left-[17%] deskxxl:left-[22%] transition duration-500 ease-out ${
             isAtTop ? "translate-y-0" : "-translate-y-[102px]"
           }`}
         />
@@ -37,7 +37,7 @@ export default function HeaderDeskBgImages({
           alt="pepper"
           width="160"
           height="100"
-          className={`absolute z-10 top-0 right-[25.23%] deskxxl:right-[28%] transition duration-500 ease-out ${
+          className={`absolute -z-10 top-0 right-[25.23%] deskxxl:right-[28%] transition duration-500 ease-out ${
             isAtTop ? "translate-y-0" : "-translate-y-[102px]"
           }`}
         />
