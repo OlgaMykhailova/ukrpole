@@ -5,14 +5,20 @@ import { useTranslations } from "next-intl";
 
 interface CatalogCardProps {
   product: ProductItem;
+  className: string;
 }
 
-export default function CatalogCard({ product }: CatalogCardProps) {
+export default function CatalogCard({
+  product,
+  className = "",
+}: CatalogCardProps) {
   const t = useTranslations("productsPage");
   const { id, trademark, title, volume } = product;
 
   return (
-    <li className="relative flex flex-col items-center w-[47.6%] tab:w-[48.9%] laptop:w-[31.9%]">
+    <li
+      className={`relative flex flex-col items-center w-[47.6%] tab:w-[48.9%] laptop:w-[31.9%] ${className}`}
+    >
       <div className="flex flex-col items-center justify-end w-full aspect-[156/168]">
         <Image
           src={`/images/backgrounds/productsCatalog/productCardBg.svg`}
