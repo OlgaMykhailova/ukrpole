@@ -8,6 +8,8 @@ import { TabType } from "@/types/tab";
 import { TabMenuItem } from "@/types/tabMenuItem";
 import CatalogList from "./CatalogList";
 
+const SECTION_ID = "catalog"
+
 export default function Catalog() {
   const [activeTab, setActiveTab] = useState<TabType>("tomatoes");
   const t = useTranslations();
@@ -42,12 +44,12 @@ export default function Catalog() {
   //   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <Section>
+    <Section id={SECTION_ID}>
       <h2 className="mb-6 text-18med tab:text-24med text-center">
         {t("productsPage.chooseCategory")}
       </h2>
       <TabMenu tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
-      <CatalogList />
+      <CatalogList id={SECTION_ID}/>
     </Section>
   );
 }

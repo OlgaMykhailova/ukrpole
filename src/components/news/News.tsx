@@ -4,13 +4,15 @@ import { useTranslations } from "next-intl";
 import PageTitle from "../shared/titles/PageTitle";
 import NewsList from "./NewsList";
 
+const SECTION_ID = "news";
+
 export default function News() {
   const t = useTranslations("newsPage");
 
   return (
-    <Section>
+    <Section id={SECTION_ID}>
       <PageTitle>{t("title")}</PageTitle>
-      <NewsList />
+      <NewsList id={SECTION_ID} />
     </Section>
   );
 }
