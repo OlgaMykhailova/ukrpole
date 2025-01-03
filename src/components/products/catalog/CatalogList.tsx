@@ -8,16 +8,21 @@ import Pagination from "@/components/shared/pagination/Pagination";
 
 interface CatalogListProps {
   id?: string;
+  filterBy: string;
 }
 
-export default function CatalogList({ id = "" }: CatalogListProps) {
+export default function CatalogList({ id = "", filterBy }: CatalogListProps) {
   const itemsPerPage = 6;
   const locale = useLocale();
   const localizedProductsList = productsList[locale as Locale] as ProductItem[];
 
+  const filteredProducts = localizedProductsList.filter(
+    (product) => product.id === filterBy
+  );
+
   return (
     <Pagination
-      items={localizedProductsList}
+      items={filteredProducts}
       itemsPerPage={itemsPerPage}
       scrollTargetId={id}
       renderItems={(currentItems) => (

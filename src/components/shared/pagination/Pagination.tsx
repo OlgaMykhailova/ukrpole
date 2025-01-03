@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 interface PaginationProps<T> {
@@ -16,6 +16,10 @@ export default function Pagination<T>({
 }: PaginationProps<T>) {
   const [currentPage, setCurrentPage] = useState(1);
 
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [items]);
+
   const totalPages = Math.ceil(items.length / itemsPerPage);
   const currentItems = items.slice(
     (currentPage - 1) * itemsPerPage,
@@ -24,7 +28,7 @@ export default function Pagination<T>({
 
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
-       if (scrollTargetId) {
+    if (scrollTargetId) {
       const targetElement = document.getElementById(scrollTargetId);
       if (targetElement) {
         targetElement.scrollIntoView({
@@ -38,7 +42,7 @@ export default function Pagination<T>({
   return (
     <>
       <div>{renderItems(currentItems)}</div>
-      <div className="pagination flex justify-center gap-x-4 mt-10 tab:mt-16 laptop:mt-[100px]">
+      <div className="flex justify-center gap-x-4 mt-10 tab:mt-16 laptop:mt-[100px]">
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index + 1}
