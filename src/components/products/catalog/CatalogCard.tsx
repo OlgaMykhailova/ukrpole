@@ -26,7 +26,7 @@ export default function CatalogCard({
         locale={locale}
         className="outline-none"
       >
-        <div className="flex flex-col items-center justify-end w-full aspect-[156/168]">
+        <div className="flex flex-col items-center justify-end w-full aspect-[156/168] overflow-clip">
           <Image
             src={`/images/backgrounds/productsCatalog/productCardBg.svg`}
             alt={title}
@@ -39,7 +39,7 @@ export default function CatalogCard({
             alt={title}
             width={968}
             height={1152}
-            className="w-[62.2%] h-auto"
+            className="w-[62.2%] h-auto laptop:hover:scale-105 transition duration-[2000ms] ease-out"
           />
         </div>
         <h3 className="mt-4 text-16med tab:text-24med text-center">{title}</h3>

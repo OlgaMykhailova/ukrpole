@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import NewsItem from "./NewsItem";
-import Pagination from "./Pagination";
+import Pagination from "../shared/pagination/Pagination";
 import { articlesList } from "@/mockedData/articles";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
