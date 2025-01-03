@@ -7,7 +7,7 @@ import ProductItem from "./ProductItem";
 import { Tabs } from "@/mockedData/tabs";
 
 export default function ProductsTabs() {
-  const [activeTab, setActiveTab] = useState<TabType>("tomatoes");
+  const [activeTab, setActiveTab] = useState<TabType | "all">("tomatoes");
 
   const tabs = Tabs();
 

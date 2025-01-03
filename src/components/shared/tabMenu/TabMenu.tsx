@@ -4,9 +4,9 @@ import Image from "next/image";
 import { Tabs } from "@/mockedData/tabs";
 
 interface TabMenuProps {
-  activeTab: TabType;
-  setActiveTab: Dispatch<SetStateAction<TabType>>;
-  renderContent: (activeTab: TabType) => ReactNode;
+  activeTab: TabType | "all";
+  setActiveTab: Dispatch<SetStateAction<TabType | "all">>;
+  renderContent: (activeTab: TabType | "all") => ReactNode;
 }
 
 export default function TabMenu({
@@ -18,7 +18,7 @@ export default function TabMenu({
 
   return (
     <div>
-      <div className="flex justify-between w-[328px] tab:w-[556px] mx-auto mb-12 laptop:mb-8">
+      <div className="flex justify-between w-[328px] tab:w-[556px] mx-auto mb-12 laptop:mb-16">
         {tabs.map(({ id, label, imageAlt }) => (
           <button
             key={id}

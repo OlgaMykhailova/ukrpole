@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import TextButton from "../shared/buttons/TextButton";
 
 interface CooperationItemMobTabProps {
   cooperationItem: {
@@ -30,12 +31,10 @@ export default function CooperationItemMobTab({
         height={1024}
         className="w-full h-auto"
       />
-      <div className="group" onClick={toggleShowMore}>
+      <div onClick={toggleShowMore}>
         <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
         <div>
-          <span className="text-16med text-greenDark group-active:text-greenKhaki transition duration-700 ease-out">
-            {t("buttons.learnMore")}
-          </span>
+          <TextButton>{t("buttons.learnMore")}</TextButton>
           <Image
             src="images/icons/arrow.svg"
             alt="arrow"

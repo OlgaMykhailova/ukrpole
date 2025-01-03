@@ -10,7 +10,7 @@ import Section from "@/components/shared/section/Section";
 const SECTION_ID = "catalog";
 
 export default function Catalog() {
-  const [activeTab, setActiveTab] = useState<TabType>("tomatoes");
+  const [activeTab, setActiveTab] = useState<TabType | "all">("tomatoes");
   const t = useTranslations();
 
   return (
@@ -22,7 +22,11 @@ export default function Catalog() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         renderContent={(activeTab) => (
-          <CatalogList id={SECTION_ID} filterBy={activeTab} />
+          <CatalogList
+            id={SECTION_ID}
+            filterBy={activeTab}
+            setActiveTab={setActiveTab}
+          />
         )}
       />
     </Section>
