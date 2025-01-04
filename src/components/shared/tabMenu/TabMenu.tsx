@@ -62,7 +62,9 @@ export default function TabMenu({
               />
               <span
                 className={`tab:text-18med transition duration-300 ease-out ${
-                  activeTab === id ? "text-black" : "text-greenDark"
+                  activeTab === id
+                    ? "text-black text-16med"
+                    : "text-greenDark text-16reg"
                 }`}
               >
                 {label}
