@@ -24,9 +24,9 @@ export default function CatalogCard({
       <Link
         href={`/products/${trademark.id}-${id}-${volume}`}
         locale={locale}
-        className="outline-none"
+        className="group outline-none"
       >
-        <div className="flex flex-col items-center justify-end w-full aspect-[156/168] overflow-clip">
+        <div className="flex flex-col items-center justify-end w-full aspect-[156/168]">
           <Image
             src={`/images/backgrounds/productsCatalog/productCardBg.svg`}
             alt={title}
@@ -39,7 +39,7 @@ export default function CatalogCard({
             alt={title}
             width={968}
             height={1152}
-            className="w-[62.2%] h-auto laptop:hover:scale-105 transition duration-[2000ms] ease-out"
+            className="w-[62.2%] h-auto laptop:group-hover:scale-105 transition duration-[2000ms] ease-out"
           />
         </div>
         <h3 className="mt-4 text-16med tab:text-24med text-center">{title}</h3>
