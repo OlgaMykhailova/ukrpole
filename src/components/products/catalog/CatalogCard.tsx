@@ -32,7 +32,14 @@ export default function CatalogCard({
             alt={title}
             width="156"
             height="155"
-            className="absolute -z-10 top-0 left-0 w-full h-auto"
+            className="absolute -z-20 top-0 left-0 w-full h-auto"
+          />
+          <Image
+            src={`/images/backgrounds/productsCatalog/${id}Bg.webp`}
+            alt={title}
+            width="688"
+            height="682"
+            className="absolute -z-10 top-0 left-0 w-full h-auto scale-95 translate-y-[5%] opacity-0 laptop:group-hover:translate-y-0 laptop:group-hover:opacity-100 laptop:group-hover:scale-100 transition duration-[2000ms] ease-out"
           />
           <Image
             src={`/images/contentImages/products/${trademark.id}-${id}-${volume}.webp`}
