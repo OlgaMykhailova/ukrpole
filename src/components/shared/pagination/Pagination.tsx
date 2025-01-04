@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface PaginationProps<T> {
   items: T[];
@@ -14,11 +15,10 @@ export default function Pagination<T>({
   renderItems,
   scrollTargetId,
 }: PaginationProps<T>) {
-  const [currentPage, setCurrentPage] = useState(1);
-
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [items]);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const page = Number(searchParams.get("page")) || 1;
+  const [currentPage, setCurrentPage] = useState(page);
 
   const totalPages = Math.ceil(items.length / itemsPerPage);
   const currentItems = items.slice(
@@ -26,8 +26,14 @@ export default function Pagination<T>({
     currentPage * itemsPerPage
   );
 
+  useEffect(() => {
+    const page = Number(searchParams.get("page")) || 1;
+    setCurrentPage(page);
+  }, [searchParams]);
+
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
+
     if (scrollTargetId) {
       const targetElement = document.getElementById(scrollTargetId);
       if (targetElement) {
@@ -37,6 +43,10 @@ export default function Pagination<T>({
         });
       }
     }
+
+    const params = new URLSearchParams(window.location.search);
+    params.set("page", pageNumber.toString());
+    router.push(`?${params.toString()}`, { scroll: false });
   };
 
   return (

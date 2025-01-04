@@ -2,6 +2,7 @@ import React, { Dispatch, SetStateAction, ReactNode } from "react";
 import { TabType } from "@/types/tab";
 import Image from "next/image";
 import { Tabs } from "@/mockedData/tabs";
+import { useRouter, usePathname } from "next/navigation";
 
 interface TabMenuProps {
   activeTab: TabType | "all";
@@ -15,6 +16,18 @@ export default function TabMenu({
   renderContent,
 }: TabMenuProps) {
   const tabs = Tabs();
+  const router = useRouter();
+  const pathName = usePathname();
+
+  const handleTabClick = (id: TabType) => {
+    setActiveTab(id);
+    if (pathName === "/products") {
+      const params = new URLSearchParams(window.location.search);
+      params.set("category", id);
+      params.set("page", "1");
+      router.push(`?${params.toString()}`, { scroll: false });
+    }
+  };
 
   return (
     <div>
@@ -22,7 +35,7 @@ export default function TabMenu({
         {tabs.map(({ id, label, imageAlt }) => (
           <button
             key={id}
-            onClick={() => setActiveTab(id)}
+            onClick={() => handleTabClick(id)}
             className={`group flex flex-col items-center outline-none ${
               activeTab === id
                 ? "bg-blueLight text-black"

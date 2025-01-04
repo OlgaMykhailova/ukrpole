@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
@@ -8,6 +8,7 @@ import Pagination from "@/components/shared/pagination/Pagination";
 import ProductsCounter from "./ProductsCounter";
 import { TabType } from "@/types/tab";
 import TextButton from "@/components/shared/buttons/TextButton";
+import { useRouter, useSearchParams } from "next/navigation";
 
 interface CatalogListProps {
   id: string;
@@ -22,6 +23,7 @@ export default function CatalogList({
 }: CatalogListProps) {
   const itemsPerPage = 6;
   const locale = useLocale();
+  const router = useRouter();
   const t = useTranslations("buttons");
   const localizedProductsList = productsList[locale as Locale] as ProductItem[];
 
@@ -30,12 +32,19 @@ export default function CatalogList({
       ? localizedProductsList
       : localizedProductsList.filter((product) => product.id === filterBy);
 
+
+  const handleClick = () => {
+    setActiveTab("all");
+    const params = new URLSearchParams(window.location.search);
+    params.set("category", "all");
+    params.set("page", "1");
+    router.push(`?${params.toString()}`, { scroll: false });
+  };
+
   return (
     <>
       <div className="flex flex-col gap-y-20 tab:flex-row-reverse tab:gap-y-0 tab:justify-between tab:items-center mb-6 tab:mb-8">
-        <TextButton onClick={() => setActiveTab("all")}>
-          {t("seeAll")}
-        </TextButton>
+        <TextButton onClick={handleClick}>{t("seeAll")}</TextButton>
         <ProductsCounter
           filterBy={filterBy}
           filteredProducts={filteredProducts}

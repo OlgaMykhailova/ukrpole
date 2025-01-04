@@ -1,17 +1,33 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { TabType } from "@/types/tab";
 import TabMenu from "@/components/shared/tabMenu/TabMenu";
 import CatalogList from "./CatalogList";
 import Section from "@/components/shared/section/Section";
+import { useSearchParams, useRouter } from "next/navigation";
 
 const SECTION_ID = "catalog";
 
 export default function Catalog() {
-  const [activeTab, setActiveTab] = useState<TabType | "all">("tomatoes");
   const t = useTranslations();
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const category =
+    (searchParams.get("category") as TabType | "all") || "tomatoes";
+  const [activeTab, setActiveTab] = useState(category);
+
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (!params.get("category")) {
+      params.set("category", "tomatoes");
+    }
+    if (!params.get("page")) {
+      params.set("page", "1");
+    }
+    router.replace(`?${params.toString()}`, { scroll: false });
+  }, [router, searchParams]);
 
   return (
     <Section id={SECTION_ID}>
