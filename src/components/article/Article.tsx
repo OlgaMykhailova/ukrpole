@@ -11,7 +11,6 @@ interface ArticleProps {
 }
 
 export default function Article({ currentArticle }: ArticleProps) {
-  console.log(currentArticle);
   const { title } = currentArticle;
 
   return (

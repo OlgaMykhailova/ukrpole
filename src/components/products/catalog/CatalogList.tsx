@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
@@ -8,7 +8,7 @@ import Pagination from "@/components/shared/pagination/Pagination";
 import ProductsCounter from "./ProductsCounter";
 import { TabType } from "@/types/tab";
 import TextButton from "@/components/shared/buttons/TextButton";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 interface CatalogListProps {
   id: string;
@@ -31,7 +31,6 @@ export default function CatalogList({
     filterBy === "all"
       ? localizedProductsList
       : localizedProductsList.filter((product) => product.id === filterBy);
-
 
   const handleClick = () => {
     setActiveTab("all");
