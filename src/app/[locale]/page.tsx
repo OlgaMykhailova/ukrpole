@@ -5,7 +5,7 @@ import Partners from "@/components/home/partners/Partners";
 import Cooperation from "@/components/home/cooperation/Cooperation";
 import News from "@/components/home/news/News";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Hero />
