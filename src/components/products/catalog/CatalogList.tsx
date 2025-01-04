@@ -7,7 +7,7 @@ import { ProductItem } from "@/types/productItem";
 import Pagination from "@/components/shared/pagination/Pagination";
 import ProductsCounter from "./ProductsCounter";
 import { TabType } from "@/types/tab";
-import TextButton from "@/components/shared/buttons/TextButton";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface CatalogListProps {
@@ -43,7 +43,35 @@ export default function CatalogList({
   return (
     <>
       <div className="flex flex-col gap-y-20 tab:flex-row-reverse tab:gap-y-0 tab:justify-between tab:items-center mb-6 tab:mb-8">
-        <TextButton onClick={handleClick}>{t("seeAll")}</TextButton>
+        <button
+          onClick={handleClick}
+          className={`group flex flex-col items-center outline-none ${
+            filterBy === "all"
+              ? "bg-blueLight text-black"
+              : "bg-transparent text-inputText"
+          }`}
+        >
+          <div className="relative flex justify-center items-center w-[192px] h-[50px] tab:w-[212px] tab:h-[54px] group-active:scale-95 transition duration-300 ease-out">
+            <Image
+              src="/images/icons/strokeEllipseWide.svg"
+              alt="stroke ellipse"
+              width={192}
+              height={50}
+              className={`absolute top-0 left-0 w-full h-auto laptop:group-hover:opacity-100 laptop:group-focus:opacity-100 
+                          transition duration-300 ease-out ${
+                            filterBy === "all" ? "opacity-100" : "opacity-0"
+                          }`}
+            />
+            <span
+              className={`text-16reg tab:text-18med transition duration-300 ease-out ${
+                filterBy === "all" ? "text-black" : "text-greenDark"
+              }`}
+            >
+              {t("seeAll")}
+            </span>
+          </div>
+        </button>
+
         <ProductsCounter
           filterBy={filterBy}
           filteredProducts={filteredProducts}
