@@ -20,25 +20,25 @@ export default function ArticlePage({ params }: ArticlePageProps) {
     (articleItem) => articleItem?.id === article
   );
 
+  if (!currentArticle) {
+    return <NotFound />;
+  }
+
+  const { title, id } = currentArticle;
+
   const crumbs = [
     { label: t("breadcrumbs.home"), href: "/" },
     { label: t("breadcrumbs.news"), href: "/news" },
     {
-      label: currentArticle?.title || "",
-      href: `/news/${currentArticle?.id}` || "",
+      label: title || "",
+      href: `/news/${id}` || "",
     },
   ];
 
   return (
     <>
-      {currentArticle ? (
-        <>
-          <Breadcrumbs crumbs={crumbs} />
-          <Article currentArticle={currentArticle} />
-        </>
-      ) : (
-        NotFound()
-      )}
+      <Breadcrumbs crumbs={crumbs} />
+      <Article currentArticle={currentArticle} />
     </>
   );
 }
