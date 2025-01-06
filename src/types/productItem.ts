@@ -1,5 +1,7 @@
+import { TabType } from "./tab";
+
 export interface ProductItem {
-  id: "tomatoes" | "cucumbers" | "peppers" | "assorted";
+  category: TabType;
   trademark: {
     id: "bataljon" | "ukrpole";
     title: "Укрполе" | "Батальйон Смаку";
