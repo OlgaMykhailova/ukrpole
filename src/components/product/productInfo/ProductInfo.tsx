@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import { ProductItem } from "@/types/productItem";
 import ProductBgImages from "./ProductBgImages";
 import Section from "@/components/shared/section/Section";
+import Image from "next/image";
 
 interface ProductInfoProps {
   currentProduct: ProductItem;
@@ -31,6 +32,13 @@ export default function ProductInfo({ currentProduct }: ProductInfoProps) {
       <ProductBgImages />
       <Section>
         <Breadcrumbs crumbs={crumbs} />
+        <Image
+          src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
+          alt={title}
+          width={968}
+          height={1152}
+          className="w-[63.4%] tab:w-[44%] laptop:[44.8%] h-auto mx-auto laptop:group-hover:scale-105 transition duration-[2000ms] ease-out"
+        />
       </Section>
     </div>
   );

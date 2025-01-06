@@ -61,7 +61,11 @@ export default function SimilarProductsSlider({
       <ul className="slider-container">
         <Slider {...settings}>
           {similarProducts.map((product, idx) => (
-            <CatalogCard key={idx} product={product} className="mx-2" />
+            <CatalogCard
+              key={idx}
+              product={product}
+              className="mx-2 laptop:mx-3"
+            />
           ))}
         </Slider>
       </ul>
