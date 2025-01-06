@@ -6,7 +6,7 @@ import { Link } from "@/i18n/routing";
 
 interface CatalogCardProps {
   product: ProductItem;
-  className: string;
+  className?: string;
 }
 
 export default function CatalogCard({
@@ -15,14 +15,12 @@ export default function CatalogCard({
 }: CatalogCardProps) {
   const t = useTranslations("productsPage");
   const locale = useLocale();
-  const { id, trademark, title, volume } = product;
+  const { category, trademark, title, volume } = product;
 
   return (
-    <li
-      className={`relative flex flex-col items-center w-[47.6%] tab:w-[48.9%] laptop:w-[31.9%] ${className}`}
-    >
+    <li className={`relative flex flex-col items-center ${className}`}>
       <Link
-        href={`/products/${trademark.id}-${id}-${volume}`}
+        href={`/products/${trademark.id}-${category}-${volume}`}
         locale={locale}
         className="group outline-none"
       >
@@ -35,14 +33,14 @@ export default function CatalogCard({
             className="absolute -z-20 top-0 left-0 w-full h-auto"
           />
           <Image
-            src={`/images/backgrounds/productsCatalog/${id}Bg.webp`}
+            src={`/images/backgrounds/productsCatalog/${category}Bg.webp`}
             alt={title}
             width="688"
             height="682"
             className="absolute -z-10 top-0 left-0 w-full h-auto scale-95 translate-y-[5%] opacity-0 laptop:group-hover:translate-y-0 laptop:group-hover:opacity-100 laptop:group-hover:scale-100 transition duration-[2000ms] ease-out"
           />
           <Image
-            src={`/images/contentImages/products/${trademark.id}-${id}-${volume}.webp`}
+            src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
             alt={title}
             width={968}
             height={1152}

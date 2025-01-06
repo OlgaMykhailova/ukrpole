@@ -30,7 +30,7 @@ export default function CatalogList({
   const filteredProducts =
     filterBy === "all"
       ? localizedProductsList
-      : localizedProductsList.filter((product) => product.id === filterBy);
+      : localizedProductsList.filter(({ category }) => category === filterBy);
 
   const handleClick = () => {
     setActiveTab("all");
@@ -90,7 +90,9 @@ export default function CatalogList({
               <CatalogCard
                 key={idx}
                 product={product}
-                className={idx === currentItems.length - 1 ? "mr-auto" : ""}
+                className={`${
+                  idx === currentItems.length - 1 ? "mr-auto" : ""
+                }  w-[47.6%] tab:w-[48.9%] laptop:w-[31.9%]`}
               />
             ))}
           </ul>
