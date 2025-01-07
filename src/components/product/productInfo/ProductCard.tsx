@@ -22,7 +22,7 @@ export default function ProductCard({ currentProduct }: ProductInfoProps) {
             alt={title}
             width={968}
             height={1152}
-            className="w-[63.4%] tab:w-[44%] laptop:w-[73.6%] h-auto mx-auto laptop:group-hover:scale-105 transition duration-[2000ms] ease-out"
+            className="w-[63.4%] tab:w-[44%] laptop:w-[73.6%] h-auto mx-auto laptop:hover:scale-105 transition duration-[2000ms] ease-out"
           />
           <NavigationByVolume currentProduct={currentProduct} />
         </div>

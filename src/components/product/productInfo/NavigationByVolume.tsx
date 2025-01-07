@@ -32,13 +32,14 @@ export default function NavigationByVolume({
           <Link
             href={`/products/${trademark.id}-${category}-${volume}`}
             locale={locale}
+            className="group outline-none"
           >
             <Image
               src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
               alt={title}
               width={968}
               height={1152}
-              className={`w-[67px] h-auto mx-auto mb-1 ${
+              className={`w-[67px] h-auto mx-auto mb-1 laptop:group-hover:scale-105 transition duration-[1000ms] ease-out ${
                 volume === currentProduct.volume &&
                 trademark.id === currentProduct.trademark.id
                   ? ""
