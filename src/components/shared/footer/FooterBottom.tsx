@@ -9,7 +9,7 @@ export default function FooterBottom() {
   return (
     <div className="bg-beige">
       <div
-        className="container flex flex-col-reverse tab:flex-row tab:justify-between gap-y-4 items-center justify-center max-w-[1720px] h-[114px] 
+        className="container flex flex-col-reverse tab:flex-row tab:justify-between gap-y-4 items-center justify-center max-w-[1920px] h-[114px] 
     tab:h-[57px] text-18med"
       >
         <p className="text-darkGrey"> {t("rightsReserved")}</p>

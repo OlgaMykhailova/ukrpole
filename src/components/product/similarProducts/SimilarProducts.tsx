@@ -13,6 +13,7 @@ export default function SimilarProducts({
   currentProduct,
 }: SimilarProductsProps) {
   const t = useTranslations("productPage");
+
   return (
     <Section>
       <SectionTitle>{t("similarProductsTitle")}</SectionTitle>

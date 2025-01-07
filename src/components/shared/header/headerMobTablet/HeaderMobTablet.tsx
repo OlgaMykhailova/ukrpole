@@ -20,7 +20,7 @@ export default function HeaderMobTablet() {
       className={`laptop:hidden fixed z-10 w-full h-[72px] border-b border-greenKhaki bg-beige`}
     >
       <HeaderMobTabBgImages />
-      <div className="container flex items-center justify-between py-2 max-w-[1720px]">
+      <div className="container flex items-center justify-between py-2 max-w-[1920px]">
         <div className="tab:hidden">
           <LocaleSwitcher locale={locale as Locale} />
         </div>

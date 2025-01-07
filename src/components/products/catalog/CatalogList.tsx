@@ -2,7 +2,7 @@ import React, { Dispatch, SetStateAction } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
-import CatalogCard from "./CatalogCard";
+import CatalogCard from "../../shared/catalogCard/CatalogCard";
 import { ProductItem } from "@/types/productItem";
 import Pagination from "@/components/shared/pagination/Pagination";
 import ProductsCounter from "./ProductsCounter";

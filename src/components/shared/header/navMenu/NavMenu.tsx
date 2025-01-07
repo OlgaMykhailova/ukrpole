@@ -27,7 +27,7 @@ export default function NavMenu({
 
   return (
     <nav
-      className={`relative laptop:-z-10 container flex justify-center items-center max-w-[1720px] transition-all duration-500 ease-out ${
+      className={`relative laptop:-z-10 container flex justify-center items-center max-w-[1920px] transition-all duration-500 ease-out ${
         isAtTop
           ? "laptop:top-0 laptop:h-[58px]"
           : "laptop:-top-[102px] laptop:h-[72px]"
