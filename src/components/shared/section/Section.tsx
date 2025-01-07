@@ -14,7 +14,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`container max-w-[1720px] pb-20 tab:pb-[100px] scroll-mt-[92px] ${className}`}
+      className={`container max-w-[1920px] pb-20 tab:pb-[100px] scroll-mt-[92px] ${className}`}
     >
       {children}
     </section>

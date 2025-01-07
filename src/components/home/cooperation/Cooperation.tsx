@@ -21,7 +21,7 @@ export default function Cooperation() {
         supports-[-webkit-appearance:none]:absolute supports-[-webkit-appearance:none]:left-0 supports-[-webkit-appearance:none]:right-0"
       />
       <div className="bg-green">
-        <div className="container py-6 tab:py-10 max-w-[1720px]">
+        <div className="container py-6 tab:py-10 max-w-[1920px]">
           <CooperationTitle />
           <div className="flex flex-col items-center justify-between h-full">
             <CooperationInfo />
