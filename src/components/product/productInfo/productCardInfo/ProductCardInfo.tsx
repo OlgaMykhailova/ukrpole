@@ -28,9 +28,11 @@ export default function ProductCardInfo({
       <p className="mb-6 tab:mb-8 laptop:mb-10 text-darkGrey">{description}</p>
       <Characteristics currentProduct={currentProduct} />
       <Ingredients ingredients={ingredients} />
-      <Link href="/contacts" locale={locale} className="group outline-none">
-        <Button>{t("buttons.makeDelivery")}</Button>
-      </Link>
+      <div className="flex justify-center tab:justify-start">
+        <Link href="/contacts" locale={locale} className="group outline-none">
+          <Button>{t("buttons.makeDelivery")}</Button>
+        </Link>
+      </div>
     </div>
   );
 }
