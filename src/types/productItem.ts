@@ -6,6 +6,17 @@ export interface ProductItem {
     id: "bataljon" | "ukrpole";
     title: "Укрполе" | "Батальйон Смаку";
   };
-  title: "Томати" | "Огірки" | "Перець" | "Асорті огірки та томатів";
+  title: "Томати" | "Огірки" | "Перець" | "Асорті огірків та томатів";
   volume: string;
+  description: string;
+  energyValue: {
+    kJ: string;
+    kcal: string;
+    protein: string;
+    fat: string;
+    carbohydrates: string;
+    sugars: string;
+    salt: string;
+  };
+  ingredients: string[];
 }
