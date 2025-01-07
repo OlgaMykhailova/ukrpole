@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../home/partners/sliderStyles.css";
 
 import React, { useState, useEffect } from "react";
-import CatalogCard from "@/components/products/catalog/CatalogCard";
+import CatalogCard from "@/components/shared/catalogCard/CatalogCard";
 import { productsList } from "@/mockedData/products";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
