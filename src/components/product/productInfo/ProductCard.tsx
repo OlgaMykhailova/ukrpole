@@ -2,18 +2,19 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { ProductItem } from "@/types/productItem";
 import ProductBgImages from "./ProductBgImages";
-import Section from "@/components/shared/section/Section";
 import Image from "next/image";
 import Button from "@/components/shared/buttons/Button";
+import Ingredients from "./Ingredients";
 
 interface ProductInfoProps {
   currentProduct: ProductItem;
 }
 
-export default function ProductInfo({ currentProduct }: ProductInfoProps) {
+export default function ProductCard({ currentProduct }: ProductInfoProps) {
   const t = useTranslations();
 
-  const { title, volume, trademark, category, description } = currentProduct;
+  const { title, volume, trademark, category, description, ingredients } =
+    currentProduct;
 
   const productTitle =
     `${title} ${volume} ${t("productsPage.ml")} ${t(
@@ -23,8 +24,8 @@ export default function ProductInfo({ currentProduct }: ProductInfoProps) {
   return (
     <div className="relative aspect-[360/171] tab:aspect-[768/209] laptop:aspect-[1280/261]">
       <ProductBgImages />
-      <Section className="laptop:flex justify-between">
-        <div className="laptop:w-[46.8%]">
+      <section className="container laptop:flex justify-between pb-20 tab:pb-[100px] scroll-mt-[92px]">
+        <div className="laptop:w-[44.8%]">
           <Image
             src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
             alt={title}
@@ -39,10 +40,10 @@ export default function ProductInfo({ currentProduct }: ProductInfoProps) {
           <h3 className="mb-6 text-18med">
             {t("productPage.characteristics")}
           </h3>
-          <h3 className="mb-10 text-18med">{t("productPage.ingredients")}</h3>
+          <Ingredients ingredients={ingredients} />
           <Button>{t("buttons.makeDelivery")}</Button>
         </div>
-      </Section>
+      </section>
     </div>
   );
 }

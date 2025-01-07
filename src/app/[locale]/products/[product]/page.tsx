@@ -4,7 +4,7 @@ import { productsList } from "@/mockedData/products";
 import NotFound from "../../not-found";
 import SimilarProducts from "@/components/product/similarProducts/SimilarProducts";
 import { ProductItem } from "@/types/productItem";
-import ProductInfo from "@/components/product/productInfo/ProductInfo";
+import ProductCard from "@/components/product/productInfo/ProductCard";
 import { useTranslations } from "next-intl";
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 
@@ -47,7 +47,7 @@ export default function ProductPage({
   return (
     <>
       <Breadcrumbs crumbs={crumbs} className="bg-beige" />
-      <ProductInfo currentProduct={currentProduct} />
+      <ProductCard currentProduct={currentProduct} />
       <SimilarProducts currentProduct={currentProduct} />
     </>
   );
