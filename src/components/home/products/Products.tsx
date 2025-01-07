@@ -12,8 +12,12 @@ export default function Products() {
   return (
     <Section className="flex flex-col items-center">
       <ProductsTabs />
-      <Link href="/products" locale={locale} className="group outline-none">
-        <Button className="mt-4 tab:mt-6">{t("goToCatalog")}</Button>
+      <Link
+        href="/products"
+        locale={locale}
+        className="group outline-none mt-4 tab:mt-6"
+      >
+        <Button>{t("goToCatalog")}</Button>
       </Link>
     </Section>
   );

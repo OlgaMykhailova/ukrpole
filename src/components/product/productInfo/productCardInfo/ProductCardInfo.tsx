@@ -3,7 +3,8 @@ import React from "react";
 import Button from "@/components/shared/buttons/Button";
 import Ingredients from "./Ingredients";
 import Characteristics from "./Characteristics";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 interface ProductCardInfoProps {
   currentProduct: ProductItem;
@@ -13,6 +14,7 @@ export default function ProductCardInfo({
   currentProduct,
 }: ProductCardInfoProps) {
   const t = useTranslations();
+  const locale = useLocale();
   const { title, volume, trademark, description, ingredients } = currentProduct;
 
   const productTitle =
@@ -26,7 +28,9 @@ export default function ProductCardInfo({
       <p className="mb-6 tab:mb-8 laptop:mb-10 text-darkGrey">{description}</p>
       <Characteristics currentProduct={currentProduct} />
       <Ingredients ingredients={ingredients} />
-      <Button>{t("buttons.makeDelivery")}</Button>
+      <Link href="/contacts" locale={locale} className="group outline-none">
+        <Button>{t("buttons.makeDelivery")}</Button>
+      </Link>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import { ProductItem } from "@/types/productItem";
 import ProductBgImages from "./ProductBgImages";
 import Image from "next/image";
-
 import NavigationByVolume from "./NavigationByVolume";
 import ProductCardInfo from "./productCardInfo/ProductCardInfo";
 
