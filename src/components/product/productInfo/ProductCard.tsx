@@ -16,7 +16,7 @@ export default function ProductCard({ currentProduct }: ProductInfoProps) {
     <div className="relative aspect-[360/171] tab:aspect-[768/209] laptop:aspect-[1280/261]">
       <ProductBgImages />
       <section className="container laptop:flex justify-between max-w-[1920px] pb-20 tab:pb-[100px] scroll-mt-[92px]">
-        <div className="laptop:w-[46.8%] mb-12 laptop:mb-0">
+        <div className="laptop:w-[45.8%] mb-12 laptop:mb-0">
           <Image
             src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
             alt={title}
