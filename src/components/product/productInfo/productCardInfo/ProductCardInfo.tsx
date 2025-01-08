@@ -25,7 +25,7 @@ export default function ProductCardInfo({
   return (
     <div className="laptop:w-[49.2%]">
       <h1 className="mb-4 tab:mb-6 laptop:mb-10 text-24med">{productTitle}</h1>
-      <p className="mb-6 tab:mb-8 laptop:mb-10 text-darkGrey">{description}</p>
+      <p className="mb-8 laptop:mb-10 text-darkGrey">{description}</p>
       <Characteristics currentProduct={currentProduct} />
       <Ingredients ingredients={ingredients} />
       <div className="flex justify-center tab:justify-start">

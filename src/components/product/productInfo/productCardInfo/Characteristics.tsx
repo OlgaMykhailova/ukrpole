@@ -14,7 +14,7 @@ export default function Characteristics({
   const { kJ, kcal, protein, fat, carbohydrates, sugars, salt } = energyValue;
 
   return (
-    <div className="mb-6 tab:mb-8 laptop:mb-10">
+    <div className="mb-8 laptop:mb-10">
       <h3 className="mb-4 text-18med">{t("characteristics")}</h3>
       <ul className="flex gap-x-4 tab:gap-x-8 mb-8">
         <li>
