@@ -5,7 +5,7 @@ import FooterNavigation from "./FooterNavigation";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-[calc(0.203*100vw-2px)] tab:mt-[calc(0.128*100vw-4px)] laptop:mt-[calc(0.084*100vw-4px)]">
+    <footer>
       <FooterBgImages />
       <FooterNavigation />
       <FooterBottom />
