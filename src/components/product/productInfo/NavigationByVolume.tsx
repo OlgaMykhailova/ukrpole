@@ -25,7 +25,7 @@ export default function NavigationByVolume({
   return (
     <ul
       className="flex gap-4 tab:gap-x-6 pb-4 mt-6 tab:mt-8 laptop:mt-10 overflow-x-scroll tab:overflow-x-auto scrollbar scrollbar-h-[4px] laptop:scrollbar-h-[8px] 
-    scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-beige"
+    scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-grey scrollbar-track-transparent tab:scrollbar-track-beige"
     >
       {filteredProducts.map((product, idx) => (
         <NavigationItem
