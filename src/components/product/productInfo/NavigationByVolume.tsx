@@ -17,7 +17,9 @@ export default function NavigationByVolume({
   const localizedProductsList = productsList[locale as Locale] as ProductItem[];
 
   const filteredProducts = localizedProductsList.filter(
-    (product) => product.category === currentProduct.category
+    (product) =>
+      product.category === currentProduct.category &&
+      product.trademark.id === currentProduct.trademark.id
   );
 
   return (
