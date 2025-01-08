@@ -26,7 +26,7 @@ export default function HeaderDesktop() {
 
   return (
     <div
-      className={`hidden laptop:block fixed z-10 w-full  transition-[height] duration-500 ease-out ${
+      className={`hidden laptop:block fixed z-10 w-[100vw] transition-[height] duration-500 ease-out ${
         isAtTop ? "h-[160px]" : "h-[72px]"
       }`}
     >
