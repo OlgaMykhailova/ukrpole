@@ -6,18 +6,19 @@ import { useLocale, useTranslations } from "next-intl";
 
 interface NavigationItemProps {
   product: ProductItem;
-  currentProduct: ProductItem
+  currentProduct: ProductItem;
 }
 
 export default function NavigationItem({
-  product, currentProduct
+  product,
+  currentProduct,
 }: NavigationItemProps) {
   const locale = useLocale();
   const t = useTranslations();
   const { title, trademark, category, volume } = product;
 
   return (
-    <li className="flex justify-center items-center w-[70px] h-[101px] tab:w-[103px] tab:h-[134px]">
+    <li className="flex justify-center items-center w-[70px] tab:w-[103px] h-auto">
       <Link
         href={`/products/${trademark.id}-${category}-${volume}`}
         locale={locale}
@@ -28,7 +29,7 @@ export default function NavigationItem({
           alt={title}
           width={968}
           height={1152}
-          className={`w-[67px] h-auto mx-auto mb-1 laptop:group-hover:scale-105 transition duration-[1000ms] ease-out ${
+          className={`w-[54px] tab:w-[67px] h-auto mx-auto mb-1 laptop:group-hover:scale-105 transition duration-[1000ms] ease-out ${
             volume === currentProduct.volume &&
             trademark.id === currentProduct.trademark.id
               ? ""
