@@ -14,10 +14,10 @@ export default function HeroBgImages() {
       />
       <div className="absolute top-0 left-0 -z-10 w-full h-full bg-heroHomeGradient"></div>
       <Image
-        src="/images/backgrounds/heroHome/heroHomeFigure.svg"
+        src="/images/backgrounds/heroHome/heroHomeCurveFigure.svg"
         alt="curved figure"
-        width={2048}
-        height={1024}
+        width="1280"
+        height="66"
         priority
         className="w-full h-auto"
       />
