@@ -2,7 +2,8 @@ import React, { Dispatch, SetStateAction, ReactNode } from "react";
 import { TabType } from "@/types/tab";
 import Image from "next/image";
 import { Tabs } from "@/mockedData/tabs";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { usePathname } from "@/i18n/routing";
 
 interface TabMenuProps {
   activeTab: TabType | "all";
