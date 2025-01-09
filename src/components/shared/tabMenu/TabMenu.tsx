@@ -2,8 +2,8 @@ import React, { Dispatch, SetStateAction, ReactNode } from "react";
 import { TabType } from "@/types/tab";
 import Image from "next/image";
 import { Tabs } from "@/mockedData/tabs";
-import { useRouter } from "next/navigation";
-import { usePathname } from "@/i18n/routing";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 interface TabMenuProps {
   activeTab: TabType | "all";
@@ -16,6 +16,7 @@ export default function TabMenu({
   setActiveTab,
   renderContent,
 }: TabMenuProps) {
+  const locale = useLocale();
   const tabs = Tabs();
   const router = useRouter();
   const pathName = usePathname();
@@ -26,7 +27,7 @@ export default function TabMenu({
       const params = new URLSearchParams(window.location.search);
       params.set("category", id);
       params.set("page", "1");
-      router.push(`?${params.toString()}`, { scroll: false });
+      router.push(`?${params.toString()}`, { locale, scroll: false });
     }
   };
 

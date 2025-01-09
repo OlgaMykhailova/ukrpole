@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
+import { useLocale } from "next-intl";
 
 interface PaginationProps<T> {
   items: T[];
@@ -15,6 +17,7 @@ export default function Pagination<T>({
   renderItems,
   scrollTargetId,
 }: PaginationProps<T>) {
+  const locale = useLocale();
   const router = useRouter();
   const searchParams = useSearchParams();
   const page = Number(searchParams.get("page")) || 1;
@@ -46,7 +49,7 @@ export default function Pagination<T>({
 
     const params = new URLSearchParams(window.location.search);
     params.set("page", pageNumber.toString());
-    router.push(`?${params.toString()}`, { scroll: false });
+    router.push(`?${params.toString()}`, { locale, scroll: false });
   };
 
   return (
