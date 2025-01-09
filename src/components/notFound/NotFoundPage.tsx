@@ -3,7 +3,7 @@ import Section from "../shared/section/Section";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import Button from "../shared/buttons/Button";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import NotFoundTitle from "./NotFoundTitle";
 import NotFoundInfo from "./NotFoundInfo";
 
