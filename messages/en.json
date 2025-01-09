@@ -1,5 +1,264 @@
 {
-  "home": {
-    "title": "Home page"
+  "homePage": {
+    "title": "Home Page",
+    "hero": {
+      "title": "Quality from the heart of the fields, preserved in every jar",
+      "description": "We grow premium vegetables, preserve their properties in every jar, and conserve the best for the future"
+    },
+    "products": {
+      "tomatoes": {
+        "subtitle": "Tomatoes",
+        "description": "Juicy and flavorful tomatoes, harvested at the peak of ripeness, retain their natural sweetness and aroma. Perfect as a garnish or as a base for delicious sauces and salads."
+      },
+      "cucumbers": {
+        "subtitle": "Cucumbers",
+        "description": "Crisp and aromatic cucumbers, grown with care and preserved using traditional recipes. An ideal addition to your favorite dishes, maintaining the fresh taste of every season."
+      },
+      "assorted": {
+        "subtitle": "Assorted",
+        "description": "The perfect combination of crisp cucumbers and juicy tomatoes in one jar. Assorted preserves the best summer flavors, adding bright notes to your menu in any season."
+      },
+      "peppers": {
+        "subtitle": "Peppers",
+        "description": "Sweet and tender peppers, marinated for your delight. Their versatile taste perfectly complements any table, becoming a great choice for snacks or hot dishes."
+      },
+      "all": {
+        "subtitle": "All Products"
+      }
+    },
+    "advantages": {
+      "title": "Why Choose Us",
+      "quality": {
+        "title": "High Product Quality",
+        "description": "Our products are made exclusively from premium vegetables grown in controlled, eco-friendly conditions."
+      },
+      "production": {
+        "title": "Innovative Production",
+        "description": "We use modern technologies that preserve all the beneficial properties of vegetables during processing."
+      },
+      "trust": {
+        "title": "Trust and Reliability",
+        "description": "We have established ourselves as a reliable partner thanks to consistent product quality and transparent collaboration terms."
+      }
+    },
+    "cooperation": {
+      "title": "Cooperation",
+      "description": "We work with trusted farmers who grow eco-friendly vegetables and have our own modern production facilities that ensure a full conservation cycle. We offer partnerships to promote our products or create goods under your private label."
+    },
+    "partners": { "title": "Our Partners" },
+    "news": { "title": "Company News" }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To combine the best of nature and modern technologies, providing a taste you can trust. We produce high-quality products that retain the natural taste and benefits of vegetables."
+    },
+    "advantages": {
+      "experience": {
+        "title": "Over 15 Years in the Market",
+        "description": "Years of experience ensure stability, client trust, and product quality."
+      },
+      "production": {
+        "title": "Own Production",
+        "description": "Control at every stage: from raw materials to the finished product. Certified by ISO 22000:2005."
+      },
+      "farmers": {
+        "title": "Farming Partners",
+        "description": "Vegetables are grown in the eco-friendly Transcarpathian region by trusted partners."
+      },
+      "clients": {
+        "title": "30+ Regular Clients",
+        "description": "Our products meet partners' needs, ensuring long-term and successful cooperation."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "naturalness": {
+        "title": "Naturalness",
+        "description": "We preserve natural taste and benefits without compromise."
+      },
+      "innovations": {
+        "title": "Innovations",
+        "description": "We apply modern technologies for the best results."
+      },
+      "ecology": {
+        "title": "Ecological Responsibility",
+        "description": "We care for the environment at every stage of production."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "description": "We build open and reliable relationships with clients."
+      }
+    },
+    "partners": { "title": "Trusted Partners" }
+  },
+
+  "productsPage": {
+    "title": "Products",
+    "description": "We purchase eco-friendly vegetables, produce canned goods at a modern facility, offer partnerships to create products under your private label, and also release products under the brands 'Ukrpole' and 'Battalion of Taste'.",
+    "chooseCategory": "Choose a category",
+    "ml": "ml",
+    "trademark": "TM",
+    "productsFromCategory": "Products from the category",
+    "pieces": "pcs."
+  },
+  "productPage": {
+    "similarProductsTitle": "You may also like",
+    "characteristics": "Characteristics",
+    "ingredientsTitle": "Ingredients",
+    "gram": "g",
+    "kJ": "kJ",
+    "kcal": "kcal",
+    "weight": "Net weight",
+    "energyValues": "Energy value per 100 grams",
+    "protein": "Protein",
+    "fat": "Fat",
+    "carbohydrates": "Carbohydrates",
+    "sugars": "Sugars",
+    "salt": "Salt",
+    "ingredients": {
+      "tomatoes": "Tomatoes",
+      "cucumbers": "Cucumbers",
+      "peppers": "Peppers",
+      "water": "Drinking water",
+      "sugar": "Sugar",
+      "salt": "Table salt",
+      "vinegar": "Acetic acid",
+      "fennel": "Fresh dill",
+      "garlic": "Dried garlic",
+      "mustard": "Mustard seeds",
+      "peppercorns": "Black pepper",
+      "bayLeaf": "Bay leaf"
+    }
+  },
+  "cooperationPage": {
+    "title": "Cooperation and Partnership",
+    "description": "Start partnering with us today! We will consider all nuances and offer favorable terms for your business. Click 'Start Cooperation' – together we will achieve success!",
+    "trademark": {
+      "title": "Private Label",
+      "description": {
+        "partOne": "We specialize in producing products under your private label, ensuring quality and compliance with your requirements. Our successful brands and years of experience help create products trusted by consumers. Our processes are ISO 22000:2005 certified, and raw materials come from verified farms in the Transcarpathian region.",
+        "partTwo": "We ensure a full production cycle – from cultivation to the finished product. Our partners include 'NOVUS', 'Fora', 'METRO', 'MegaMarket', and others. With us, you get a reliable partner and products that guarantee the success of your brand."
+      }
+    },
+    "distributor": {
+      "title": "Distributor Services",
+      "description": {
+        "partOne": "We are looking for reliable distributors to cooperate and develop our products in new markets. If you are ready to provide effective logistics, marketing, and interaction with leading retail chains, we are happy to offer you high-quality products already trusted by consumers.",
+        "partTwo": "Cooperation with us is an opportunity to work with a brand that values quality, trust, and stability. We are open to discussing terms to create a mutually beneficial promotion strategy, ensuring success and customer satisfaction. If you are interested in partnership, contact us to discuss cooperation details and conditions!"
+      }
+    }
+  },
+  "newsPage": {
+    "title": "News and Articles"
+  },
+  "contactsPage": {
+    "title": "Let's Work Together",
+    "description": "Contact us through the provided information or fill out the feedback form, and we will prepare the most favorable conditions for cooperation!",
+    "phone": { "title": "Phone" },
+    "email": { "title": "Email" },
+    "address": {
+      "title": "Address",
+      "description": "Zakarpattia region, Uzhhorod district, Chaslivtsi village, Heiivska Street, 2"
+    },
+    "layRoute": "Lay the route"
+  },
+  "policyPage": {
+    "title": "Privacy Policy",
+    "description": "This Privacy Policy (hereinafter referred to as 'Policy') regulates the collection, use, storage, and protection of users' personal data on the site (hereinafter referred to as 'Site'), as well as the programs and products of the Site. We strive to ensure maximum confidentiality and security of your data, adhering to all applicable laws and regulations governing personal data protection.",
+    "section1": {
+      "title": "1. Collection of Personal Data",
+      "part1": "1.1. The seller may collect various types of personal data, including but not limited to: name, surname, email address, phone number, physical address, payment information, account data, and other information that may be required to provide our services.",
+      "part2": "1.2. Data may be collected by filling out forms on our site, during registration, order placement, subscription to newsletters, participation in promotions, and other interactions with our Site."
+    },
+    "section2": {
+      "title": "2. Cookies",
+      "part1": "2.1. Cookies are small text files stored on your device when visiting our site. They allow us to recognize your browser and remember certain information.",
+      "part2": "2.2. We use cookies to improve the functionality of our site, analyze traffic, provide personalized content and advertising, and save your preferences and login data.",
+      "part3": "2.3. Cookies are used to provide users with the most relevant information on our Site; help make it safer, more secure, and user-friendly; allow monitoring of Policy violations by users or their devices; enable evaluating the number and frequency of requests, and identifying and blocking users or devices attempting mass data downloads from the site.",
+      "part4": "2.4. You can set your browser to block cookies or notify you about their use. However, blocking cookies may lead to limited site functionality. We recommend keeping cookies enabled to use all features and functions of our Site."
+    },
+    "section3": {
+      "title": "3. Use of Personal Data",
+      "part1": "3.1. The seller uses collected data to provide proper service, process orders, improve our service, communicate with customers, conduct marketing and advertising campaigns, and fulfill other obligations arising during our operations.",
+      "part2": "3.2. The seller does not transfer customers' personal data to third parties without explicit consent, except as required by law or when necessary for providing Site services."
+    }
+  },
+
+  "notFoundPage": {
+    "title": "Oops, it seems this page has been preserved!",
+    "description": "Unfortunately, this page does not exist — check the address or use the navigation to search."
+  },
+  "navMenu": {
+    "about": "About Us",
+    "products": "Products",
+    "cooperation": "Cooperation",
+    "news": "News",
+    "contacts": "Contacts"
+  },
+  "footer": {
+    "policy": "Privacy Policy",
+    "rightsReserved": "© 2024 Ukrpole"
+  },
+  "buttons": {
+    "moreAboutUs": "Learn More About Us",
+    "callBack": "Request a Callback",
+    "sendMessage": "Send",
+    "sending": "Sending...",
+    "goToCatalog": "Go to Catalog",
+    "becomePartner": "Become a Partner",
+    "seeAll": "View All",
+    "startCooperation": "Start Cooperation",
+    "learnMore": "Learn More",
+    "homePage": "Home Page",
+    "readMore": "Read More",
+    "makeDelivery": "Arrange Delivery"
+  },
+  "popUps": {
+    "callBack": {
+      "title": "Callback",
+      "description": "Leave your number, and we will call you back promptly."
+    },
+    "notifications": {
+      "successful": {
+        "title": "Your request has been successfully sent!",
+        "description": "Our managers are already processing your inquiry and will contact you shortly."
+      },
+      "unsuccessful": {
+        "title": "Request submission failed!",
+        "description": "Unfortunately, something went wrong. Please try to send your request again or call us."
+      }
+    }
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "comment": "Comment",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "example@mail.com",
+    "phonePlaceholder": "00 000 00 00",
+    "commentPlaceholder": "Enter your message",
+    "requiredFields": "fields required to fill",
+    "agreement": "By clicking the 'Send' button, you agree to the ",
+    "policy": "privacy policy",
+    "errors": {
+      "required": "This field is required",
+      "wrongPhone": "Enter a valid phone number",
+      "nameMinMaxSymbols": "Name must contain between 2 and 30 characters",
+      "nameAllowedSymbols": "Allowed characters are letters, hyphen, apostrophe, and quotes",
+      "wrongEmail": "Enter a valid email",
+      "messageMinMaxSymbols": "The field must not exceed 200 characters"
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "about": "About Us",
+    "contacts": "Contacts",
+    "cooperation": "Cooperation",
+    "news": "News",
+    "products": "Products",
+    "policy": "Privacy Policy"
   }
 }
