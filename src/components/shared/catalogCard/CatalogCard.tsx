@@ -18,11 +18,11 @@ export default function CatalogCard({
   const { category, trademark, title, volume } = product;
 
   return (
-    <li className={`relative flex flex-col items-center ${className}`}>
+    <li className={`relative ${className}`}>
       <Link
         href={`/products/${trademark.id}-${category}-${volume}`}
         locale={locale}
-        className="group outline-none"
+        className="group  flex flex-col items-center h-full outline-none"
       >
         <div className="flex flex-col items-center justify-end w-full aspect-[156/168]">
           <Image
@@ -47,14 +47,18 @@ export default function CatalogCard({
             className="w-[62.2%] h-auto laptop:group-hover:scale-105 transition duration-[2000ms] ease-out"
           />
         </div>
-        <h3 className="mt-4 text-16med tab:text-24med text-center">{title}</h3>
-        <p className="text-16med tab:text-24med text-greenDark text-center">
-          {volume}&nbsp;
-          {t("ml")}
-        </p>
-        <p className="text-14reg tab:text-18reg text-center">
-          {t("trademark")}&nbsp;{trademark.title}
-        </p>
+        <div className="mt-auto">
+          <h3 className="mt-4 text-16med tab:text-24med text-center">
+            {title}
+          </h3>
+          <p className="text-16med tab:text-24med text-greenDark text-center">
+            {volume}&nbsp;
+            {t("ml")}
+          </p>
+          <p className="text-14reg tab:text-18reg text-center">
+            {t("trademark")}&nbsp;{trademark.title}
+          </p>
+        </div>
       </Link>
     </li>
   );

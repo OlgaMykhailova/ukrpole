@@ -16,10 +16,10 @@ export default function ProductsCounter({
 
   return (
     <p>
-      {t("productsPage.productsFromCategory")}&nbsp;&quot;
+      {t("productsPage.productsFromCategory")}&ensp;&quot;
       {t(`homePage.products.${filterBy}.subtitle`)}&quot;:
       <span className="text-16med laptop:text-18med">
-        &nbsp;&nbsp;{filteredProducts.length}&nbsp;{t("productsPage.pieces")}
+        &ensp;{filteredProducts.length}&nbsp;{t("productsPage.pieces")}
       </span>
     </p>
   );

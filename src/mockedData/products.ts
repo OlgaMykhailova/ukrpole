@@ -579,7 +579,7 @@ export const productsList = {
   en: [
     {
       category: "assorted",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Assorted Cucumbers and Tomatoes",
       volume: "720",
       energyValue: {
@@ -609,7 +609,7 @@ export const productsList = {
     },
     {
       category: "assorted",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Assorted Cucumbers and Tomatoes",
       volume: "900",
       energyValue: {
@@ -639,7 +639,7 @@ export const productsList = {
     },
     {
       category: "assorted",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Assorted Cucumbers and Tomatoes",
       volume: "1500",
       energyValue: {
@@ -669,7 +669,7 @@ export const productsList = {
     },
     {
       category: "assorted",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Assorted Cucumbers and Tomatoes",
       volume: "1850",
       energyValue: {
@@ -699,7 +699,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "480",
       energyValue: {
@@ -728,7 +728,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "540",
       energyValue: {
@@ -757,7 +757,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "580",
       energyValue: {
@@ -786,7 +786,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "720",
       energyValue: {
@@ -815,7 +815,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "900",
       energyValue: {
@@ -844,7 +844,7 @@ export const productsList = {
     },
     {
       category: "cucumbers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Cucumbers",
       volume: "1500",
       energyValue: {
@@ -873,7 +873,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Chelisimo Tomatoes",
       volume: "480",
       energyValue: {
@@ -899,7 +899,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Tomatoes",
       volume: "540",
       energyValue: {
@@ -928,7 +928,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Tomatoes",
       volume: "720",
       energyValue: {
@@ -957,7 +957,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Tomatoes",
       volume: "900",
       energyValue: {
@@ -986,7 +986,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Tomatoes",
       volume: "1000",
       energyValue: {
@@ -1015,7 +1015,7 @@ export const productsList = {
     },
     {
       category: "tomatoes",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Tomatoes",
       volume: "1500",
       energyValue: {
@@ -1128,7 +1128,7 @@ export const productsList = {
     },
     {
       category: "peppers",
-      trademark: { id: "bataljon", title: "Battalion of Taste" },
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
       title: "Peppers",
       volume: "720",
       energyValue: {

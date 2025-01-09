@@ -51,7 +51,7 @@ export default function CatalogList({
               : "bg-transparent text-inputText"
           }`}
         >
-          <div className="relative flex justify-center items-center w-[192px] h-[50px] tab:w-[212px] tab:h-[54px] group-active:scale-95 transition duration-300 ease-out">
+          <div className="relative flex justify-center items-center w-[142px] h-[37px] tab:w-[212px] tab:h-[54px] group-active:scale-95 transition duration-300 ease-out">
             <Image
               src="/images/icons/strokeEllipseWide.svg"
               alt="stroke ellipse"
@@ -65,8 +65,8 @@ export default function CatalogList({
             <span
               className={`tab:text-18med transition duration-300 ease-out ${
                 filterBy === "all"
-                  ? "text-black text-16med"
-                  : "text-greenDark text-16reg"
+                  ? "text-black text-14med"
+                  : "text-greenDark text-14reg"
               }`}
             >
               {t("seeAll")}
