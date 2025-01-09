@@ -31,7 +31,7 @@ export default function TabMenu({
 
   return (
     <div>
-      <div className="flex justify-between w-[328px] tab:w-[556px] mx-auto mb-12 laptop:mb-16">
+      <div className="flex justify-between w-[328px] tab:w-[556px] mx-auto mb-6 laptop:mb-16">
         {tabs.map(({ id, label, imageAlt }) => (
           <button
             key={id}

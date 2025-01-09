@@ -65,8 +65,8 @@ export default function CatalogList({
             <span
               className={`tab:text-18med transition duration-300 ease-out ${
                 filterBy === "all"
-                  ? "text-black text-12med"
-                  : "text-greenDark text-12reg"
+                  ? "text-black text-14med"
+                  : "text-greenDark text-14reg"
               }`}
             >
               {t("seeAll")}

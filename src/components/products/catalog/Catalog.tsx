@@ -14,14 +14,13 @@ export default function Catalog() {
   const t = useTranslations();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const category =
-    (searchParams.get("category") as TabType | "all") || "tomatoes";
+  const category = (searchParams.get("category") as TabType | "all") || "all";
   const [activeTab, setActiveTab] = useState(category);
 
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
     if (!params.get("category")) {
-      params.set("category", "tomatoes");
+      params.set("category", "all");
     }
     if (!params.get("page")) {
       params.set("page", "1");
