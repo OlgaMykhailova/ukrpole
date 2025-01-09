@@ -1,7 +1,7 @@
 "use client";
 import React, { Dispatch, SetStateAction } from "react";
 import MenuLink from "./MenuLink";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { usePathname } from "@/i18n/routing";
 
 interface NavMenuProps {
@@ -14,6 +14,7 @@ export default function NavMenu({
   setIsHeaderMenuOpened,
 }: NavMenuProps) {
   const t = useTranslations();
+  const locale = useLocale();
 
   const currentPath = usePathname().slice(1);
 
@@ -46,11 +47,13 @@ export default function NavMenu({
             className={`transition-transform duration-500 ${
               isAtTop
                 ? "laptop:translate-x-0"
+                : locale === "en"
+                ? idx < 2
+                  ? "laptop:-translate-x-[45px]"
+                  : "laptop:translate-x-[145px]"
                 : idx < 2
                 ? "laptop:-translate-x-[70px]"
-                : idx >= 2
-                ? "laptop:translate-x-[120px]"
-                : ""
+                : "laptop:translate-x-[120px]"
             } ${currentPath === menuItem.path ? "text-greenDark" : ""}`}
           />
         ))}
