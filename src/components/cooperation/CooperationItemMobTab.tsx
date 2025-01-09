@@ -36,7 +36,7 @@ export default function CooperationItemMobTab({
         <div>
           <TextButton>{t("buttons.learnMore")}</TextButton>
           <Image
-            src="images/icons/arrow.svg"
+            src="/images/icons/arrow.svg"
             alt="arrow"
             width="16"
             height="16"

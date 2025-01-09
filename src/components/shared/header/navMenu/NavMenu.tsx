@@ -50,7 +50,7 @@ export default function NavMenu({
                 : locale === "en"
                 ? idx < 2
                   ? "laptop:-translate-x-[45px]"
-                  : "laptop:translate-x-[145px]"
+                  : "laptop:translate-x-[142px]"
                 : idx < 2
                 ? "laptop:-translate-x-[70px]"
                 : "laptop:translate-x-[120px]"
