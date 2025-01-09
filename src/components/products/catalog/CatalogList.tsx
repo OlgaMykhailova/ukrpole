@@ -8,7 +8,7 @@ import Pagination from "@/components/shared/pagination/Pagination";
 import ProductsCounter from "./ProductsCounter";
 import { TabType } from "@/types/tab";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 
 interface CatalogListProps {
   id: string;
@@ -37,7 +37,7 @@ export default function CatalogList({
     const params = new URLSearchParams(window.location.search);
     params.set("category", "all");
     params.set("page", "1");
-    router.push(`?${params.toString()}`, { scroll: false });
+    router.push(`?${params.toString()}`, { locale, scroll: false });
   };
 
   return (

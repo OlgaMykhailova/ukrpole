@@ -1,17 +1,19 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { TabType } from "@/types/tab";
 import TabMenu from "@/components/shared/tabMenu/TabMenu";
 import CatalogList from "./CatalogList";
 import Section from "@/components/shared/section/Section";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
+import { useSearchParams } from "next/navigation";
 
 const SECTION_ID = "catalog";
 
 export default function Catalog() {
   const t = useTranslations();
+  const locale = useLocale();
   const router = useRouter();
   const searchParams = useSearchParams();
   const category = (searchParams.get("category") as TabType | "all") || "all";
@@ -25,7 +27,7 @@ export default function Catalog() {
     if (!params.get("page")) {
       params.set("page", "1");
     }
-    router.replace(`?${params.toString()}`, { scroll: false });
+    router.replace(`?${params.toString()}`, { locale, scroll: false });
   }, [router, searchParams]);
 
   return (
