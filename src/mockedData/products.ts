@@ -921,7 +921,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy pickled tomatoes with a delicate aroma of dill and garlic. The natural taste is preserved, perfect to complement any dish or snack!",
@@ -950,7 +950,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy pickled tomatoes with a delicate aroma of dill and garlic. The natural taste is preserved, perfect to complement any dish or snack!",
@@ -979,7 +979,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy pickled tomatoes with a delicate aroma of dill and garlic. The natural taste is preserved, perfect to complement any dish or snack!",
@@ -1008,7 +1008,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy pickled tomatoes with a delicate aroma of dill and garlic. The natural taste is preserved, perfect to complement any dish or snack!",
@@ -1037,7 +1037,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy pickled tomatoes with a delicate aroma of dill and garlic. The natural taste is preserved, perfect to complement any dish or snack!",
@@ -1066,7 +1066,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy tomatoes in a fragrant marinade with spices. The balanced taste and natural qualities make them a great choice for your table!",
@@ -1095,7 +1095,7 @@ export const productsList = {
         "garlic",
         "mustard",
         "peppercorns",
-        "bay leaf",
+        "bayLeaf",
       ],
       description:
         "Juicy tomatoes in a fragrant marinade with spices. The balanced taste and natural qualities make them a great choice for your table!",
