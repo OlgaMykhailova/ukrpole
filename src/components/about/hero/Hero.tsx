@@ -31,7 +31,7 @@ export default function Hero() {
         className={`sm:hidden absolute -z-10 top-0 left-0 w-full h-auto ${
           isVisible
             ? "scale-100 translate-x-0 translate-y-0"
-            : "scale-[115%] -translate-x-[30px] -translate-y-[25px]"
+            : "scale-[115%] -translate-x-[20px] -translate-y-[18px]"
         } transition duration-[2000ms] ease-out`}
       />
       <Image
@@ -43,7 +43,7 @@ export default function Hero() {
         className={`hidden sm:block absolute -z-10 top-0 left-0 w-full h-auto ${
           isVisible
             ? "scale-100 translate-x-0 translate-y-0"
-            : "scale-[115%] sm:-translate-x-[60px] sm:-translate-y-[36px] laptop:-translate-x-[100px] laptop:-translate-y-[60px]"
+            : "scale-[115%] sm:-translate-x-[40px] sm:-translate-y-[25px] laptop:-translate-x-[70px] laptop:-translate-y-[40px]"
         } transition duration-[2000ms] ease-out`}
       />
       <Image
