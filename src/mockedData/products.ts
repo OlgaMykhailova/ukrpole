@@ -580,7 +580,7 @@ export const productsList = {
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Assorted Cucumbers and Tomatoes",
+      title: "Assorted cucumbers andtTomatoes",
       volume: "720",
       energyValue: {
         kJ: "184",
@@ -610,7 +610,7 @@ export const productsList = {
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Assorted Cucumbers and Tomatoes",
+      title: "Assorted cucumbers and tomatoes",
       volume: "900",
       energyValue: {
         kJ: "184",
@@ -640,7 +640,7 @@ export const productsList = {
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Assorted Cucumbers and Tomatoes",
+      title: "Assorted cucumbers and tomatoes",
       volume: "1500",
       energyValue: {
         kJ: "184",
@@ -670,7 +670,7 @@ export const productsList = {
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Assorted Cucumbers and Tomatoes",
+      title: "Assorted cucumbers and tomatoes",
       volume: "1850",
       energyValue: {
         kJ: "184",
@@ -874,7 +874,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Chelisimo Tomatoes",
+      title: "Chelisimo tomatoes",
       volume: "480",
       energyValue: {
         kJ: "268",
