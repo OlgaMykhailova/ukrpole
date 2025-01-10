@@ -7,6 +7,8 @@ import Button from "@/components/shared/buttons/Button";
 import { Link } from "@/i18n/routing";
 import PeppersBgImages from "./PeppersBgImages";
 
+const SECTION_ID = "products-page-hero";
+
 export default function Hero() {
   const t = useTranslations();
   const locale = useLocale();
@@ -17,10 +19,13 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative flex flex-col items-center pb-20 tab:pb-[100px]">
-      <div className="relative w-full aspect-[360/160] sm:aspect-[770/202]">
+    <section
+      id={SECTION_ID}
+      className="relative flex flex-col items-center pb-20 tab:pb-[100px]"
+    >
+      <div className="relative flex flex-col justify-between w-full aspect-[360/160] sm:aspect-[1280/360] overflow-hidden">
         <Breadcrumbs crumbs={crumbs} variant="light" />
-        <HeroBgImages />
+        <HeroBgImages sectionId={SECTION_ID} />
       </div>
       <div className="container flex flex-col items-center">
         <HeroDescription />
