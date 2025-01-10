@@ -42,7 +42,7 @@ export default function Hero() {
         priority
         className={`hidden sm:block absolute -z-10 top-0 left-0 w-full h-auto ${
           isVisible ? "scale-100" : "scale-[115%]"
-        } transition duration-[600ms] ease-out`}
+        } transition duration-[1000ms] ease-out`}
       />
     </section>
   );
