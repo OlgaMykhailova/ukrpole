@@ -17,7 +17,7 @@ export default function Phone() {
         height="32"
       />
       <div className="flex flex-col gap-4">
-        <Subtitle>{t("phone.title")}</Subtitle>
+        <h3 className="text-18med tab:text-24med">{t("phone.title")}</h3>
         <a
           href={`tel:+${PHONE_NUMBER.replace(/\D/g, "")}`}
           target="_blank"
