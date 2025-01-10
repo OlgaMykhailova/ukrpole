@@ -206,22 +206,22 @@ export const articlesList = {
   en: [
     {
       id: "cooperation",
-      title: "Key Reasons to Partner with Our Brands",
+      title: "Key reasons to partner with our brands",
       description:
         "When choosing a partner, it is crucial to consider reliability, product quality, and compliance with modern standards. These aspects form long-term relationships that foster your business growth and strengthen your market reputation. Our company offers a partnership that not only meets these criteria but exceeds them, ensuring stability, eco-friendliness, and a guarantee of high quality. We understand that modern businesses need reliable partners who can adapt to market changes and respond to new challenges. That’s why our products are created following the latest quality standards and technological innovations, ensuring their durability and effectiveness. The eco-friendly approach we adopt not only meets modern demands but also contributes to caring for the environment, a key factor for consumers. Here are five reasons why we are the best choice for your business.",
       list: [
         {
-          title: "In-house Production",
+          title: "In-house production",
           description:
             "We control the entire production process, from sourcing raw materials to packaging finished products. This allows us to guarantee the high quality of each unit and quickly respond to partner requests.",
         },
         {
-          title: "Grown in an Eco-friendly Region",
+          title: "Grown in an eco-friendly region",
           description:
             "The raw materials for our products are grown in the unique Zakarpattia region, renowned for its clean soils, fresh air, and natural conditions ideal for cultivating eco-friendly products. This ensures the naturalness, freshness, and top quality of our goods.",
         },
         {
-          title: "Product Certification",
+          title: "Product certification",
           description:
             "All our products meet international quality and safety standards. Certification guarantees that our goods fully comply with market and consumer requirements.",
         },
@@ -236,7 +236,7 @@ export const articlesList = {
             "Over the years, we have established ourselves as a stable and responsible partner. Our clients trust us for timely deliveries, fair pricing, and long-term cooperation.",
         },
         {
-          title: "Individual Approach",
+          title: "Individual approach",
           description:
             "We always consider the needs of our partners and offer flexible cooperation terms. All processes are coordinated to achieve the best results.",
         },
@@ -246,32 +246,32 @@ export const articlesList = {
     },
     {
       id: "growing",
-      title: "From Field to Jar: How We Grow Vegetables for Preservation",
+      title: "From field to jar: how we grow vegetables for preservation",
       description:
         "Imagine picturesque Carpathian landscapes where the dawns fill the air with freshness, and sunsets bathe the mountains in golden hues. Here, among fast rivers, dense forests, and crystal-clear air, lie the fertile lands of Zakarpattia — the source of the finest natural produce. This is where every vegetable begins its journey in harmony with nature, growing under the gentle sun and the care of local farmers. This is where the journey of every vegetable, which later becomes our high-quality preserves, begins. Every tomato, cucumber, or pepper is cultivated with care, using only natural methods passed down through generations. The fertile lands of Zakarpattia give not only taste but also a unique aroma that forms the foundation of our products. Each jar of our preserves is a piece of the Carpathians, filled with freshness and natural goodness. We believe that quality starts with love for the land, which is why we carefully preserve everything it gives to ensure our products bring joy and benefit to your table.",
       list: [
         {
-          title: "Fertile Soil as the Foundation",
+          title: "Fertile soil as the foundation",
           description:
             "Our fields are located in the eco-friendly areas of Zakarpattia. This region is known for its unique soils enriched with natural minerals. We use only natural fertilization methods to maintain the natural balance and ensure high crop quality.",
         },
         {
-          title: "Selection and Quality as Priorities",
+          title: "Selection and quality as priorities",
           description:
             "Harvested vegetables go through a meticulous selection process. We ensure that only the best produce is used in production, which is why our preserves retain the natural taste and aroma of fresh vegetables.",
         },
         {
-          title: "Future Technologies for Organic Today",
+          title: "Future technologies for organic today",
           description:
             "Vegetables are cultivated using modern methods that combine tradition and innovation. We have abandoned chemical fertilizers and pesticides, opting instead for biological plant protection means. This ensures our vegetables remain as natural as possible.",
         },
         {
-          title: "The Perfect Jar as the Final Touch",
+          title: "The perfect jar as the final touch",
           description:
             "The final stage is preservation. We carefully process the vegetables, maintaining their beneficial properties. Each jar is a piece of Zakarpattia, delivering taste and care for nature to consumers.",
         },
         {
-          title: "Caring for Nature and the Community",
+          title: "Caring for nature and the community",
           description:
             "Every stage of our work considers ecological aspects. We adhere to sustainable farming principles, preserving the purity of the soil, water, and air. At the same time, we support the local community by creating jobs for Zakarpattia residents and investing in the region’s development.",
         },
@@ -281,37 +281,37 @@ export const articlesList = {
     },
     {
       id: "trademarks",
-      title: "Private Label: How We Help You Create a Unique Product",
+      title: "Private label: how we help you create a unique product",
       description:
         "Creating a private label (PL) is not just an opportunity to expand your business assortment but also a chance to make it more competitive and recognizable in the market. A private label provides unique products tailored to customer needs and quality standards. It’s a great way to build trust in your brand, increase customer loyalty, and open new growth prospects. We offer you a full range of services to turn your idea into a real and successful product. From creating a concept that reflects your brand’s values to developing recipes, packaging design, and manufacturing finished products — we support you every step of the way. Our team ensures professional expertise, flexibility in problem-solving, and support at all stages of PL creation.",
       list: [
         {
-          title: "Customized Concept Development",
+          title: "Customized concept development",
           description:
             "We work with you to create a product that perfectly matches your brand and customer needs. Together, we define the concept, unique features, and style of the future product.",
         },
         {
-          title: "Selecting Ingredients and Recipes",
+          title: "Selecting ingredients and recipes",
           description:
             "The nature of Zakarpattia and our extensive experience allow us to use the best raw materials. Together with you, we develop recipes that meet modern trends and the preferences of your audience.",
         },
         {
-          title: "Quality Assurance and Certification",
+          title: "Quality assurance and sertification",
           description:
             "We adhere to all national and international quality standards. Your product will receive the necessary certifications that ensure market compliance.",
         },
         {
-          title: "Turnkey Production",
+          title: "Turnkey production",
           description:
             "Our production facilities are equipped with modern machinery, ensuring efficiency and high product quality. You can be confident that the end result will meet your expectations.",
         },
         {
-          title: "Design and Packaging",
+          title: "Design and packaging",
           description:
             "Our design team helps create a unique look for your product. We develop packaging that attracts customer attention and meets ecological requirements.",
         },
         {
-          title: "Logistics and Support",
+          title: "Logistics and support",
           description:
             "We organize the delivery of finished products to your warehouse or retail locations. Additionally, our team is always ready to provide consultations and support after the product launch.",
         },
@@ -321,37 +321,37 @@ export const articlesList = {
     },
     {
       id: "benefits",
-      title: "Why Are Preserved Vegetables Beneficial?",
+      title: "Why are preserved vegetables beneficial?",
       description:
         "Preserved vegetables have long become an essential part of our diet, occupying a special place in daily life. They combine convenience, practicality, and a modern approach to food storage, allowing us to enjoy their taste all year round. They are indispensable in the kitchen, helping to quickly create delicious dishes full of care for quality and comfort. Preserved vegetables appear on our tables daily as a simple yet ingenious way to retain nature's bounty. But behind this familiar dietary staple lies something more than just food. It’s a story that merges tradition and modern innovation, creating a product capable of surprising with its meaning and role in our lives.",
       list: [
         {
-          title: "Preserving Nutrients",
+          title: "Preserving nutrients",
           description:
             "Properly preserved vegetables retain vitamins, minerals, and antioxidants found in fresh produce. Modern processing technologies and airtight packaging keep these beneficial properties intact for a long time.",
         },
         {
-          title: "No Limits to Seasonality",
+          title: "No limits to seasonality",
           description:
             "Preserved vegetables allow you to enjoy your favorite produce regardless of the season. This is especially relevant for regions with harsh winters, where fresh vegetables are hard to find.",
         },
         {
-          title: "Minimizing Food Waste",
+          title: "Minimizing food waste",
           description:
             "Preservation helps save the harvest and prevent spoilage, reducing food waste and promoting resource efficiency.",
         },
         {
-          title: "Convenience and Longevity",
+          title: "Convenience and longevity",
           description:
             "Preserved vegetables don’t require special storage conditions and are ready to use at any time. They can be easily transported and stored for extended periods without losing quality.",
         },
         {
-          title: "Environmental Aspect",
+          title: "Environmental aspect",
           description:
             "Preservation contributes to resource savings: water, energy, and fuel spent on growing and transporting fresh produce. Moreover, using reusable glass jars helps reduce single-use packaging.",
         },
         {
-          title: "Accessible for Everyone",
+          title: "Accessible for everyone",
           description:
             "Preserved vegetables are an excellent option for those seeking balanced nutrition but have limited access to fresh produce due to geographic or financial constraints.",
         },
@@ -361,42 +361,42 @@ export const articlesList = {
     },
     {
       id: "storage",
-      title: "How to Store Preserved Foods Properly: Expert Tips",
+      title: "How to store preserved foods properly: expert tips",
       description:
         "Preserved foods are a convenient and practical way to store food for an extended period, allowing you to always have delicious and nutritious meals at hand. They not only save time and effort but also don’t require special storage conditions, remaining consumable for months or even years. However, to ensure that preserves retain their taste, beneficial properties, and safety for consumption, it’s important to follow a few simple yet effective rules. In this article, we share practical recommendations from experts to help you organize the storage of preserved foods at home and maximize their quality.",
       list: [
         {
-          title: "Temperature Control",
+          title: "Temperature control",
           description:
             "The optimal temperature for storing preserves is between +5 and +20 degrees Celsius. Excessively high temperatures can compromise the jar's seal, leading to spoilage. It’s recommended to store preserves in a cool, dry place.",
         },
         {
-          title: "Protection from Sunlight",
+          title: "Protection from sunlight",
           description:
             "Direct sunlight can negatively affect the shelf life of preserves, altering their taste and quality. Store preserves in dark cabinets or cellars, away from direct sunlight.",
         },
         {
-          title: "Jar Position",
+          title: "Jar position",
           description:
             "It’s better to store jars horizontally to prevent potential deformations and allow for even content distribution. Also, avoid overloading shelves to prevent jar damage.",
         },
         {
-          title: "Checking Expiration Dates",
+          title: "Checking expiration dates",
           description:
             "Always check the expiration date on the label when purchasing preserves. Opening jars past their expiration date can be hazardous to health.",
         },
         {
-          title: "Post-Opening Conditions",
+          title: "Post-opening conditions",
           description:
             "After opening, preserves should be stored in the refrigerator. Do not keep opened jars for long; it’s better to transfer the remaining product to an airtight container and consume it within 2-3 days.",
         },
         {
-          title: "Inspecting Jars for Damage",
+          title: "Inspecting jars for damage",
           description:
             "When buying preserves, carefully inspect jars for damage or deformation. A damaged jar can be dangerous, even if its content appears normal.",
         },
         {
-          title: "Avoiding High Humidity",
+          title: "Avoiding high humidity",
           description:
             "High humidity can cause jars to rust and reduce product quality. Therefore, store preserves in a dry place with no excessive moisture.",
         },
