@@ -23,7 +23,7 @@ export default function LocaleSwitcher({
 
     const newPath = `${pathName}${hash}?${searchParams.toString()}`;
 
-    router.push(newPath, { locale: newLocale });
+    router.replace(newPath, { locale: newLocale });
   };
 
   return (
