@@ -47,7 +47,7 @@ export default function ContactsForm({
     const data =
       `<b>Заявка "Контакти"</b>\n` +
       `Ім'я: ${values.name.trim()}\n` +
-      `Телефон: +380${values.phone.replace(/[^\d+]/g, "")}\n` +
+      `Телефон: +38${values.phone.replace(/[^\d+]/g, "")}\n` +
       `Email: ${values.email.toLowerCase().trim()}\n` +
       `Повідомлення: ${values.message.trim()}\n`;
 
