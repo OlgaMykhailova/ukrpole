@@ -271,7 +271,7 @@
       "required": "This field is required",
       "wrongPhone": "Enter a valid phone number",
       "nameMinMaxSymbols": "Name must contain between 2 and 30 characters",
-      "nameAllowedSymbols": "Allowed characters are letters, hyphen, apostrophe, and quotes",
+      "nameAllowedSymbols": "Allowed letters, hyphen, apostrophe, and quotes",
       "wrongEmail": "Enter a valid email",
       "messageMinMaxSymbols": "The field must not exceed 200 characters"
     }
