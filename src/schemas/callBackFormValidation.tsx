@@ -9,6 +9,11 @@ export const CallBackValidation = () => {
   const callBackFormValidationSchema = yup.object().shape({
     phone: yup
       .string()
+      .test(
+        "starts-with-zero",
+        t("startsWithZero"),
+        (value) => value?.startsWith("0") || false
+      )
       .matches(inputPhoneRegex, t("wrongPhone"))
       .required(t("required")),
   });

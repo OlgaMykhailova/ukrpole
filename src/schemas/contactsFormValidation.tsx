@@ -16,6 +16,11 @@ export const ContactsValidation = () => {
     email: yup.string().matches(emailRegex, t("wrongEmail")),
     phone: yup
       .string()
+      .test(
+        "starts-with-zero",
+        t("startsWithZero"),
+        (value) => value?.startsWith("0") || false
+      )
       .matches(inputPhoneRegex, t("wrongPhone"))
       .required(t("required")),
     message: yup.string().max(200, t("messageMinMaxSymbols")),

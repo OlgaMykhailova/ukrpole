@@ -19,6 +19,7 @@ interface CustomizedInputProps {
   fieldClassName?: string;
   image?: string;
   mask?: string | RegExp | (string | RegExp)[];
+  autocomplete?: string;
 }
 
 const labelStyles = "relative flex flex-col gap-y-1 w-full text-14reg";
@@ -40,6 +41,7 @@ export default function CustomizedInput({
   fieldClassName = "",
   image,
   mask = "",
+  autocomplete = "on",
 }: CustomizedInputProps) {
   return (
     <label className={labelStyles}>
@@ -58,8 +60,8 @@ export default function CustomizedInput({
           <Image
             src={image}
             alt="phone prefix"
-            width={67}
-            height={22}
+            width={57}
+            height={23}
             className="absolute bottom-1/2 left-[10px] z-[5] transform translate-y-1/2"
           />
         )}
@@ -68,7 +70,7 @@ export default function CustomizedInput({
           mask={mask}
           name={fieldName}
           type="text"
-          autoComplete="on"
+          autoComplete={autocomplete}
           placeholder={placeholder}
           className={`${fieldStyles} ${fieldClassName} ${
             errors[fieldName] && touched[fieldName]

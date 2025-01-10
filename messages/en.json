@@ -273,7 +273,8 @@
       "nameMinMaxSymbols": "Name must contain between 2 and 30 characters",
       "nameAllowedSymbols": "Allowed letters, hyphen, apostrophe, and quotes",
       "wrongEmail": "Enter a valid email",
-      "messageMinMaxSymbols": "The field must not exceed 200 characters"
+      "messageMinMaxSymbols": "The field must not exceed 200 characters",
+      "startsWithZero": "The phone number must start with zero"
     }
   },
   "breadcrumbs": {

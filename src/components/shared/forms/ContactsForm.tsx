@@ -86,8 +86,9 @@ export default function ContactsForm({
               touched={touched}
               as={MaskedInput}
               image="/images/icons/phonePrefix.svg"
-              fieldClassName="pl-[80px]"
+              fieldClassName="pl-[70px]"
               mask={phoneMask}
+              autocomplete="tel-national"
             />
             <CustomizedInput
               fieldName="email"
