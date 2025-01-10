@@ -22,10 +22,12 @@ export default function Hero() {
         <Breadcrumbs crumbs={crumbs} variant="light" />
         <HeroBgImages />
       </div>
-      <HeroDescription />
-      <Link href="/contacts" locale={locale} className="group outline-none">
-        <Button>{t("buttons.startCooperation")}</Button>
-      </Link>
+      <div className="container flex flex-col items-center">
+        <HeroDescription />
+        <Link href="/contacts" locale={locale} className="group outline-none">
+          <Button>{t("buttons.startCooperation")}</Button>
+        </Link>
+      </div>
       <PeppersBgImages />
     </section>
   );
