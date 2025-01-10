@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id={SECTION_ID}
-      className="relative w-full aspect-[720/320] sm:aspect-[2560/800]"
+      className="relative flex flex-col justify-between w-full aspect-[720/320] sm:aspect-[2560/800] overflow-hidden"
     >
       <Breadcrumbs crumbs={crumbs} variant="light" />
       <Image
@@ -30,8 +30,8 @@ export default function Hero() {
         priority
         className={`sm:hidden absolute -z-10 top-0 left-0 w-full h-auto ${
           isVisible
-            ? "opacity-100 scale-100 tanslate-x-0 translate-y-0"
-            : " opacity-75 scale-110 translate-x-[20px] translate-y-[20px]"
+            ? "scale-100 translate-x-0 translate-y-0"
+            : "scale-[115%] -translate-x-[30px] translate-y-[15px]]"
         } transition duration-[2000ms] ease-out`}
       />
       <Image
@@ -41,8 +41,18 @@ export default function Hero() {
         height={800}
         priority
         className={`hidden sm:block absolute -z-10 top-0 left-0 w-full h-auto ${
-          isVisible ? "scale-100" : "scale-[115%]"
-        } transition duration-[1000ms] ease-out`}
+          isVisible
+            ? "scale-100 translate-x-0 translate-y-0"
+            : "scale-[115%] sm:-translate-x-[60px] sm:translate-y-[30px]"
+        } transition duration-[2000ms] ease-out`}
+      />
+      <Image
+        src="/images/backgrounds/aboutHero/curveFigure.svg"
+        alt="curved figure"
+        width="1280"
+        height="70"
+        priority
+        className="w-full h-auto"
       />
     </section>
   );

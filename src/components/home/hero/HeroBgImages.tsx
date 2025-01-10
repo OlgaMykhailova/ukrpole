@@ -22,7 +22,7 @@ export default function HeroBgImages({ sectionId }: HeroBgImagesProps) {
           isVisible
             ? "scale-100 translate-x-0 translate-y-0"
             : "scale-[115%] -translate-x-[30px] translate-y-[15px] tab:-translate-x-[60px] tab:translate-y-[30px]"
-        } transition-[scale, translate] duration-[2000ms] ease-out`}
+        } transition duration-[2000ms] ease-out`}
       />
       <div className="absolute top-0 left-0 -z-10 w-full h-full bg-heroHomeGradient"></div>
       <Image
