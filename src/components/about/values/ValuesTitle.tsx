@@ -30,7 +30,7 @@ export default function ValuesTitle({ className = "" }: ValuesTitleProps) {
             isVisible
               ? "w-full sm:w-[417px] laptop:w-[597px] opacity-100"
               : "w-[53.6%] sm:w-[225px] laptop:w-[312px] opacity-0"
-          } h-auto transition-[width, opacity] duration-[600ms] ease-out`}
+          } h-auto transition-[width, opacity] duration-[1000ms] ease-out`}
         />
       </div>
       <h2

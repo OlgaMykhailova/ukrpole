@@ -51,12 +51,12 @@ export default function TabMenu({
               height={80}
               className={`size-[64px] tab:size-20 group-active:scale-95 transition duration-300 ease-out`}
             />
-            <div className="relative flex justify-center items-center w-[82px] tab:w-[128px] h-[39px] tab:h-[61px] group-active:scale-95 transition duration-300 ease-out">
+            <div className="relative flex justify-center items-center w-[90px] tab:w-[128px] aspect-[162/50] group-active:scale-95 transition duration-300 ease-out">
               <Image
                 src="/images/icons/strokeEllipse.svg"
                 alt="stroke ellipse"
-                width={103}
-                height={49}
+                width={162}
+                height={50}
                 className={`absolute top-0 left-0 w-[90px] tab:w-[128px] h-auto laptop:group-hover:opacity-100 laptop:group-focus:opacity-100 
                   transition duration-300 ease-out ${
                     activeTab === id ? "opacity-100" : "opacity-0"
