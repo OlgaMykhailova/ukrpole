@@ -17,7 +17,7 @@ export default function Address() {
         height="32"
       />
       <div className="flex flex-col gap-y-4">
-        <Subtitle>{t("address.title")}</Subtitle>
+        <h3 className="text-18med tab:text-24med">{t("address.title")}</h3>
         <a
           href={ADDRESS_LINK}
           target="_blank"

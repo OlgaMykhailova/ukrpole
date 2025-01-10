@@ -17,7 +17,7 @@ export default function Email() {
         height="32"
       />
       <div className="flex flex-col gap-4">
-        <Subtitle>{t("email.title")}</Subtitle>
+        <h3 className="text-18med tab:text-24med">{t("email.title")}</h3>
         <a
           href={`mailto:${EMAIL}`}
           target="_blank"
