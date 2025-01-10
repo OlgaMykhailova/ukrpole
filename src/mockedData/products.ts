@@ -580,7 +580,7 @@ export const productsList = {
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Assorted cucumbers and Tomatoes",
+      title: "Assorted cucumbers and tomatoes",
       volume: "720",
       energyValue: {
         kJ: "184",
