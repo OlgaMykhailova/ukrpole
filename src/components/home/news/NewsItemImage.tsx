@@ -17,17 +17,17 @@ export default function NewsItemImage({ id, sectionId }: NewsItemImageProps) {
         src={`/images/contentImages/homeNews/${id}.webp`}
         alt={id}
         width={1056}
-        height={700}
+        height={701}
         className={`absolute top-0 left-0 -z-10 ${
-          isVisible ? "scale-100" : "scale-105"
+          isVisible ? "scale-100" : "scale-[115%]"
         } transition duration-1000 ease-out`}
       />
       <Image
         src={`/images/backgrounds/homeNews/curveFigure.svg`}
         alt={id}
-        width={290}
-        height={83}
-        className={`w-full mt-auto`}
+        width="528"
+        height="82"
+        className={`w-full`}
       />
     </div>
   );
