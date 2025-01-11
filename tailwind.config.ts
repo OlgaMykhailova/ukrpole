@@ -72,6 +72,9 @@ export default {
         buttonGreenDark: "0 0 0 2px #418D12",
         buttonGrey: "0 0 0 2px #C4CFC4",
       },
+      transitionTimingFunction: {
+        outBack: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      },
       keyframes: {
         rotate: {
           "0%": {
