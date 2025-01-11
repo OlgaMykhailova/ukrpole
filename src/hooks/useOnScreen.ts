@@ -10,7 +10,7 @@ export const useOnScreen = (
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setHasInitialized(true); // Встановити, що хук ініціалізовано
+        setHasInitialized(true);
         if (once) {
           if (entry.isIntersecting) {
             setIsVisible(true);

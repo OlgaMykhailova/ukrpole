@@ -15,21 +15,21 @@ interface NewsItemProps {
   className?: string;
 }
 
-const SECTION_ID = "home-page-news";
-
 export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
   const t = useTranslations();
   const locale = useLocale();
 
   const { title, description, id } = newsItem;
 
+  const sectionId = `home-page-news-${id}`;
+
   return (
     <li
-      id={SECTION_ID}
+      id={sectionId}
       className={`w-full tab:w-[46.6%] laptop:w-[48.9%] ${className}`}
     >
       <Link href={`/news/${id}`} locale={locale} className="outline-none">
-        <NewsItemImage sectionId={SECTION_ID} id={id} />
+        <NewsItemImage sectionId={sectionId} id={id} />
         <Subtitle>{title}</Subtitle>
       </Link>
       <p className="mt-4 line-clamp-4 laptop:line-clamp-3">{description}</p>
