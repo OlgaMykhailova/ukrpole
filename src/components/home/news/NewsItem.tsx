@@ -1,9 +1,10 @@
 import Subtitle from "@/components/shared/titles/Subtitle";
-import Image from "next/image";
+
 import React from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import TextButton from "@/components/shared/buttons/TextButton";
+import NewsItemImage from "./NewsItemImage";
 
 interface NewsItemProps {
   newsItem: {
@@ -14,6 +15,8 @@ interface NewsItemProps {
   className?: string;
 }
 
+const SECTION_ID = "home-page-news";
+
 export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
   const t = useTranslations();
   const locale = useLocale();
@@ -21,15 +24,12 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
   const { title, description, id } = newsItem;
 
   return (
-    <li className={`w-full tab:w-[46.6%] laptop:w-[48.9%] ${className}`}>
+    <li
+      id={SECTION_ID}
+      className={`w-full tab:w-[46.6%] laptop:w-[48.9%] ${className}`}
+    >
       <Link href={`/news/${id}`} locale={locale} className="outline-none">
-        <Image
-          src={`/images/contentImages/homeNews/${id}.webp`}
-          alt={id}
-          width={1056}
-          height={700}
-          className="mb-6"
-        />
+        <NewsItemImage sectionId={SECTION_ID} id={id} />
         <Subtitle>{title}</Subtitle>
       </Link>
       <p className="mt-4 line-clamp-4 laptop:line-clamp-3">{description}</p>
