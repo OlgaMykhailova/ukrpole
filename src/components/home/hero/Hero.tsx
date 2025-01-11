@@ -12,7 +12,7 @@ export default function Hero() {
     overflow-hidden"
     >
       <HeroBgImages sectionId={SECTION_ID} />
-      <HeroInfo />
+      <HeroInfo sectionId={SECTION_ID} />
     </section>
   );
 }
