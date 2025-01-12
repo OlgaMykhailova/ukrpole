@@ -23,8 +23,8 @@ export default function NewsList({ id = "" }: NewsListProps) {
       scrollTargetId={id}
       renderItems={(currentItems) => (
         <ul className="flex flex-col gap-y-10 justify-between">
-          {currentItems.map((newsItem, idx) => (
-            <NewsItem key={idx} newsItem={newsItem} />
+          {currentItems.map((newsItem) => (
+            <NewsItem key={newsItem.id} newsItem={newsItem} />
           ))}
         </ul>
       )}

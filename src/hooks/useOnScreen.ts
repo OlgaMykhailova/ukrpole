@@ -10,7 +10,7 @@ export const useOnScreen = (
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setHasInitialized(true); // Встановити, що хук ініціалізовано
+        setHasInitialized(true);
         if (once) {
           if (entry.isIntersecting) {
             setIsVisible(true);
@@ -20,7 +20,7 @@ export const useOnScreen = (
           setIsVisible(entry.isIntersecting);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.75 }
     );
 
     const element = document.getElementById(id);

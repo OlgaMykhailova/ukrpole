@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import TextButton from "../shared/buttons/TextButton";
+import NewsItemImage from "./NewsItemImage";
 
 interface NewsItemProps {
   newsItem: {
@@ -19,22 +20,14 @@ export default function NewsItem({ newsItem, className = "" }: NewsItemProps) {
 
   const { title, description, id } = newsItem;
 
-  return (
-    <li className={`sm:flex justify-between w-full ${className}`}>
-      <Link
-        href={`/news/${id}`}
-        locale={locale}
-        className="block w-full sm:w-[50%] tab:w-[44.7%] lg:w-[48.9%] mb-6 sm:mb-0outline-none"
-      >
-        <Image
-          src={`/images/contentImages/homeNews/${id}.webp`}
-          alt={id}
-          width={1056}
-          height={700}
-          className="w-full h-auto"
-        />
-      </Link>
+  const sectionId = `news-page-${id}`;
 
+  return (
+    <li
+      id={sectionId}
+      className={`sm:flex justify-between w-full ${className}`}
+    >
+      <NewsItemImage id={id} sectionId={sectionId} />
       <div className="flex flex-col content-between sm:w-[47%] tab:w-[51.8%] lg:w-[48.9%] lg:pb-10">
         <Link href={`/news/${id}`} locale={locale} className="outline-none">
           <h2 className="text-18med lg:text-24med">{title}</h2>

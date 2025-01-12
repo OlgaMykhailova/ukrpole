@@ -41,7 +41,6 @@ export default function Pagination<T>({
       const targetElement = document.getElementById(scrollTargetId);
       if (targetElement) {
         targetElement.scrollIntoView({
-          behavior: "smooth",
           block: "start",
         });
       }
