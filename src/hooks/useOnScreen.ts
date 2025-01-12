@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export const useOnScreen = (
   id: string,
-  { once = true }: { once?: boolean } = {}
+  { once = true, threshold = 0.5 }: { once?: boolean; threshold?: number } = {}
 ) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasInitialized, setHasInitialized] = useState(false);
@@ -20,7 +20,7 @@ export const useOnScreen = (
           setIsVisible(entry.isIntersecting);
         }
       },
-      { threshold: 0.65 }
+      { threshold }
     );
 
     const element = document.getElementById(id);

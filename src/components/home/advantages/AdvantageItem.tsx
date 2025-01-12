@@ -18,7 +18,8 @@ export default function AdvantageItem({ advantage, idx }: AdvantageItemProps) {
   return (
     <li
       id={sectionId}
-      className="relative flex flex-col justify-center items-center w-full tab:w-[46.59%] lg:w-[328px] laptop:w-[31.85%] aspect-[1/1] max-w-[368px] laptop:max-w-[460px]"
+      className="relative flex flex-col justify-center items-center w-full tab:w-[46.59%] lg:w-[328px] laptop:w-[31.85%] aspect-[1/1] 
+      max-w-[368px] laptop:max-w-[460px] overflow-hidden"
     >
       <AdvantageItemImage sectionId={sectionId} idx={idx} />
       <Subtitle className="w-[209px] mb-2 laptop:mb-4 text-center">

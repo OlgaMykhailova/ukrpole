@@ -85,10 +85,20 @@ export default {
             transform: "rotate(360deg)",
           },
         },
+        rotate60: {
+          "0%": {
+            opacity: "0",
+            transform: "rotate(60deg)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "rotate(0deg)",
+          },
+        },
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
-        rotationOnce: "rotate 2000ms linear 1",
+        rotationOnce: "rotate60 1000ms ease-out 1",
       },
     },
   },

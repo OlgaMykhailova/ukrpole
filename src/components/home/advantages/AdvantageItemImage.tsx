@@ -12,7 +12,7 @@ export default function AdvantageItemImage({
   sectionId,
   idx,
 }: AdvantageItemImageProps) {
-  const { isVisible } = useOnScreen(sectionId);
+  const { isVisible } = useOnScreen(sectionId, { threshold: 1 });
 
   return (
     <Image
@@ -20,16 +20,8 @@ export default function AdvantageItemImage({
       alt="round outline"
       width={344}
       height={343}
-      className={`absolute top-0 left-0 w-full h-auto ${
-        isVisible
-          ? `animate-rotationOnce ${
-              idx === 0
-                ? ""
-                : idx === 1
-                ? "tab:animate-delay-[2100ms]"
-                : "tab:animate-delay-[4200ms]"
-            }`
-          : ""
+      className={`absolute top-0 left-[1.5px] w-[calc(100%-3px)] h-auto ${
+        isVisible ? "animate-rotationOnce" : ""
       }`}
     />
   );
