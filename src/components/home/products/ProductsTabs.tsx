@@ -19,7 +19,7 @@ export default function ProductsTabs() {
         renderContent={(activeTab) => {
           const activeTabData = tabs.find((tab) => tab.id === activeTab);
           return activeTabData ? (
-            <ProductItem activeTabData={activeTabData} />
+            <ProductItem key={activeTabData.id} activeTabData={activeTabData} />
           ) : null;
         }}
       />
