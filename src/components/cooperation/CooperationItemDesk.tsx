@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import CooperationItemImageDesk from "./CooperationItemImageDesk";
 
 interface CooperationItemDeskProps {
   cooperationItem: {
@@ -17,23 +17,20 @@ export default function CooperationItemDesk({
 }: CooperationItemDeskProps) {
   const { id, title, descriptionPartOne, descriptionPartTwo } = cooperationItem;
 
+  const sectionId = `cooperation-page-${id}`;
+
   return (
     <li
+      id={sectionId}
       className={`relative group overflow-hidden hidden laptop:flex flex-col w-[528px] aspect-[1/1] p-10 ${
         position === "top" ? "justify-start" : "justify-end"
       }`}
     >
-      <Image
-        src={`/images/contentImages/cooperation/${id}.webp`}
-        alt={id}
-        width={1024}
-        height={1024}
-        priority
-        className="absolute -z-10 top-0 left-0 w-full h-auto"
+      <CooperationItemImageDesk
+        cooperationItem={cooperationItem}
+        sectionId={sectionId}
+        position={position}
       />
-      <h2 className="font-alegreya text-32med text-white text-center uppercase">
-        {title}
-      </h2>
       <div
         className={`absolute top-0 left-0 flex gap-10 w-full h-full px-4 py-10 translate-y-full text-center bg-opacity-85 bg-greenLight 
             laptop:group-hover:translate-y-0 laptop:group-focus:translate-y-0
