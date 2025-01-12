@@ -5,12 +5,12 @@ import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import { useOnScreen } from "@/hooks/useOnScreen";
 
-interface NewItemImageProps {
+interface NewsItemImageProps {
   id: string;
   sectionId: string;
 }
 
-export default function NewItemImage({ id, sectionId }: NewItemImageProps) {
+export default function NewsItemImage({ id, sectionId }: NewsItemImageProps) {
   const locale = useLocale();
   const { isVisible } = useOnScreen(sectionId);
 
