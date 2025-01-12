@@ -5,12 +5,10 @@ import { useOnScreen } from "@/hooks/useOnScreen";
 
 interface AdvantageItemImageProps {
   sectionId: string;
-  idx: number;
 }
 
 export default function AdvantageItemImage({
   sectionId,
-  idx,
 }: AdvantageItemImageProps) {
   const { isVisible } = useOnScreen(sectionId, { threshold: 1 });
 

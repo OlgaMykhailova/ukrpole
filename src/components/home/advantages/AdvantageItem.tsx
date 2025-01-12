@@ -8,10 +8,9 @@ interface AdvantageItemProps {
     description: string;
     id: string;
   };
-  idx: number;
 }
 
-export default function AdvantageItem({ advantage, idx }: AdvantageItemProps) {
+export default function AdvantageItem({ advantage }: AdvantageItemProps) {
   const { title, description, id } = advantage;
   const sectionId = `home-page-advantages-${id}`;
 
@@ -21,7 +20,7 @@ export default function AdvantageItem({ advantage, idx }: AdvantageItemProps) {
       className="relative flex flex-col justify-center items-center w-full tab:w-[46.59%] lg:w-[328px] laptop:w-[31.85%] aspect-[1/1] 
       max-w-[368px] laptop:max-w-[460px] overflow-hidden"
     >
-      <AdvantageItemImage sectionId={sectionId} idx={idx} />
+      <AdvantageItemImage sectionId={sectionId} />
       <Subtitle className="w-[209px] mb-2 laptop:mb-4 text-center">
         {title}
       </Subtitle>

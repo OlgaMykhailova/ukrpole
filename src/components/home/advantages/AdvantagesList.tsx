@@ -25,8 +25,8 @@ export default function AdvantagesList() {
 
   return (
     <ul className="flex flex-col items-center gap-6 tab:gap-x-12 tab:gap-y-2 tab:flex-row tab:justify-center laptop:justify-between tab:flex-wrap laptop:flex-nowrap laptop:gap-6">
-      {advantagesList.map((advantage, idx) => (
-        <AdvantageItem key={advantage.id} idx={idx} advantage={advantage} />
+      {advantagesList.map((advantage) => (
+        <AdvantageItem key={advantage.id} advantage={advantage} />
       ))}
     </ul>
   );
