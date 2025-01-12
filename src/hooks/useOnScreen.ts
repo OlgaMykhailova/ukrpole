@@ -20,7 +20,7 @@ export const useOnScreen = (
           setIsVisible(entry.isIntersecting);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.65 }
     );
 
     const element = document.getElementById(id);
