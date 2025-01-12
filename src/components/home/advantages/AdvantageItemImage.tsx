@@ -20,8 +20,8 @@ export default function AdvantageItemImage({
       alt="round outline"
       width={344}
       height={343}
-      className={`absolute top-0 left-[1.5px] w-[calc(100%-3px)] h-auto ${
-        isVisible ? "animate-rotationOnce" : ""
+      className={`absolute top-0 left-[1.5px] w-[calc(100%-3px)] h-auto transition duration-1000 ease-out ${
+        isVisible ? "animate-rotationOnce opacity-100" : "opacity-0"
       }`}
     />
   );

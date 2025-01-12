@@ -87,11 +87,9 @@ export default {
         },
         rotate60: {
           "0%": {
-            opacity: "0",
             transform: "rotate(60deg)",
           },
           "100%": {
-            opacity: "1",
             transform: "rotate(0deg)",
           },
         },
