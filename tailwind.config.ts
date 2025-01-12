@@ -88,7 +88,7 @@ export default {
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
-        rotationOnce: "rotate 1000ms linear 1",
+        rotationOnce: "rotate 2000ms linear 1",
       },
     },
   },

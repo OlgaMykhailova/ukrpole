@@ -26,8 +26,8 @@ export default function AdvantageItemImage({
               idx === 0
                 ? ""
                 : idx === 1
-                ? "tab:animate-delay-[1100ms]"
-                : "tab:animate-delay-[2200ms]"
+                ? "tab:animate-delay-[2100ms]"
+                : "tab:animate-delay-[4200ms]"
             }`
           : ""
       }`}
