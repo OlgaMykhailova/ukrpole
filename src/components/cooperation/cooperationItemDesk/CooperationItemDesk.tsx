@@ -17,7 +17,7 @@ export default function CooperationItemDesk({
 }: CooperationItemDeskProps) {
   const { id, title, descriptionPartOne, descriptionPartTwo } = cooperationItem;
 
-  const sectionId = `cooperation-page-${id}`;
+  const sectionId = `cooperation-page-desk-${id}`;
 
   return (
     <li

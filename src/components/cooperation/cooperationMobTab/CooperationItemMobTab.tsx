@@ -24,14 +24,17 @@ export default function CooperationItemMobTab({
 
   const { id, title, descriptionPartOne, descriptionPartTwo } = cooperationItem;
 
-  const sectionId = `cooperation-page-${id}`;
+  const sectionId = `cooperation-page-mob-${id}`;
 
   return (
     <li
       id={sectionId}
       className="laptop:hidden flex flex-col gap-y-4 w-full p-4 border-[2px] border-green"
     >
-      <CooperationItemImageMobTab cooperationItem={cooperationItem} sectionId={sectionId}/>
+      <CooperationItemImageMobTab
+        cooperationItem={cooperationItem}
+        sectionId={sectionId}
+      />
       <div onClick={toggleShowMore}>
         <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
         <div>
