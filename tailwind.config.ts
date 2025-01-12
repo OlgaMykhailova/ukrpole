@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 import tailwindScrollbar from "tailwind-scrollbar";
 
 export default {
@@ -84,10 +85,18 @@ export default {
             transform: "rotate(360deg)",
           },
         },
+        rotate60: {
+          "0%": {
+            transform: "rotate(60deg)",
+          },
+          "100%": {
+            transform: "rotate(0deg)",
+          },
+        },
       },
       animation: {
         rotation: "rotate 1600ms linear infinite",
-        slowRotation: "rotate 2800ms linear infinite",
+        rotationOnce: "rotate60 1000ms ease-out 1",
       },
     },
   },
@@ -95,6 +104,16 @@ export default {
     tailwindScrollbar({
       nocompatible: true,
       preferredStrategy: "pseudoelements",
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "animate-delay": (value) => ({
+            animationDelay: value,
+          }),
+        },
+        { values: theme("transitionDelay") }
+      );
     }),
   ],
 } satisfies Config;

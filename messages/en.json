@@ -35,20 +35,20 @@
       "title": "Why choose us",
       "quality": {
         "title": "High product quality",
-        "description": "Our products are made exclusively from premium vegetables grown in controlled, eco-friendly conditions."
+        "description": "Our products are made exclusively from premium vegetables grown in controlled, eco-friendly conditions"
       },
       "production": {
         "title": "Innovative production",
-        "description": "We use modern technologies that preserve all the beneficial properties of vegetables during processing."
+        "description": "We use modern technologies that preserve all the beneficial properties of vegetables during processing"
       },
       "trust": {
         "title": "Trust and reliability",
-        "description": "We have established ourselves as a reliable partner thanks to consistent product quality and transparent collaboration terms."
+        "description": "We have established ourselves as a reliable partner thanks to consistent product quality and transparent collaboration terms"
       }
     },
     "cooperation": {
       "title": "Cooperation",
-      "description": "We work with trusted farmers who grow eco-friendly vegetables and have our own modern production facilities that ensure a full conservation cycle. We offer partnerships to promote our products or create goods under your private label."
+      "description": "We work with trusted farmers who grow eco-friendly vegetables and have our own modern production facilities that ensure a full conservation cycle. We offer partnerships to promote our products or create goods under your private label"
     },
     "partners": { "title": "Our partners" },
     "news": { "title": "Company news" }

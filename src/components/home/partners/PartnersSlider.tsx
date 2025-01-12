@@ -24,7 +24,7 @@ export default function PartnersSlider({ partnersList }: PartnersSliderProps) {
     autoplay: true,
     swipeToSlide: true,
     speed: 500,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     cssEase: "ease-out",
   };
 

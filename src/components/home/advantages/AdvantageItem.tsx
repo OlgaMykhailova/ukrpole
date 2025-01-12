@@ -1,27 +1,26 @@
 import Subtitle from "@/components/shared/titles/Subtitle";
 import React from "react";
-import Image from "next/image";
+import AdvantageItemImage from "./AdvantageItemImage";
 
 interface AdvantageItemProps {
   advantage: {
     title: string;
     description: string;
+    id: string;
   };
 }
 
 export default function AdvantageItem({ advantage }: AdvantageItemProps) {
-  const { title, description } = advantage;
+  const { title, description, id } = advantage;
+  const sectionId = `home-page-advantages-${id}`;
 
   return (
-    <li className="group relative flex flex-col justify-center items-center w-full tab:w-[46.59%] lg:w-[328px] laptop:w-[31.85%] aspect-[1/1] max-w-[368px] laptop:max-w-[460px]">
-      <Image
-        src="/images/icons/strokeCircle.svg"
-        alt="round outline"
-        width={344}
-        height={343}
-        className="absolute top-0 left-0 w-full h-auto group-hover:animate-slowRotation"
-      />
-
+    <li
+      id={sectionId}
+      className="relative flex flex-col justify-center items-center w-full tab:w-[46.59%] lg:w-[328px] laptop:w-[31.85%] aspect-[1/1] 
+      max-w-[368px] laptop:max-w-[460px] overflow-hidden"
+    >
+      <AdvantageItemImage sectionId={sectionId} />
       <Subtitle className="w-[209px] mb-2 laptop:mb-4 text-center">
         {title}
       </Subtitle>
