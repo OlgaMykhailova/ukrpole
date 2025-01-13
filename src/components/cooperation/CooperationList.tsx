@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslations } from "next-intl";
-import CooperationItemMobTab from "./CooperationItemMobTab";
-import CooperationItemDesk from "./CooperationItemDesk";
+import CooperationItemMobTab from "./cooperationMobTab/CooperationItemMobTab";
+import CooperationItemDesk from "./cooperationItemDesk/CooperationItemDesk";
 
 export default function CooperationList() {
   const t = useTranslations("cooperationPage");

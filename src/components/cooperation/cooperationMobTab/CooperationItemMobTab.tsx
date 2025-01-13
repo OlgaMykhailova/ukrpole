@@ -2,7 +2,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-import TextButton from "../shared/buttons/TextButton";
+import TextButton from "../../shared/buttons/TextButton";
+import CooperationItemImageMobTab from "./CooperationItemImageMobTab";
 
 interface CooperationItemMobTabProps {
   cooperationItem: {
@@ -18,18 +19,21 @@ export default function CooperationItemMobTab({
 }: CooperationItemMobTabProps) {
   const t = useTranslations();
   const [isShownMore, setIsShownMore] = useState(false);
+
   const toggleShowMore = () => setIsShownMore(!isShownMore);
 
   const { id, title, descriptionPartOne, descriptionPartTwo } = cooperationItem;
 
+  const sectionId = `cooperation-page-mob-${id}`;
+
   return (
-    <li className="laptop:hidden flex flex-col gap-y-4 w-full p-4 border-[2px] border-green">
-      <Image
-        src={`/images/contentImages/cooperation/${id}.webp`}
-        alt={id}
-        width={1024}
-        height={1024}
-        className="w-full h-auto"
+    <li
+      id={sectionId}
+      className="laptop:hidden flex flex-col gap-y-4 w-full p-4 border-[2px] border-green"
+    >
+      <CooperationItemImageMobTab
+        cooperationItem={cooperationItem}
+        sectionId={sectionId}
       />
       <div onClick={toggleShowMore}>
         <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
