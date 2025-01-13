@@ -9,6 +9,7 @@ import { Montserrat, Alegreya_Sans_SC } from "next/font/google";
 import Header from "@/components/shared/header/Header";
 import Footer from "@/components/shared/footer/Footer";
 import CookiesComponent from "@/components/shared/cookies/CookiesComponent";
+import CallBackApplicationMob from "@/components/shared/header/callBackApplication/CallBackApplicationMob";
 
 const montserrat = Montserrat({
   weight: ["400", "500"],
@@ -68,6 +69,7 @@ export default async function LocaleLayout({
           <main className="flex-1 pt-[72px] laptop:pt-[160px]">{children}</main>
           <Footer />
           <CookiesComponent />
+          <CallBackApplicationMob />
         </NextIntlClientProvider>
       </body>
     </html>

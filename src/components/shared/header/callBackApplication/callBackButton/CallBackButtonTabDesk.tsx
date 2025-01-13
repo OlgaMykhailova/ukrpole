@@ -3,16 +3,18 @@ import { phoneRegex } from "@/regex/regex";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-interface CallBackButtonProps {
+interface CallBackButtonTabDeskProps {
   onClick: () => void;
 }
 
-export default function CallBackButton({ onClick }: CallBackButtonProps) {
+export default function CallBackButtonTabDesk({
+  onClick,
+}: CallBackButtonTabDeskProps) {
   const t = useTranslations("buttons");
   return (
     <button
       onClick={onClick}
-      className="group flex items-center gap-x-1 outline-none text-18med laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark
+      className="hidden tab:flex group items-center gap-x-1 outline-none text-18med laptop:hover:text-greenDark focus-visible:text-greenDark active:text-greenDark
        transition duration-300 ease-out"
     >
       <Image
