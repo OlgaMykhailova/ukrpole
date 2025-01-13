@@ -59,7 +59,7 @@ export default function Pagination<T>({
           <button
             key={index + 1}
             onClick={() => handlePageChange(index + 1)}
-            className={`relative size-12 laptop:hover:text-black focus:text-black active:text-black transition duration-300 ease-out ${
+            className={`relative size-12 laptop:hover:text-black focus-visible::text-black active:text-black transition duration-300 ease-out ${
               currentPage === index + 1
                 ? "text-black text-18med"
                 : "text-grey text-18reg"
