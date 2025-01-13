@@ -33,7 +33,7 @@ export default function CooperationItemDesk({
       />
       <div
         className={`absolute top-0 left-0 flex gap-10 w-full h-full px-4 py-10 translate-y-full text-center bg-opacity-85 bg-greenLight 
-            laptop:group-hover:translate-y-0 laptop:group-focus:translate-y-0
+            laptop:group-hover:translate-y-0 laptop:group-focus-visible:translate-y-0
             transition duration-700 ease-in ${
               position === "top" ? "flex-col" : "flex-col-reverse"
             }`}

@@ -31,8 +31,8 @@ export default function Breadcrumbs({
               key={crumb.href}
               className={`flex items-center text-18reg ${
                 variant === "bright"
-                  ? "text-darkGrey laptop:hover:text-greenDark focus:text-greenDark active:text-greenDark"
-                  : "text-white laptop:hover:text-greenLight focus:text-greenLight active:text-greenLight"
+                  ? "text-darkGrey laptop:hover:text-greenDark focus-visible::text-greenDark active:text-greenDark"
+                  : "text-white laptop:hover:text-greenLight focus-visible::text-greenLight active:text-greenLight"
               } transition duration-300 ease-out`}
             >
               {index > 0 && (
