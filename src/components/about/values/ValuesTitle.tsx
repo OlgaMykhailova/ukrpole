@@ -12,7 +12,7 @@ const SECTION_ID = "values-section-title";
 
 export default function ValuesTitle({ className = "" }: ValuesTitleProps) {
   const t = useTranslations("aboutPage.values");
-  const { isVisible } = useOnScreen(SECTION_ID);
+  const { isVisible } = useOnScreen(SECTION_ID, { threshold: 0.8 });
 
   return (
     <li
