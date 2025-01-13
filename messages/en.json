@@ -209,7 +209,6 @@
       "part1": "If you have any questions or comments regarding this Policy, please contact us using the contact information provided on our website."
     }
   },
-
   "notFoundPage": {
     "title": "Oops, it seems this page has been preserved!",
     "description": "Unfortunately, this page does not exist — check the address or use the navigation to search."
@@ -237,7 +236,8 @@
     "learnMore": "Learn more",
     "homePage": "Home page",
     "readMore": "Read more",
-    "makeDelivery": "Arrange delivery"
+    "makeDelivery": "Arrange delivery",
+    "acceptCookies": "Accept Cookies"
   },
   "popUps": {
     "callBack": {
@@ -285,5 +285,9 @@
     "news": "News",
     "products": "Products",
     "policy": "Privacy policy"
+  },
+  "cookies": {
+    "description": "This site uses cookies for proper functionality and to improve the service. If you agree to their use, click “Accept Cookies”. More information can be found in the ",
+    "policy": "Privacy Policy"
   }
 }
