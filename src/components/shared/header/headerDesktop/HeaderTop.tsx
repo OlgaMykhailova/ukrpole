@@ -1,9 +1,9 @@
 import React from "react";
-import CallBackApplication from "../callBackApplication/CallBackApplication";
 import LocaleSwitcher from "../LocaleSwitcher";
 import LogoLink from "../../logoLink/LogoLink";
 import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
+import CallBackApplicationTabDesk from "../callBackApplication/CallBackApplicationTabDesk";
 
 interface HeaderTopProps {
   isAtTop: boolean;
@@ -31,7 +31,7 @@ export default function HeaderTop({ isAtTop }: HeaderTopProps) {
         />
       </div>
       <div className="flex-1 flex justify-end">
-        <CallBackApplication />
+        <CallBackApplicationTabDesk />
       </div>
     </div>
   );

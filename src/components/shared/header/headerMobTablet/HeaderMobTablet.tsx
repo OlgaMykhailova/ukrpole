@@ -8,7 +8,7 @@ import BurgerMenuButton from "./burgerMenu/BurgerMenuButton";
 import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
 import BurgerMenu from "./burgerMenu/BurgerMenu";
 import Backdrop from "../../backdrop/Backdrop";
-import CallBackApplication from "../callBackApplication/CallBackApplication";
+import CallBackApplicationTabDesk from "../callBackApplication/CallBackApplicationTabDesk";
 
 export default function HeaderMobTablet() {
   const locale = useLocale();
@@ -26,7 +26,7 @@ export default function HeaderMobTablet() {
         </div>
         <LogoLink className="w-[124px] h-8 tab:w-[162px] tab:h-[42px] laptop:w-[204px] laptop:h-[53px]" />
         <div className="hidden tab:flex">
-          <CallBackApplication />
+          <CallBackApplicationTabDesk />
         </div>
         <div className="relative size-14">
           <BurgerMenuButton

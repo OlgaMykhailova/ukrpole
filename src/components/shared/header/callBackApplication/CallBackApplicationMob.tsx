@@ -1,15 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import CallBackButton from "./CallBackButton";
+import CallBackButton from "./callBackButton/CallBackButtonTabDesk";
 import CallBackPopUp from "../../pop-ups/CallBackPopUp";
 import Backdrop from "../../backdrop/Backdrop";
+import CallBackButtonMob from "./callBackButton/CallBackButtonMob";
 
-export default function CallBackApplication() {
+export default function CallBackApplicationMob() {
   const [isPopUpShown, setIsPopUpShown] = useState(false);
 
   return (
     <>
-      <CallBackButton onClick={() => setIsPopUpShown(true)} />
+      <CallBackButtonMob onClick={() => setIsPopUpShown(true)} />
       <CallBackPopUp
         isPopUpShown={isPopUpShown}
         setIsPopUpShown={setIsPopUpShown}
