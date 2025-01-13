@@ -10,7 +10,7 @@ interface PartnersListProps {
 const SECTION_ID = "partners-section";
 
 export default function PartnersList({ partnersList }: PartnersListProps) {
-  const { isVisible } = useOnScreen(SECTION_ID);
+  const { isVisible } = useOnScreen(SECTION_ID, { threshold: 0.8 });
 
   return (
     <ul
