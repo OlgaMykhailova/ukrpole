@@ -34,7 +34,7 @@ export default function ProductItemImage({
         width={1756}
         height={740}
         className={`w-full h-auto max-w-[878px] mx-auto laptop:hover:scale-105 transition duration-[1500ms] ease-out ${
-          isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
+          isVisible ? "scale-100 opacity-100" : "scale-95 opacity-90"
         }`}
       />
     </Link>
