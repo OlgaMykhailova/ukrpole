@@ -38,6 +38,7 @@ export default {
         "18reg": ["18px", { lineHeight: "25px", fontWeight: "400" }],
         "18med": ["18px", { lineHeight: "25px", fontWeight: "500" }],
         "24med": ["24px", { lineHeight: "32px", fontWeight: "500" }],
+        "28med": ["28px", { lineHeight: "32px", fontWeight: "500" }],
         "32med": ["32px", { lineHeight: "40px", fontWeight: "500" }],
         "40med": ["40px", { lineHeight: "56px", fontWeight: "500" }],
         "64med": ["64px", { lineHeight: "80px", fontWeight: "500" }],

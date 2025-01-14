@@ -35,7 +35,7 @@ export default function CooperationItemImageDesk({
         }`}
       />
       <h2
-        className={`font-alegreya text-32med text-white text-center uppercase transition duration-[2000ms] ease-out ${
+        className={`w-full font-alegreya text-32med text-white text-center uppercase transition duration-[2000ms] ease-out ${
           isVisible
             ? `translate-y-0 opacity-100`
             : ` ${
