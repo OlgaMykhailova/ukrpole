@@ -27,16 +27,21 @@ export default function CooperationItemMobTab({
   const sectionId = `cooperation-page-mob-${id}`;
 
   return (
-    <li
+    <div
       id={sectionId}
-      className="laptop:hidden flex flex-col gap-y-4 w-full p-4 border-[2px] border-green"
+      className="laptop:hidden flex flex-col gap-y-4 w-full h-full p-4 border-[2px] border-green"
     >
       <CooperationItemImageMobTab
         cooperationItem={cooperationItem}
         sectionId={sectionId}
       />
-      <div onClick={toggleShowMore}>
-        <h2 className="mb-4 font-alegreya text-32med uppercase">{title}</h2>
+      <div
+        onClick={toggleShowMore}
+        className="flex flex-col justify-between flex-1"
+      >
+        <h2 className="mb-4 font-alegreya text-32med sm:text-28med tab:text-32med uppercase">
+          {title}
+        </h2>
         <div>
           <TextButton>{t("buttons.learnMore")}</TextButton>
           <Image
@@ -58,6 +63,6 @@ export default function CooperationItemMobTab({
           </div>
         </div>
       </div>
-    </li>
+    </div>
   );
 }

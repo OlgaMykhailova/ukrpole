@@ -21,15 +21,15 @@ export default function CooperationList() {
     },
   ];
   return (
-    <ul className="flex flex-col sm:flex-row items-start gap-10 tab:gap-12">
+    <ul className="flex flex-col sm:flex-row items-stretch gap-10 tab:gap-12">
       {cooperationList.map((cooperationItem, idx) => (
-        <React.Fragment key={idx}>
+        <li key={idx} className="flex-1">
           <CooperationItemMobTab cooperationItem={cooperationItem} />
           <CooperationItemDesk
             cooperationItem={cooperationItem}
             position={`${idx === 0 ? "top" : "bottom"}`}
           />
-        </React.Fragment>
+        </li>
       ))}
     </ul>
   );

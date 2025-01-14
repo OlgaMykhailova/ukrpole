@@ -20,9 +20,9 @@ export default function CooperationItemDesk({
   const sectionId = `cooperation-page-desk-${id}`;
 
   return (
-    <li
+    <div
       id={sectionId}
-      className={`relative group overflow-hidden hidden laptop:flex flex-col w-[528px] aspect-[1/1] p-10 ${
+      className={`relative group overflow-hidden hidden laptop:flex flex-col w-[528px] aspect-[1/1] px-6 py-10 ${
         position === "top" ? "justify-start" : "justify-end"
       }`}
     >
@@ -46,6 +46,6 @@ export default function CooperationItemDesk({
           <p>{descriptionPartTwo}</p>
         </div>
       </div>
-    </li>
+    </div>
   );
 }
