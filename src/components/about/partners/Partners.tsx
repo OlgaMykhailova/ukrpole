@@ -12,10 +12,8 @@ export default function Partners() {
   const locale = useLocale();
 
   return (
-    <Section>
-      <SectionTitle>
-        {t("aboutPage.partners.title")}
-      </SectionTitle>
+    <Section className="overflow-hidden">
+      <SectionTitle>{t("aboutPage.partners.title")}</SectionTitle>
       <PartnersInfo />
       <div className="flex flex-col items-center">
         <CooperationInfo />
