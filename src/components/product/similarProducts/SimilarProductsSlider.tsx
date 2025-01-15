@@ -35,7 +35,7 @@ export default function SimilarProductsSlider({
       () => Math.random() - 0.5
     );
     setSimilarProducts(shuffledProducts.slice(0, 6));
-  }, [filteredProducts]);
+  }, []);
 
   const settings = {
     dots: true,
