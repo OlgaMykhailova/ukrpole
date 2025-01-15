@@ -44,7 +44,7 @@ export default function NavMenu({
             key={idx}
             menuItem={menuItem}
             setIsHeaderMenuOpened={setIsHeaderMenuOpened}
-            className={`transition-transform duration-500 ${
+            className={`transition duration-500 ${
               isAtTop
                 ? "laptop:translate-x-0"
                 : locale === "en"
