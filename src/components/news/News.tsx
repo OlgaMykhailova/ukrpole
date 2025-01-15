@@ -1,6 +1,7 @@
-import React from "react";
-import Section from "../shared/section/Section";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import Section from "../shared/section/Section";
 import PageTitle from "../shared/titles/PageTitle";
 import NewsList from "./NewsList";
 

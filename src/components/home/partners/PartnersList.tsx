@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
-import PartnerItem from "./PartnerItem";
+
 import { useOnScreen } from "@/hooks/useOnScreen";
+
+import PartnerItem from "./PartnerItem";
 
 interface PartnersListProps {
   partnersList: string[];

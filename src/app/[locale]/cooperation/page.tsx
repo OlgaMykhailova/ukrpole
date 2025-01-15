@@ -1,7 +1,8 @@
-import React from "react";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
-import Cooperation from "@/components/cooperation/Cooperation";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import Cooperation from "@/components/cooperation/Cooperation";
+import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 
 export default function CooperationPage() {
   const t = useTranslations();

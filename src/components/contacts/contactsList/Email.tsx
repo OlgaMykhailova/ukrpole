@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import React from "react";
 
-import Subtitle from "@/components/shared/titles/Subtitle";
 import { EMAIL } from "@/constants/constants";
 
 export default function Email() {

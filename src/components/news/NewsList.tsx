@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
-import NewsItem from "./NewsItem";
-import Pagination from "../shared/pagination/Pagination";
-import { articlesList } from "@/mockedData/articles";
 import { useLocale } from "next-intl";
+import React from "react";
+
+import { articlesList } from "@/mockedData/articles";
 import { Locale } from "@/types/locale";
+
+import Pagination from "../shared/pagination/Pagination";
+import NewsItem from "./NewsItem";
 
 interface NewsListProps {
   id?: string;

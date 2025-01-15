@@ -1,6 +1,6 @@
-import React from "react";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import React from "react";
 
 export default function MissionInfo() {
   const t = useTranslations("aboutPage.mission");

@@ -1,8 +1,9 @@
-import React from "react";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+import React from "react";
+
 import { Link } from "@/i18n/routing";
 import { ProductItem } from "@/types/productItem";
-import { useLocale, useTranslations } from "next-intl";
 
 interface NavigationItemProps {
   product: ProductItem;

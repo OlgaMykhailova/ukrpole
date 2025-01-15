@@ -1,11 +1,13 @@
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
+
+import { Link } from "@/i18n/routing";
+
+import Button from "../shared/buttons/Button";
 import Section from "../shared/section/Section";
 import PageTitle from "../shared/titles/PageTitle";
-import Button from "../shared/buttons/Button";
-import { Link } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
-import CooperationList from "./CooperationList";
 import CooperationInfo from "./CooperationInfo";
+import CooperationList from "./CooperationList";
 
 export default function Cooperation() {
   const t = useTranslations();

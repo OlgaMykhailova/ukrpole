@@ -6,6 +6,7 @@ import "./sliderStyles.css";
 
 import React from "react";
 import Slider from "react-slick";
+
 import PartnerItem from "./PartnerItem";
 
 interface PartnersSliderProps {

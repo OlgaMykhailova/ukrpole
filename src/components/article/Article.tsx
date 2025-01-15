@@ -1,9 +1,11 @@
 import React from "react";
+
+import { ArticleItem } from "@/types/article";
+
 import Section from "../shared/section/Section";
 import PageTitle from "../shared/titles/PageTitle";
-import ArticleDescription from "./ArticleDescription";
-import { ArticleItem } from "@/types/article";
 import ArticleBottom from "./ArticleBottom";
+import ArticleDescription from "./ArticleDescription";
 import ArticleList from "./ArticleList";
 
 interface ArticleProps {

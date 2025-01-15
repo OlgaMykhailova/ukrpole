@@ -1,7 +1,7 @@
+import Image from "next/image";
 import React from "react";
 
 import { ButtonProps } from "@/types/buttonProps";
-import Image from "next/image";
 
 export default function Button({
   children,

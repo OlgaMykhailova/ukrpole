@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import * as yup from "yup";
 
-import { emailRegex, nameRegex, inputPhoneRegex } from "@/regex/regex";
+import { emailRegex, inputPhoneRegex,nameRegex } from "@/regex/regex";
 
 export const ContactsValidation = () => {
   const t = useTranslations("forms.errors");

@@ -1,10 +1,12 @@
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
+
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
-import { useTranslations, useLocale } from "next-intl";
-import HeroBgImages from "./HeroBgImages";
-import HeroDescription from "./HeroDescription";
 import Button from "@/components/shared/buttons/Button";
 import { Link } from "@/i18n/routing";
+
+import HeroBgImages from "./HeroBgImages";
+import HeroDescription from "./HeroDescription";
 import PeppersBgImages from "./PeppersBgImages";
 
 const SECTION_ID = "products-page-hero";

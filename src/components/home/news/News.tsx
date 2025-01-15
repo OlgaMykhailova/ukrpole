@@ -1,9 +1,11 @@
-import Section from "@/components/shared/section/Section";
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
+
+import Button from "@/components/shared/buttons/Button";
+import Section from "@/components/shared/section/Section";
 import SectionTitle from "@/components/shared/titles/SectionTitle";
 import { Link } from "@/i18n/routing";
-import Button from "@/components/shared/buttons/Button";
+
 import NewsList from "./NewsList";
 
 export default function News() {

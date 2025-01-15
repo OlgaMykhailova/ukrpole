@@ -4,8 +4,8 @@ import React, { Dispatch, SetStateAction } from "react";
 
 import Backdrop from "../backdrop/Backdrop";
 import Modal from "../modal/Modal";
-import PopUpTitle from "../titles/PopUpTitle";
 import PhoneLink from "../phoneLink/PhoneLink";
+import PopUpTitle from "../titles/PopUpTitle";
 
 interface NotificationPopUpProps {
   isNotificationShown: boolean;

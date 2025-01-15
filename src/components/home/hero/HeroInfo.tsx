@@ -1,9 +1,10 @@
 "use client";
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
+
 import Button from "@/components/shared/buttons/Button";
-import { Link } from "@/i18n/routing";
 import { useOnScreen } from "@/hooks/useOnScreen";
+import { Link } from "@/i18n/routing";
 
 interface HeroInfoProps {
   sectionId: string;

@@ -1,10 +1,12 @@
-import { ProductItem } from "@/types/productItem";
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
+
 import Button from "@/components/shared/buttons/Button";
-import Ingredients from "./Ingredients";
-import Characteristics from "./Characteristics";
-import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { ProductItem } from "@/types/productItem";
+
+import Characteristics from "./Characteristics";
+import Ingredients from "./Ingredients";
 
 interface ProductCardInfoProps {
   currentProduct: ProductItem;

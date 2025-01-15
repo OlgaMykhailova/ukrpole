@@ -4,12 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../home/partners/sliderStyles.css";
 
-import React, { useState, useEffect } from "react";
+import { useLocale } from "next-intl";
+import React, { useEffect,useState } from "react";
+import Slider from "react-slick";
+
 import CatalogCard from "@/components/shared/catalogCard/CatalogCard";
 import { productsList } from "@/mockedData/products";
-import { useLocale } from "next-intl";
 import { Locale } from "@/types/locale";
-import Slider from "react-slick";
 import { ProductItem } from "@/types/productItem";
 
 interface SimilarProductsSliderProps {
@@ -34,7 +35,7 @@ export default function SimilarProductsSlider({
       () => Math.random() - 0.5
     );
     setSimilarProducts(shuffledProducts.slice(0, 6));
-  }, []);
+  }, [filteredProducts]);
 
   const settings = {
     dots: true,

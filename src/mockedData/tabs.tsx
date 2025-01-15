@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+
 import { TabMenuItem } from "@/types/tabMenuItem";
 
 export const Tabs = () => {

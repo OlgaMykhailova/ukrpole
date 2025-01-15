@@ -32,7 +32,7 @@ export const useOnScreen = (
     return () => {
       observer.disconnect();
     };
-  }, [id, once]);
+  }, [id, once, threshold]);
 
   return { isVisible, hasInitialized };
 };

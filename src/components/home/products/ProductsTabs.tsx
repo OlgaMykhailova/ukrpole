@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+
+import { Tabs } from "@/mockedData/tabs";
 import { TabType } from "@/types/tab";
+
 import TabMenu from "../../shared/tabMenu/TabMenu";
 import ProductItem from "./ProductItem";
-import { Tabs } from "@/mockedData/tabs";
 
 export default function ProductsTabs() {
   const [activeTab, setActiveTab] = useState<TabType | "all">("tomatoes");

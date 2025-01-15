@@ -1,6 +1,6 @@
+import tailwindScrollbar from "tailwind-scrollbar";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
-import tailwindScrollbar from "tailwind-scrollbar";
 
 export default {
   content: [

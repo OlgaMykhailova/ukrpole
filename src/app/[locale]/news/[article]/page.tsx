@@ -1,10 +1,12 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React from "react";
+
+import Article from "@/components/article/Article";
+import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import { articlesList } from "@/mockedData/articles";
 import { Locale } from "@/types/locale";
-import { useTranslations } from "next-intl";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
-import Article from "@/components/article/Article";
+
 import NotFound from "../../not-found";
 
 interface ArticlePageProps {

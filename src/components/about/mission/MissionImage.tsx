@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
-import { useOnScreen } from "@/hooks/useOnScreen";
 import Image from "next/image";
+import React from "react";
+
+import { useOnScreen } from "@/hooks/useOnScreen";
 
 const SECTION_ID = "about-page-mission-image";
 

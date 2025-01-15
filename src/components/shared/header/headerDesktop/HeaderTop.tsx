@@ -1,9 +1,11 @@
-import React from "react";
-import LocaleSwitcher from "../LocaleSwitcher";
-import LogoLink from "../../logoLink/LogoLink";
 import { useLocale } from "next-intl";
+import React from "react";
+
 import { Locale } from "@/types/locale";
+
+import LogoLink from "../../logoLink/LogoLink";
 import CallBackApplicationTabDesk from "../callBackApplication/CallBackApplicationTabDesk";
+import LocaleSwitcher from "../LocaleSwitcher";
 
 interface HeaderTopProps {
   isAtTop: boolean;

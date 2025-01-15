@@ -1,9 +1,10 @@
-import Subtitle from "@/components/shared/titles/Subtitle";
-
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
-import { Link } from "@/i18n/routing";
+
 import TextButton from "@/components/shared/buttons/TextButton";
+import Subtitle from "@/components/shared/titles/Subtitle";
+import { Link } from "@/i18n/routing";
+
 import NewsItemImage from "./NewsItemImage";
 
 interface NewsItemProps {

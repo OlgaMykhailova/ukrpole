@@ -1,10 +1,12 @@
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
-import CooperationInfo from "./CooperationInfo";
+
 import Button from "@/components/shared/buttons/Button";
-import CooperationTitle from "./CooperationTitle";
 import { Link } from "@/i18n/routing";
+
 import CooperationBgImages from "./CooperationBgImages";
+import CooperationInfo from "./CooperationInfo";
+import CooperationTitle from "./CooperationTitle";
 
 const SECTION_ID = "home-page-cooperation-section";
 

@@ -1,4 +1,5 @@
 import React from "react";
+
 import PartnersList from "./PartnersList";
 import PartnersSlider from "./PartnersSlider";
 

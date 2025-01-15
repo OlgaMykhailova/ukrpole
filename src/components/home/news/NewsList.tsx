@@ -1,8 +1,10 @@
-import React from "react";
-import NewsItem from "./NewsItem";
 import { useLocale } from "next-intl";
+import React from "react";
+
 import { articlesList } from "@/mockedData/articles";
 import { Locale } from "@/types/locale";
+
+import NewsItem from "./NewsItem";
 
 export default function NewsList() {
   const locale = useLocale();

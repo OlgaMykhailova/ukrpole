@@ -1,6 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import React from "react";
 
 interface IngredientItemProps {
   ingredient: string;

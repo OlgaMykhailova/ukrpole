@@ -1,12 +1,14 @@
-import React from "react";
-import { Locale } from "@/types/locale";
-import { productsList } from "@/mockedData/products";
-import NotFound from "../../not-found";
-import SimilarProducts from "@/components/product/similarProducts/SimilarProducts";
-import { ProductItem } from "@/types/productItem";
-import ProductCard from "@/components/product/productInfo/ProductCard";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import ProductCard from "@/components/product/productInfo/ProductCard";
+import SimilarProducts from "@/components/product/similarProducts/SimilarProducts";
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
+import { productsList } from "@/mockedData/products";
+import { Locale } from "@/types/locale";
+import { ProductItem } from "@/types/productItem";
+
+import NotFound from "../../not-found";
 
 export default function ProductPage({
   params,

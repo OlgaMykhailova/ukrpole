@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
-import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { useLocale } from "next-intl";
-import { TabMenuItem } from "@/types/tabMenuItem";
+import React from "react";
+
 import { useOnScreen } from "@/hooks/useOnScreen";
+import { Link } from "@/i18n/routing";
+import { TabMenuItem } from "@/types/tabMenuItem";
 
 interface ProductItemImageProps {
   activeTabData: TabMenuItem;

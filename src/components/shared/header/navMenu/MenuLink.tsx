@@ -1,6 +1,7 @@
-import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import React, { Dispatch, SetStateAction } from "react";
+
+import { Link } from "@/i18n/routing";
 
 interface MenuLinkProps {
   menuItem: {

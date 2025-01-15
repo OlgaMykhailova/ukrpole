@@ -1,9 +1,11 @@
 "use client";
-import React from "react";
 import Image from "next/image";
-import NavigationByVolume from "./navigationByVolume/NavigationByVolume";
-import { ProductItem } from "@/types/productItem";
+import React from "react";
+
 import { useOnScreen } from "@/hooks/useOnScreen";
+import { ProductItem } from "@/types/productItem";
+
+import NavigationByVolume from "./navigationByVolume/NavigationByVolume";
 
 interface ProductCardImageProps {
   currentProduct: ProductItem;

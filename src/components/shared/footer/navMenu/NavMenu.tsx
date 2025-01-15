@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
-import MenuLink from "./MenuLink";
 import { useTranslations } from "next-intl";
+import React from "react";
+
 import { usePathname } from "@/i18n/routing";
+
+import MenuLink from "./MenuLink";
 
 export default function NavMenu() {
   const t = useTranslations();

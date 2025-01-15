@@ -1,7 +1,8 @@
-import { TabMenuItem } from "@/types/tabMenuItem";
+import { useRouter } from "next/navigation";
 import React from "react";
 
-import { useRouter } from "next/navigation";
+import { TabMenuItem } from "@/types/tabMenuItem";
+
 import ProductItemImage from "./ProductItemImage";
 
 interface ProductItemProps {

@@ -1,6 +1,7 @@
-import React from "react";
-import { ArticleItem } from "@/types/article";
 import Image from "next/image";
+import React from "react";
+
+import { ArticleItem } from "@/types/article";
 
 interface ArticleDescriptionProps {
   currentArticle: ArticleItem;
