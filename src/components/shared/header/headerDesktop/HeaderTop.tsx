@@ -23,10 +23,10 @@ export default function HeaderTop({ isAtTop }: HeaderTopProps) {
       </div>
       <div className={`flex-1 flex justify-center`}>
         <LogoLink
-          className={`w-[124px] h-auto tab:w-[162px] transition-all duration-500 ease-out ${
+          className={`w-[124px] h-auto tab:w-[162px] laptop:w-[204px] transition-all duration-500 ease-out ${
             isAtTop
-              ? "translate-y-0 laptop:w-[204px]"
-              : "translate-y-[87px] laptop:w-[160px]"
+              ? "translate-y-0 laptop:scale-100"
+              : "translate-y-[87px] laptop:scale-[78.4%]"
           }`}
         />
       </div>
