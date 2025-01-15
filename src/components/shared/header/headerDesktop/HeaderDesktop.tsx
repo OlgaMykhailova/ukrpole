@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { throttle } from "lodash";
-import HeaderDeskBgImages from "./HeaderDeskBgImages";
+import React, { useEffect, useState } from "react";
+
 import NavMenu from "../navMenu/NavMenu";
+import HeaderDeskBgImages from "./HeaderDeskBgImages";
 import HeaderTop from "./HeaderTop";
 
 export default function HeaderDesktop() {

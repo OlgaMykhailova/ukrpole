@@ -1,6 +1,7 @@
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
+
 import { Link } from "@/i18n/routing";
-import { useTranslations, useLocale } from "next-intl";
 
 export default function FooterBottom() {
   const t = useTranslations("footer");

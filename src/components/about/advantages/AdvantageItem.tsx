@@ -1,6 +1,7 @@
-import Subtitle from "@/components/shared/titles/Subtitle";
 import Image from "next/image";
 import React from "react";
+
+import Subtitle from "@/components/shared/titles/Subtitle";
 
 interface AdvantageItemProps {
   advantage: { title: string; description: string; icon: string };

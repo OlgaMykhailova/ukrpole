@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
+import React, { useEffect,useState } from "react";
+
+import { useRouter } from "@/i18n/routing";
 
 interface PaginationProps<T> {
   items: T[];

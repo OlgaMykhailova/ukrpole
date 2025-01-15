@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
 import Image from "next/image";
-import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
+import React from "react";
+
 import { useOnScreen } from "@/hooks/useOnScreen";
+import { Link } from "@/i18n/routing";
 
 interface NewsItemImageProps {
   id: string;

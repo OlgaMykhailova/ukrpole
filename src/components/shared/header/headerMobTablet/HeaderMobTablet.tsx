@@ -1,14 +1,16 @@
 "use client";
-import React, { useState } from "react";
-import LocaleSwitcher from "../LocaleSwitcher";
-import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { useLocale } from "next-intl";
+import React, { useState } from "react";
+
+import LogoLink from "@/components/shared/logoLink/LogoLink";
 import { Locale } from "@/types/locale";
-import BurgerMenuButton from "./burgerMenu/BurgerMenuButton";
-import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
-import BurgerMenu from "./burgerMenu/BurgerMenu";
+
 import Backdrop from "../../backdrop/Backdrop";
 import CallBackApplicationTabDesk from "../callBackApplication/CallBackApplicationTabDesk";
+import LocaleSwitcher from "../LocaleSwitcher";
+import BurgerMenu from "./burgerMenu/BurgerMenu";
+import BurgerMenuButton from "./burgerMenu/BurgerMenuButton";
+import HeaderMobTabBgImages from "./HeaderMobTabBgImages";
 
 export default function HeaderMobTablet() {
   const locale = useLocale();

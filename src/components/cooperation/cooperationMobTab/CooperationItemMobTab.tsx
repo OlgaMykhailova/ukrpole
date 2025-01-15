@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import React, { useState } from "react";
+
 import TextButton from "../../shared/buttons/TextButton";
 import CooperationItemImageMobTab from "./CooperationItemImageMobTab";
 

@@ -1,8 +1,8 @@
-import React from "react";
-import { PHONE_NUMBER } from "@/constants/constants";
 import Image from "next/image";
-import Subtitle from "@/components/shared/titles/Subtitle";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import { PHONE_NUMBER } from "@/constants/constants";
 import { phoneRegex } from "@/regex/regex";
 
 export default function Phone() {

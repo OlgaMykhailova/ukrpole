@@ -1,7 +1,8 @@
 "use client";
 
-import { routing, usePathname, useRouter } from "@/i18n/routing";
 import { useSearchParams } from "next/navigation";
+
+import { routing, usePathname, useRouter } from "@/i18n/routing";
 import { Locale } from "@/types/locale";
 
 interface LocaleSwitcherProps {

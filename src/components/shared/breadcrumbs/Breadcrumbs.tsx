@@ -1,5 +1,6 @@
-import { Link } from "@/i18n/routing";
 import { useLocale } from "next-intl";
+
+import { Link } from "@/i18n/routing";
 
 interface Breadcrumb {
   label: string;

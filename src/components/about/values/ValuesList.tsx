@@ -1,5 +1,6 @@
-import React from "react";
 import { useTranslations } from "next-intl";
+import React from "react";
+
 import ValueItem from "./ValueItem";
 import ValuesTitle from "./ValuesTitle";
 

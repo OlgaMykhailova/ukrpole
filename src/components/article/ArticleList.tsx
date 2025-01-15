@@ -1,5 +1,7 @@
-import { ArticleItem } from "@/types/article";
 import React from "react";
+
+import { ArticleItem } from "@/types/article";
+
 import ArticleListItem from "./ArticleItem";
 
 interface ArticleListProps {

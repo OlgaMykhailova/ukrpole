@@ -1,14 +1,16 @@
-import React, { Dispatch, SetStateAction } from "react";
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
+import React, { Dispatch, SetStateAction } from "react";
+
+import Pagination from "@/components/shared/pagination/Pagination";
+import { useRouter } from "@/i18n/routing";
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
-import CatalogCard from "../../shared/catalogCard/CatalogCard";
 import { ProductItem } from "@/types/productItem";
-import Pagination from "@/components/shared/pagination/Pagination";
-import ProductsCounter from "./ProductsCounter";
 import { TabType } from "@/types/tab";
-import Image from "next/image";
-import { useRouter } from "@/i18n/routing";
+
+import CatalogCard from "../../shared/catalogCard/CatalogCard";
+import ProductsCounter from "./ProductsCounter";
 
 interface CatalogListProps {
   id: string;

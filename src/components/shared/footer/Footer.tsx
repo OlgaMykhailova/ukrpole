@@ -1,6 +1,7 @@
 import React from "react";
-import FooterBottom from "./FooterBottom";
+
 import FooterBgImages from "./FooterBgImages";
+import FooterBottom from "./FooterBottom";
 import FooterNavigation from "./FooterNavigation";
 
 export default function Footer() {

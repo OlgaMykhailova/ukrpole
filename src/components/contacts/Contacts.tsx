@@ -1,11 +1,12 @@
-import React from "react";
-import Section from "../shared/section/Section";
-import Map from "./Map";
-import ContactsList from "./contactsList/ContactsList";
-import ContactsInfo from "./ContactsInfo";
-import PageTitle from "../shared/titles/PageTitle";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import Section from "../shared/section/Section";
+import PageTitle from "../shared/titles/PageTitle";
 import ContactsApplication from "./ContactsApplication";
+import ContactsInfo from "./ContactsInfo";
+import ContactsList from "./contactsList/ContactsList";
+import Map from "./Map";
 
 export default function Contacts() {
   const t = useTranslations("contactsPage");

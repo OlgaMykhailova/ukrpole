@@ -1,11 +1,13 @@
-import React from "react";
-import Section from "../shared/section/Section";
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
-import Button from "../shared/buttons/Button";
+import { useLocale,useTranslations } from "next-intl";
+import React from "react";
+
 import { Link } from "@/i18n/routing";
-import NotFoundTitle from "./NotFoundTitle";
+
+import Button from "../shared/buttons/Button";
+import Section from "../shared/section/Section";
 import NotFoundInfo from "./NotFoundInfo";
+import NotFoundTitle from "./NotFoundTitle";
 
 export default function NotFoundPage() {
   const t = useTranslations("buttons");

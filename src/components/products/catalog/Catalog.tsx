@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
-import { useTranslations, useLocale } from "next-intl";
-import { TabType } from "@/types/tab";
-import TabMenu from "@/components/shared/tabMenu/TabMenu";
-import CatalogList from "./CatalogList";
-import Section from "@/components/shared/section/Section";
-import { useRouter } from "@/i18n/routing";
 import { useSearchParams } from "next/navigation";
+import { useLocale,useTranslations } from "next-intl";
+import React, { useEffect,useState } from "react";
+
+import Section from "@/components/shared/section/Section";
+import TabMenu from "@/components/shared/tabMenu/TabMenu";
+import { useRouter } from "@/i18n/routing";
+import { TabType } from "@/types/tab";
+
+import CatalogList from "./CatalogList";
 
 const SECTION_ID = "catalog";
 
@@ -28,7 +30,7 @@ export default function Catalog() {
       params.set("page", "1");
     }
     router.replace(`?${params.toString()}`, { locale, scroll: false });
-  }, [router, searchParams]);
+  }, [router, searchParams, locale]);
 
   return (
     <Section id={SECTION_ID}>

@@ -1,8 +1,10 @@
-import { ProductItem } from "@/types/productItem";
-import React from "react";
 import { useLocale } from "next-intl";
+import React from "react";
+
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
+import { ProductItem } from "@/types/productItem";
+
 import NavigationItem from "./NavigationItem";
 
 interface NavigationByVolumeProps {

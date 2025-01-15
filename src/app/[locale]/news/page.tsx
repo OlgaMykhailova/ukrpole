@@ -1,7 +1,8 @@
-import React from "react";
 import { useTranslations } from "next-intl";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
+import React from "react";
+
 import News from "@/components/news/News";
+import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 
 export default function NewsPage() {
   const t = useTranslations();

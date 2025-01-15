@@ -1,8 +1,10 @@
 "use client";
+import { useLocale,useTranslations } from "next-intl";
 import React, { Dispatch, SetStateAction } from "react";
-import MenuLink from "./MenuLink";
-import { useTranslations, useLocale } from "next-intl";
+
 import { usePathname } from "@/i18n/routing";
+
+import MenuLink from "./MenuLink";
 
 interface NavMenuProps {
   isAtTop?: boolean;

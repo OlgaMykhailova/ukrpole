@@ -2,10 +2,11 @@ import { useLocale } from "next-intl";
 import React, { Dispatch, SetStateAction } from "react";
 
 import { Locale } from "@/types/locale";
-import LocaleSwitcher from "../../LocaleSwitcher";
-import BurgerMenuBgImages from "./BurgerMenuBgImages";
-import NavMenu from "../../navMenu/NavMenu";
+
 import PhoneLink from "../../../phoneLink/PhoneLink";
+import LocaleSwitcher from "../../LocaleSwitcher";
+import NavMenu from "../../navMenu/NavMenu";
+import BurgerMenuBgImages from "./BurgerMenuBgImages";
 
 interface BurgerMenuMobTabProps {
   isHeaderMenuOpened: boolean;

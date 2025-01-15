@@ -1,9 +1,10 @@
-import React, { Dispatch, SetStateAction, ReactNode } from "react";
-import { TabType } from "@/types/tab";
 import Image from "next/image";
-import { Tabs } from "@/mockedData/tabs";
 import { useLocale } from "next-intl";
+import React, { Dispatch, ReactNode,SetStateAction } from "react";
+
 import { usePathname, useRouter } from "@/i18n/routing";
+import { Tabs } from "@/mockedData/tabs";
+import { TabType } from "@/types/tab";
 
 interface TabMenuProps {
   activeTab: TabType | "all";

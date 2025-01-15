@@ -1,8 +1,9 @@
-import React from "react";
 import Image from "next/image";
-import { ProductItem } from "@/types/productItem";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale,useTranslations } from "next-intl";
+import React from "react";
+
 import { Link } from "@/i18n/routing";
+import { ProductItem } from "@/types/productItem";
 
 interface CatalogCardProps {
   product: ProductItem;

@@ -1,15 +1,17 @@
+import "./globals.css";
+
+import { Alegreya_Sans_SC,Montserrat } from "next/font/google";
+import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
-import "./globals.css";
-import { Locale } from "@/types/locale";
-import { Montserrat, Alegreya_Sans_SC } from "next/font/google";
-import Header from "@/components/shared/header/Header";
-import Footer from "@/components/shared/footer/Footer";
+
 import CookiesComponent from "@/components/shared/cookies/CookiesComponent";
+import Footer from "@/components/shared/footer/Footer";
 import CallBackApplicationMob from "@/components/shared/header/callBackApplication/CallBackApplicationMob";
+import Header from "@/components/shared/header/Header";
+import { routing } from "@/i18n/routing";
+import { Locale } from "@/types/locale";
 
 const montserrat = Montserrat({
   weight: ["400", "500"],

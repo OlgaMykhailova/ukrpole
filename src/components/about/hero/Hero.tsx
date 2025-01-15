@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import { useTranslations } from "next-intl";
+import React from "react";
+
+import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import { useOnScreen } from "@/hooks/useOnScreen";
 
 const SECTION_ID = "about-page-hero";

@@ -1,7 +1,8 @@
-import Image from "next/image";
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import { useTranslations, useLocale } from "next-intl";
+
 import { Link } from "@/i18n/routing";
+
 import TextButton from "../shared/buttons/TextButton";
 import NewsItemImage from "./NewsItemImage";
 

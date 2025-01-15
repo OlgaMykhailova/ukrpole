@@ -1,7 +1,8 @@
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+
 import { PHONE_NUMBER } from "@/constants/constants";
 import { phoneRegex } from "@/regex/regex";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 interface CallBackButtonTabDeskProps {
   onClick: () => void;

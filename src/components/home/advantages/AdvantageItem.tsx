@@ -1,5 +1,7 @@
-import Subtitle from "@/components/shared/titles/Subtitle";
 import React from "react";
+
+import Subtitle from "@/components/shared/titles/Subtitle";
+
 import AdvantageItemImage from "./AdvantageItemImage";
 
 interface AdvantageItemProps {

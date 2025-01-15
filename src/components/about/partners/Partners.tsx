@@ -1,11 +1,12 @@
+import { useLocale,useTranslations } from "next-intl";
 import React from "react";
-import Section from "@/components/shared/section/Section";
-import PartnersInfo from "@/components/home/partners/PartnersInfo";
+
 import CooperationInfo from "@/components/cooperation/CooperationInfo";
-import { Link } from "@/i18n/routing";
+import PartnersInfo from "@/components/home/partners/PartnersInfo";
 import Button from "@/components/shared/buttons/Button";
-import { useTranslations, useLocale } from "next-intl";
+import Section from "@/components/shared/section/Section";
 import SectionTitle from "@/components/shared/titles/SectionTitle";
+import { Link } from "@/i18n/routing";
 
 export default function Partners() {
   const t = useTranslations();

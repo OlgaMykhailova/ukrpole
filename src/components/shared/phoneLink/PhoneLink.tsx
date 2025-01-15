@@ -1,8 +1,9 @@
-import { PHONE_NUMBER } from "@/constants/constants";
-import { phoneRegex } from "@/regex/regex";
-import Button from "@/components/shared/buttons/Button";
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
+
+import Button from "@/components/shared/buttons/Button";
+import { PHONE_NUMBER } from "@/constants/constants";
+import { phoneRegex } from "@/regex/regex";
 
 interface PhoneLinkProps {
   className?: string;

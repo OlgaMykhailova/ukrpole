@@ -9,8 +9,8 @@ import { ContactsValidation } from "@/schemas/contactsFormValidation";
 import { handleSubmitForm } from "@/utils/handleSubmitForm";
 
 import CustomizedInput from "./formElements/CustomizedInput";
-import SubmitButton from "./formElements/SubmitButton";
 import FormDescription from "./formElements/FormDescription";
+import SubmitButton from "./formElements/SubmitButton";
 
 export interface ValuesContactsFormType {
   name: string;

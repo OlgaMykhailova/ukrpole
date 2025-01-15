@@ -1,7 +1,9 @@
-import Section from "@/components/shared/section/Section";
 import React from "react";
-import MissionInfo from "./MissionInfo";
+
+import Section from "@/components/shared/section/Section";
+
 import MissionImage from "./MissionImage";
+import MissionInfo from "./MissionInfo";
 
 export default function Mission() {
   return (

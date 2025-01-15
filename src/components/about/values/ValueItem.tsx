@@ -1,5 +1,6 @@
-import Subtitle from "@/components/shared/titles/Subtitle";
 import React from "react";
+
+import Subtitle from "@/components/shared/titles/Subtitle";
 
 interface ValueItemProps {
   value: {

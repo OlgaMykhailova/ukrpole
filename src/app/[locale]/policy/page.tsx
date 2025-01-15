@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import React from "react";
-import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
+
 import Section1 from "@/components/policy/Section1";
 import Section2 from "@/components/policy/Section2";
 import Section3 from "@/components/policy/Section3";
@@ -8,8 +8,9 @@ import Section4 from "@/components/policy/Section4";
 import Section5 from "@/components/policy/Section5";
 import Section6 from "@/components/policy/Section6";
 import Section7 from "@/components/policy/Section7";
-import PageTitle from "@/components/shared/titles/PageTitle";
+import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Section from "@/components/shared/section/Section";
+import PageTitle from "@/components/shared/titles/PageTitle";
 
 export default function PolicyPage() {
   const t = useTranslations("");
