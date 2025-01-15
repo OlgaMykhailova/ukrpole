@@ -12,13 +12,13 @@ export default function LogoLink({ className = "" }: LogoLinkProps) {
   const locale = useLocale();
 
   return (
-    <Link href="/" locale={locale} className="outline-none">
+    <Link href="/" locale={locale} className="cursor-pointer outline-none">
       <Image
         src="/images/icons/logo.svg"
         alt="logo"
         width="204"
         height="53"
-        className={` ${className}`}
+        className={`${className}`}
       />
     </Link>
   );
