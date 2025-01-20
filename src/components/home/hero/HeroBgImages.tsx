@@ -19,7 +19,7 @@ export default function HeroBgImages({ sectionId }: HeroBgImagesProps) {
         width={2048}
         height={1024}
         priority
-        className={`absolute top-0 left-0 -z-20 w-full h-full object-cover object-22%-center tab:origin-center ${
+        className={`absolute top-0 left-0 -z-20 w-full h-full object-cover origin-center ${
           isVisible
             ? "scale-100 translate-x-0 translate-y-0"
             : "scale-[115%] -translate-x-[30px] translate-y-[15px] tab:-translate-x-[60px] tab:translate-y-[30px]"
