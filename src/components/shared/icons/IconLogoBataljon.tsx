@@ -1,6 +1,6 @@
 import { IconProps } from "@/types/iconProps";
 
-export default function IconClose({ className }: IconProps) {
+export default function IconLogoBataljon({ className }: IconProps) {
   return (
     <svg
       width="125"
