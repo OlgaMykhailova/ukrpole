@@ -1,8 +1,10 @@
-import { useLocale,useTranslations } from "next-intl";
+import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Button from "@/components/shared/buttons/Button";
+import IconLogoBataljon from "@/components/shared/icons/IconLogoBataljon";
 import { Link } from "@/i18n/routing";
 
 import HeroBgImages from "./HeroBgImages";
@@ -31,6 +33,17 @@ export default function Hero() {
       </div>
       <div className="container flex flex-col items-center">
         <HeroDescription />
+        <div className="flex items-center gap-6 laptop:gap-7 mb-10">
+          <Image
+            src="/images/icons/logo.svg"
+            alt="logo"
+            width="204"
+            height="53"
+            priority
+            className="w-[131px] laptop:w-[153px] h-auto"
+          />
+          <IconLogoBataljon className="w-[107px] laptop:w-[125px] h-auto text-yellow" />
+        </div>
         <Link href="/contacts" locale={locale} className="group outline-none">
           <Button>{t("buttons.startCooperation")}</Button>
         </Link>
