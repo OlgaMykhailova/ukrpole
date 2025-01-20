@@ -53,6 +53,7 @@ export default {
         greenKhaki: "#ADC584",
         green: "#B0E48F",
         greenLight: "#CCF0B5",
+        yellow: "#FFCA37",
         yellowDark: "#F8DB04",
         yellowLight: "#FAF1D5",
         darkRed: "#FF7272",
