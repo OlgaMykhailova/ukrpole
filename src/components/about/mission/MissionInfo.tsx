@@ -13,7 +13,7 @@ export default function MissionInfo() {
         width={344}
         height={343}
         priority
-        className="absolute top-0 left-0 w-full h-auto"
+        className="absolute top-0 left-0 laptop:scale-90 w-full h-auto"
       />
       <Image
         src="/images/icons/bubbles.svg"
@@ -26,7 +26,7 @@ export default function MissionInfo() {
       <h2 className="mb-2 tab:mb-3 laptop:mb-4 font-alegreya text-32med tab:text-40med uppercase text-center">
         {t("title")}
       </h2>
-      <p className="w-[276px] tab:w-[325px] laptop:w-[369px] sm:max-w-[378px] text-center">
+      <p className="w-[276px] tab:w-[300px] laptop:w-[339px] sm:max-w-[378px] text-center">
         {t("description")}
       </p>
     </div>
