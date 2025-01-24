@@ -4,7 +4,6 @@ import { Alegreya_Sans_SC, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { getTranslations } from "next-intl/server";
 
 import CookiesComponent from "@/components/shared/cookies/CookiesComponent";
 import Footer from "@/components/shared/footer/Footer";
@@ -12,6 +11,7 @@ import CallBackApplicationMob from "@/components/shared/header/callBackApplicati
 import Header from "@/components/shared/header/Header";
 import { routing } from "@/i18n/routing";
 import { Locale } from "@/types/locale";
+import { generatePageMetaData } from "@/utils/generatePageMetaData";
 
 const montserrat = Montserrat({
   weight: ["400", "500"],
@@ -26,29 +26,16 @@ const alegreya = Alegreya_Sans_SC({
 });
 
 export async function generateMetadata({
-  params: { locale },
-  searchParams,
+  params,
 }: {
   params: { locale: Locale };
-  searchParams: Record<string, string>;
 }) {
-  const t = await getTranslations({ locale, namespace: "metadata" });
-
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const path = searchParams.path || "";
-  const currentUrl = `${baseUrl}${locale === "en" ? "/en" : ""}${path}`;
-
-  return {
-    alternates: {
-      canonical: currentUrl,
-      languages: {
-        uk: `${baseUrl}/${path}`,
-        en: `${baseUrl}/en${path}`,
-      },
-    },
-    title: t("title"),
-    description: t("description"),
-  };
+  const { locale } = params;
+  return generatePageMetaData({
+    locale,
+    namespace: "metadata",
+    canonical: "/",
+  });
 }
 
 export default async function LocaleLayout({
