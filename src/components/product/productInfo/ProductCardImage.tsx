@@ -25,6 +25,7 @@ export default function ProductCardImage({
       <Image
         src={`/images/contentImages/products/${trademark.id}-${category}-${volume}.webp`}
         alt={title}
+        priority
         width={968}
         height={1152}
         className={`w-[63.4%] tab:w-[44%] laptop:w-[73.6%] h-auto mx-auto laptop:hover:scale-105 transition duration-[2000ms] ease-out ${

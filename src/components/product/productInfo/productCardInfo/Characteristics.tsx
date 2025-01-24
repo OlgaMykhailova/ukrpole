@@ -16,7 +16,7 @@ export default function Characteristics({
 
   return (
     <div className="mb-8 laptop:mb-10">
-      <h3 className="mb-4 text-18med">{t("characteristics")}</h3>
+      <h2 className="mb-4 text-18med">{t("characteristics")}</h2>
       <ul className="flex gap-x-4 tab:gap-x-8 mb-8">
         <li>
           <p className="text-16med tab:text-18med text-center">
