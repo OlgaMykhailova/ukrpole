@@ -15,7 +15,6 @@ export default function NewsItemImage({ id, sectionId }: NewsItemImageProps) {
   const locale = useLocale();
   const { isVisible } = useOnScreen(sectionId);
 
-  console.log(isVisible, sectionId);
   return (
     <Link
       href={`/news/${id}`}
@@ -27,6 +26,7 @@ export default function NewsItemImage({ id, sectionId }: NewsItemImageProps) {
         alt={id}
         width={1056}
         height={701}
+        priority={id === "cooperation"}
         className={`absolute top-0 left-0 -z-10 ${
           isVisible ? "scale-100" : "scale-[115%]"
         } transition duration-1000 ease-out`}
