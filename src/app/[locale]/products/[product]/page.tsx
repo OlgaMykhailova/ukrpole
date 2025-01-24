@@ -7,17 +7,28 @@ import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import { productsList } from "@/mockedData/products";
 import { Locale } from "@/types/locale";
 import { ProductItem } from "@/types/productItem";
+import { generatePageMetaData } from "@/utils/generatePageMetaData";
 
 import NotFound from "../../not-found";
 
-export default function ProductPage({
-  params,
-}: {
+interface ProductPageProps {
   params: {
     product: string;
     locale: Locale;
   };
-}) {
+}
+
+export async function generateMetadata({ params }: ProductPageProps) {
+  const { locale, product } = params;
+
+  return generatePageMetaData({
+    locale,
+    namespace: "metadata",
+    canonical: `/news/${product}`,
+  });
+}
+
+export default function ProductPage({ params }: ProductPageProps) {
   const t = useTranslations();
   const { product, locale } = params;
 
