@@ -27,20 +27,23 @@ const alegreya = Alegreya_Sans_SC({
 
 export async function generateMetadata({
   params: { locale },
+  searchParams,
 }: {
   params: { locale: Locale };
+  searchParams: Record<string, string>;
 }) {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const currentUrl = `${baseUrl}${locale === "en" ? "/en" : ""}`;
+  const path = searchParams.path || "";
+  const currentUrl = `${baseUrl}${locale === "en" ? "/en" : ""}${path}`;
 
   return {
     alternates: {
       canonical: currentUrl,
       languages: {
-        uk: `${baseUrl}/`,
-        en: `${baseUrl}/en`,
+        uk: `${baseUrl}/${path}`,
+        en: `${baseUrl}/en${path}`,
       },
     },
     title: t("title"),
