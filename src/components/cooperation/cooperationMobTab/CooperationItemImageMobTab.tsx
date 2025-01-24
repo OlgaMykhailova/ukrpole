@@ -26,6 +26,7 @@ export default function CooperationItemImageMobTab({
       <Image
         src={`/images/contentImages/cooperation/${id}.webp`}
         alt={id}
+        priority
         width={1024}
         height={1024}
         className={`w-full h-auto transition duration-[2000ms] ease-out ${
