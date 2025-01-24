@@ -22,51 +22,51 @@ export default function Characteristics({
           <p className="text-16med tab:text-18med text-center">
             {volume}&nbsp;{t("gram")}
           </p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("weight")}
-          </h4>
+          </h3>
         </li>
         <li>
           <p className="text-16med tab:text-18med text-center">
             {kJ}&nbsp;{t("kJ")}&nbsp;/&nbsp;{kcal}&nbsp;{t("kcal")}
           </p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("energyValues")}
-          </h4>
+          </h3>
         </li>
       </ul>
       <ul className="flex gap-x-4 tab:gap-x-8">
         <li>
           <p className="text-16med tab:text-18med text-center">{protein}</p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("protein")}
-          </h4>
+          </h3>
         </li>
         <li>
           <p className="text-16med tab:text-18med text-center">{fat}</p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("fat")}
-          </h4>
+          </h3>
         </li>
         <li>
           <p className="text-16med tab:text-18med text-center">
             {carbohydrates}
           </p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("carbohydrates")}
-          </h4>
+          </h3>
         </li>
         <li>
           <p className="text-16med tab:text-18med text-center">{sugars}</p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("sugars")}
-          </h4>
+          </h3>
         </li>
         <li>
           <p className="text-16med tab:text-18med text-center">{salt}</p>
-          <h4 className="text-12reg tab:text-14reg text-center text-darkGrey">
+          <h3 className="text-12reg tab:text-14reg text-center text-darkGrey">
             {t("salt")}
-          </h4>
+          </h3>
         </li>
       </ul>
     </div>
