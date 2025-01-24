@@ -11,6 +11,20 @@ import Section7 from "@/components/policy/Section7";
 import Breadcrumbs from "@/components/shared/breadcrumbs/Breadcrumbs";
 import Section from "@/components/shared/section/Section";
 import PageTitle from "@/components/shared/titles/PageTitle";
+import { Locale } from "@/types/locale";
+import { generatePageMetaData } from "@/utils/generatePageMetaData";
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: Locale };
+}) {
+  return generatePageMetaData({
+    locale,
+    namespace: "metadata",
+    canonical: "/policy",
+  });
+}
 
 export default function PolicyPage() {
   const t = useTranslations("");
