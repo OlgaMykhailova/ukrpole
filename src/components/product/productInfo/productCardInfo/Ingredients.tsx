@@ -12,7 +12,7 @@ export default function Ingredients({ ingredients }: IngredientsProps) {
 
   return (
     <div className="mb-10">
-      <h3 className="mb-4 text-18med">{t("ingredientsTitle")}</h3>
+      <h2 className="mb-4 text-18med">{t("ingredientsTitle")}</h2>
       <ul className="flex flex-wrap gap-x-6 gap-y-2 tab:gap-y-4">
         {ingredients?.map((ingredient, idx) => (
           <IngredientItem
