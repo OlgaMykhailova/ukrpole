@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Alegreya_Sans_SC,Montserrat } from "next/font/google";
+import { Alegreya_Sans_SC, Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -32,12 +32,15 @@ export async function generateMetadata({
 }) {
   const t = await getTranslations({ locale, namespace: "metadata" });
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const currentUrl = `${baseUrl}${locale === "en" ? "/en" : ""}`;
+
   return {
     alternates: {
-      canonical: "/",
+      canonical: currentUrl,
       languages: {
-        uk: "/",
-        en: "/en",
+        uk: `${baseUrl}/`,
+        en: `${baseUrl}/en`,
       },
     },
     title: t("title"),
