@@ -1,12 +1,34 @@
 /** @type {import('next-sitemap').IConfig} */
 
-import { articlesList } from "./src/mockedData/articles.ts";
-import { productsList } from "./src/mockedData/products.ts";
-
-const articlesIds = articlesList.uk.map((article) => article.id);
-const productsIds = productsList.uk.map(
-  (product) => `${product.trademark.id}-${product.category}-${product.volume}`
-);
+const articlesIds = [
+  "cooperation",
+  "growing",
+  "trademarks",
+  "benefits",
+  "storage",
+];
+const productsIds = [
+  "bataljon-assorted-720",
+  "bataljon-assorted-900",
+  "bataljon-assorted-1500",
+  "bataljon-assorted-1850",
+  "bataljon-cucumbers-480",
+  "bataljon-cucumbers-540",
+  "bataljon-cucumbers-580",
+  "bataljon-cucumbers-720",
+  "bataljon-cucumbers-900",
+  "bataljon-cucumbers-1500",
+  "bataljon-tomatoes-480",
+  "bataljon-tomatoes-540",
+  "bataljon-tomatoes-720",
+  "bataljon-tomatoes-900",
+  "bataljon-tomatoes-1000",
+  "bataljon-tomatoes-1500",
+  "ukrpole-tomatoes-540",
+  "ukrpole-tomatoes-720",
+  "ukrpole-peppers-720",
+  "bataljon-peppers-720",
+];
 
 async function getDynamicArticlesPages() {
   return articlesIds.map((id) => `/articles/${id}`);
@@ -38,6 +60,10 @@ module.exports = {
     ],
   },
   alternateRefs: [
+    {
+      href: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
+      hreflang: "uk",
+    },
     {
       href: `${process.env.NEXT_PUBLIC_BASE_URL}/en`,
       hreflang: "en",
