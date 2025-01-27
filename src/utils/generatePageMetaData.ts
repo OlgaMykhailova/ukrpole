@@ -23,9 +23,9 @@ export async function generatePageMetaData({
     locale === "uk" ? canonical : `/${locale}${canonical}`;
 
   return {
-    metadataBase: metadataBase: new URL(baseUrl),,
+    metadataBase: new URL(baseUrl),
     alternates: {
-      canonical: localizedCanonical,,
+      canonical: localizedCanonical,
       languages: {
         uk: `/`,
         en: `/en`,
