@@ -4,6 +4,36 @@ export const productsList = {
       category: "assorted",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
       title: "Асорті огірків та томатів",
+      volume: "540",
+      energyValue: {
+        kJ: "184",
+        kcal: "44",
+        protein: "0,39",
+        fat: "0,005",
+        carbohydrates: "7,9",
+        sugars: "5,5",
+        salt: "1,7",
+      },
+      ingredients: [
+        "tomatoes",
+        "cucumbers",
+        "water",
+        "sugar",
+        "salt",
+        "vinegar",
+        "fennel",
+        "garlic",
+        "mustard",
+        "peppercorns",
+        "bayLeaf",
+      ],
+      description:
+        "Мариновані огірки й помідори в ароматному розсолі з кропом та спеціями. Хрусткі, соковиті, без штучних добавок — ідеальні до будь-якої страви!",
+    },
+    {
+      category: "assorted",
+      trademark: { id: "bataljon", title: "Батальйон Смаку" },
+      title: "Асорті огірків та томатів",
       volume: "720",
       energyValue: {
         kJ: "184",
@@ -152,8 +182,37 @@ export const productsList = {
     {
       category: "cucumbers",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
-      title: "Огірки",
+      title: "Огірки Корнішони",
       volume: "540",
+      energyValue: {
+        kJ: "121",
+        kcal: "29",
+        protein: "0,48",
+        fat: "0,005",
+        carbohydrates: "4,32",
+        sugars: "2,6",
+        salt: "1,7",
+      },
+      ingredients: [
+        "cucumbers",
+        "water",
+        "sugar",
+        "salt",
+        "vinegar",
+        "fennel",
+        "garlic",
+        "mustard",
+        "peppercorns",
+        "bayLeaf",
+      ],
+      description:
+        "Хрусткі мариновані огірки з ніжним ароматом кропу, часнику та спецій. Натуральний смак без зайвих добавок, ідеальні як закуска чи гарнір!",
+    },
+    {
+      category: "cucumbers",
+      trademark: { id: "bataljon", title: "Батальйон Смаку" },
+      title: "Огірки",
+      volume: "550",
       energyValue: {
         kJ: "121",
         kcal: "29",
@@ -323,7 +382,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
-      title: "Томати",
+      title: "Томати Чері",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -468,7 +527,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "ukrpole", title: "Укрполе" },
-      title: "Томати",
+      title: "Томати Чері",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -577,6 +636,36 @@ export const productsList = {
     },
   ],
   en: [
+    {
+      category: "assorted",
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
+      title: "Assorted cucumbers and tomatoes",
+      volume: "540",
+      energyValue: {
+        kJ: "184",
+        kcal: "44",
+        protein: "0.39",
+        fat: "0.005",
+        carbohydrates: "7.9",
+        sugars: "5.5",
+        salt: "1.7",
+      },
+      ingredients: [
+        "tomatoes",
+        "cucumbers",
+        "water",
+        "sugar",
+        "salt",
+        "vinegar",
+        "fennel",
+        "garlic",
+        "mustard",
+        "peppercorns",
+        "bayLeaf",
+      ],
+      description:
+        "Pickled cucumbers and tomatoes in a fragrant brine with fennel and spices. Crunchy, juicy, without artificial additives — perfect for any dish!",
+    },
     {
       category: "assorted",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
@@ -729,8 +818,37 @@ export const productsList = {
     {
       category: "cucumbers",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Cucumbers",
+      title: "Cucumbers Gherkins",
       volume: "540",
+      energyValue: {
+        kJ: "121",
+        kcal: "29",
+        protein: "0.48",
+        fat: "0.005",
+        carbohydrates: "4.32",
+        sugars: "2.6",
+        salt: "1.7",
+      },
+      ingredients: [
+        "cucumbers",
+        "water",
+        "sugar",
+        "salt",
+        "vinegar",
+        "fennel",
+        "garlic",
+        "mustard",
+        "peppercorns",
+        "bayLeaf",
+      ],
+      description:
+        "Crispy pickled cucumbers with a delicate aroma of dill, garlic, and spices. Natural taste without excessive additives, perfect as a snack or garnish!",
+    },
+    {
+      category: "cucumbers",
+      trademark: { id: "bataljon", title: "Battalion Smaku" },
+      title: "Cucumbers",
+      volume: "550",
       energyValue: {
         kJ: "121",
         kcal: "29",
@@ -900,7 +1018,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Tomatoes",
+      title: "Tomatoes Cherry",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -1045,7 +1163,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "ukrpole", title: "Ukrpole" },
-      title: "Tomatoes",
+      title: "Tomatoes Cherry",
       volume: "540",
       energyValue: {
         kJ: "184",
