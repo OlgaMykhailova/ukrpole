@@ -323,7 +323,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "bataljon", title: "Батальйон Смаку" },
-      title: "Томати",
+      title: "Томати Чері",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -468,7 +468,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "ukrpole", title: "Укрполе" },
-      title: "Томати",
+      title: "Томати Чері",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -900,7 +900,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "bataljon", title: "Battalion Smaku" },
-      title: "Tomatoes",
+      title: "Tomatoes Cherry",
       volume: "540",
       energyValue: {
         kJ: "184",
@@ -1045,7 +1045,7 @@ export const productsList = {
     {
       category: "tomatoes",
       trademark: { id: "ukrpole", title: "Ukrpole" },
-      title: "Tomatoes",
+      title: "Tomatoes Cherry",
       volume: "540",
       energyValue: {
         kJ: "184",
