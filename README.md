@@ -6,11 +6,11 @@
 
 ## Technical Features
 
-This app is built using Next.js for server-side rendering and static site generation. TypeScript ensures type safety and better development workflows. For localization, Next-intl is integrated. For API requests Axios is used. For styling is used TailwindCSS. Form handling is powered by Formik, validation handled by Yup for reliable user input management. Responsive layout.
+This app is built using Next.js for server-side rendering. TypeScript ensures type safety and better development workflows. For localization, Next-intl is integrated. For API requests Axios is used. For styling is used TailwindCSS. Form handling is powered by Formik, validation handled by Yup for reliable user input management. Responsive layout.
 
 ## Description
 
-This is the landing page for Lirik Solar, a company specializing in the installation of solar panels and backup power systems. The homepage offers user-friendly navigation and incorporates animations to enhance the visual appeal. It includes forms for gathering user information, which are integrated with a Telegram channel to streamline processing by the company's managers. Additionally, the site features a custom 404 page to improve the user experience.
+This is the multi-page website for Ukrpole, an agricultural company specializing in growing and preserving vegetables. The home page offers user-friendly navigation and incorporates animations to enhance the visual appeal. It includes forms for gathering user information, which are integrated with a Telegram channel to streamline processing by the company's managers. A convenient catalog has been developed for familiarization with the company's products. Additionally, the site features a custom 404 page to improve the user experience.
 
 Home page hero section
 
@@ -35,6 +35,10 @@ Products page catalog section
 Product page
 
 ![Product](/public/images/screenshots/product-page-info-section.webp)
+
+Cooperation page
+
+![Cooperation](/public/images/screenshots/cooperation-page.webp)
 
 Not found page
 
