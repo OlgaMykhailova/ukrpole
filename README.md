@@ -12,18 +12,30 @@ This app is built using Next.js for server-side rendering and static site genera
 
 This is the landing page for Lirik Solar, a company specializing in the installation of solar panels and backup power systems. The homepage offers user-friendly navigation and incorporates animations to enhance the visual appeal. It includes forms for gathering user information, which are integrated with a Telegram channel to streamline processing by the company's managers. Additionally, the site features a custom 404 page to improve the user experience.
 
-Hero section
+Home page hero section
 
-![Hero](/public/images/screenshots/hero.webp)
+![Hero](/public/images/screenshots/home-page-hero-section.webp)
 
-About us section
+About us page hero section
 
-![About](/public/images/screenshots/about.webp)
+![About](/public/images/screenshots/about-page-hero-section.webp)
 
-Solar stations section
+About us page mission section
 
-![Solar stations](/public/images/screenshots/stations.webp)
+![Mission](/public/images/screenshots/about-page-mission-section.webp)
+
+Products page hero section
+
+![Products](/public/images/screenshots/products-page-hero-section.webp)
+
+Products page catalog section
+
+![Catalog](/public/images/screenshots/products-page-catalog-section.webp)
+
+Product page
+
+![Product](/public/images/screenshots/product-page-info-section.webp)
 
 Not found page
 
-![Not found page](/public/images/screenshots/notFound.webp)
+![Not found page](/public/images/screenshots/not-found-page.webp)
